@@ -11,6 +11,12 @@ module Expr =
 
     ostap (
       parse:
+        l:compi suf:(("&&" | "!!") compi)* {
+           List.fold_left (fun l (op, r) -> Binop (Token.repr op, l, r)) l suf
+        }
+      | compi;
+
+      compi:
         l:addi suf:(("<=" | "<" | "==" | "!=" | ">=" | ">") addi)* {
            List.fold_left (fun l (op, r) -> Binop (Token.repr op, l, r)) l suf
         }

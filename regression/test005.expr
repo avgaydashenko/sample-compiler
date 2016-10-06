@@ -1,4 +1,14 @@
 read (x);
 read (y);
 z := ((x + y) + (x - y)) + ((x - y) - (x / y));
-write (z)
+write (z);
+x := 1;
+y := 0;
+write (x && y);
+write (x !! y);
+write (x >  y);
+write (x >= y);
+write (x <  y);
+write (x <= y);
+write (x != y);
+write (x == y)

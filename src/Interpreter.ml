@@ -3,11 +3,37 @@ module Expr =
 
     open Language.Expr
 
+    let eval_op op l r =
+    let int = function
+    | false -> 0
+    | true  -> 1
+    in
+    let bool = function
+    | 0 -> false
+    | _ -> true
+    in
+
+    match op with
+    | "+"  -> l + r
+    | "-"  -> l - r
+    | "*"  -> l * r
+    | "/"  -> l / r
+    | "%"  -> l mod r
+    | "==" -> int (l == r)
+    | "!=" -> int (l != r)
+    | "<"  -> int (l < r)
+    | "<=" -> int (l <= r)
+    | ">"  -> int (l > r)
+    | ">=" -> int (l >= r)
+    | "&&" -> int ((bool l) && (bool r))                
+    | "!!" -> int ((bool l) || (bool r))
+    | _ -> failwith "unsupported operation" 
+                               
     let rec eval state = function
-    | Const  n -> n
-    | Var    x -> state x
-    | Binop  _ -> failwith "not supported"
- 
+    | Const  n          -> n
+    | Var    x          -> state x
+    | Binop (op, l, r)  -> eval_op op (eval state l) (eval state r)
+                                   
   end
   
 module Stmt =

@@ -1,0 +1,10 @@
+Language.cmo :
+Language.cmx :
+Interpreter.cmo : Language.cmo
+Interpreter.cmx : Language.cmx
+StackMachine.cmo : Language.cmo Interpreter.cmo
+StackMachine.cmx : Language.cmx Interpreter.cmx
+X86.cmo : StackMachine.cmo
+X86.cmx : StackMachine.cmx
+Driver.cmo : X86.cmo StackMachine.cmo Language.cmo Interpreter.cmo
+Driver.cmx : X86.cmx StackMachine.cmx Language.cmx Interpreter.cmx

@@ -1,0 +1,1150 @@
+"StackMachine.ml" 14 168 176 "StackMachine.ml" 14 168 179
+type(
+  int list -> i list -> int list
+)
+ident(
+  def run "StackMachine.ml" 40 965 1000 "StackMachine.ml" 42 1003 1008
+)
+"StackMachine.ml" 14 168 180 "StackMachine.ml" 14 168 185
+type(
+  int list
+)
+ident(
+  def input "StackMachine.ml" 14 168 186 "StackMachine.ml" 40 965 1000
+)
+"StackMachine.ml" 14 168 186 "StackMachine.ml" 14 168 190
+type(
+  i list
+)
+ident(
+  def code "StackMachine.ml" 15 193 199 "StackMachine.ml" 40 965 1000
+)
+"StackMachine.ml" 15 193 207 "StackMachine.ml" 15 193 211
+type(
+  (string * int) list * int list * int list * int list -> i list -> int list
+)
+ident(
+  def run' "StackMachine.ml" 15 193 199 "StackMachine.ml" 40 965 1000
+)
+"StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+type(
+  (string * int) list
+)
+ident(
+  def state "StackMachine.ml" 15 193 242 "StackMachine.ml" 38 936 955
+)
+"StackMachine.ml" 15 193 220 "StackMachine.ml" 15 193 225
+type(
+  int list
+)
+ident(
+  def stack "StackMachine.ml" 15 193 242 "StackMachine.ml" 38 936 955
+)
+"StackMachine.ml" 15 193 227 "StackMachine.ml" 15 193 232
+type(
+  int list
+)
+ident(
+  def input "StackMachine.ml" 15 193 242 "StackMachine.ml" 38 936 955
+)
+"StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+type(
+  int list
+)
+ident(
+  def output "StackMachine.ml" 15 193 242 "StackMachine.ml" 38 936 955
+)
+"StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 240
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 15 193 242 "StackMachine.ml" 15 193 246
+type(
+  i list
+)
+ident(
+  def code "StackMachine.ml" 16 249 250 "StackMachine.ml" 38 936 955
+)
+"StackMachine.ml" 16 249 256 "StackMachine.ml" 16 249 260
+type(
+  i list
+)
+ident(
+  int_ref code "StackMachine.ml" 15 193 242 "StackMachine.ml" 15 193 246
+)
+"StackMachine.ml" 17 266 269 "StackMachine.ml" 17 266 271
+type(
+  i list
+)
+"StackMachine.ml" 17 266 281 "StackMachine.ml" 17 266 287
+type(
+  int list
+)
+ident(
+  int_ref output "StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+)
+"StackMachine.ml" 18 288 291 "StackMachine.ml" 18 288 292
+type(
+  i
+)
+ident(
+  def i "StackMachine.ml" 19 303 308 "StackMachine.ml" 38 936 955
+)
+"StackMachine.ml" 18 288 294 "StackMachine.ml" 18 288 299
+type(
+  i list
+)
+ident(
+  def code' "StackMachine.ml" 19 303 308 "StackMachine.ml" 38 936 955
+)
+"StackMachine.ml" 18 288 291 "StackMachine.ml" 18 288 299
+type(
+  i list
+)
+"StackMachine.ml" 19 303 308 "StackMachine.ml" 19 303 312
+type(
+  (string * int) list * int list * int list * int list -> i list -> int list
+)
+ident(
+  int_ref run' "StackMachine.ml" 15 193 207 "StackMachine.ml" 15 193 211
+)
+"StackMachine.ml" 20 313 334 "StackMachine.ml" 20 313 335
+type(
+  i
+)
+ident(
+  int_ref i "StackMachine.ml" 18 288 291 "StackMachine.ml" 18 288 292
+)
+"StackMachine.ml" 21 341 357 "StackMachine.ml" 21 341 363
+type(
+  i
+)
+"StackMachine.ml" 22 367 375 "StackMachine.ml" 22 367 376
+type(
+  int
+)
+ident(
+  def y "StackMachine.ml" 23 396 400 "StackMachine.ml" 23 396 433
+)
+"StackMachine.ml" 22 367 378 "StackMachine.ml" 22 367 384
+type(
+  int list
+)
+ident(
+  def input' "StackMachine.ml" 23 396 400 "StackMachine.ml" 23 396 433
+)
+"StackMachine.ml" 22 367 375 "StackMachine.ml" 22 367 384
+type(
+  int list
+)
+"StackMachine.ml" 22 367 387 "StackMachine.ml" 22 367 392
+type(
+  int list
+)
+ident(
+  int_ref input "StackMachine.ml" 15 193 227 "StackMachine.ml" 15 193 232
+)
+"StackMachine.ml" 23 396 401 "StackMachine.ml" 23 396 406
+type(
+  (string * int) list
+)
+ident(
+  int_ref state "StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+)
+"StackMachine.ml" 23 396 408 "StackMachine.ml" 23 396 409
+type(
+  int
+)
+ident(
+  int_ref y "StackMachine.ml" 22 367 375 "StackMachine.ml" 22 367 376
+)
+"StackMachine.ml" 23 396 411 "StackMachine.ml" 23 396 416
+type(
+  int list
+)
+ident(
+  int_ref stack "StackMachine.ml" 15 193 220 "StackMachine.ml" 15 193 225
+)
+"StackMachine.ml" 23 396 408 "StackMachine.ml" 23 396 416
+type(
+  int list
+)
+"StackMachine.ml" 23 396 418 "StackMachine.ml" 23 396 424
+type(
+  int list
+)
+ident(
+  int_ref input' "StackMachine.ml" 22 367 378 "StackMachine.ml" 22 367 384
+)
+"StackMachine.ml" 23 396 426 "StackMachine.ml" 23 396 432
+type(
+  int list
+)
+ident(
+  int_ref output "StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+)
+"StackMachine.ml" 23 396 400 "StackMachine.ml" 23 396 433
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 22 367 371 "StackMachine.ml" 23 396 433
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 24 434 450 "StackMachine.ml" 24 434 457
+type(
+  i
+)
+"StackMachine.ml" 25 461 469 "StackMachine.ml" 25 461 470
+type(
+  int
+)
+ident(
+  def y "StackMachine.ml" 26 490 494 "StackMachine.ml" 26 490 530
+)
+"StackMachine.ml" 25 461 472 "StackMachine.ml" 25 461 478
+type(
+  int list
+)
+ident(
+  def stack' "StackMachine.ml" 26 490 494 "StackMachine.ml" 26 490 530
+)
+"StackMachine.ml" 25 461 469 "StackMachine.ml" 25 461 478
+type(
+  int list
+)
+"StackMachine.ml" 25 461 481 "StackMachine.ml" 25 461 486
+type(
+  int list
+)
+ident(
+  int_ref stack "StackMachine.ml" 15 193 220 "StackMachine.ml" 15 193 225
+)
+"StackMachine.ml" 26 490 495 "StackMachine.ml" 26 490 500
+type(
+  (string * int) list
+)
+ident(
+  int_ref state "StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+)
+"StackMachine.ml" 26 490 502 "StackMachine.ml" 26 490 508
+type(
+  int list
+)
+ident(
+  int_ref stack' "StackMachine.ml" 25 461 472 "StackMachine.ml" 25 461 478
+)
+"StackMachine.ml" 26 490 510 "StackMachine.ml" 26 490 515
+type(
+  int list
+)
+ident(
+  int_ref input "StackMachine.ml" 15 193 227 "StackMachine.ml" 15 193 232
+)
+"StackMachine.ml" 26 490 517 "StackMachine.ml" 26 490 523
+type(
+  int list
+)
+ident(
+  int_ref output "StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+)
+"StackMachine.ml" 26 490 527 "StackMachine.ml" 26 490 528
+type(
+  int
+)
+ident(
+  int_ref y "StackMachine.ml" 25 461 469 "StackMachine.ml" 25 461 470
+)
+"StackMachine.ml" 26 490 526 "StackMachine.ml" 26 490 529
+type(
+  int list
+)
+type(
+  int list
+)
+"StackMachine.ml" 26 490 517 "StackMachine.ml" 26 490 529
+call(
+  stack
+)
+type(
+  int list
+)
+type(
+  int list -> int list -> int list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"StackMachine.ml" 26 490 494 "StackMachine.ml" 26 490 530
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 25 461 465 "StackMachine.ml" 26 490 530
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 27 531 554 "StackMachine.ml" 27 531 555
+type(
+  int
+)
+ident(
+  def n "StackMachine.ml" 28 559 563 "StackMachine.ml" 28 559 595
+)
+"StackMachine.ml" 27 531 547 "StackMachine.ml" 27 531 555
+type(
+  i
+)
+"StackMachine.ml" 28 559 564 "StackMachine.ml" 28 559 569
+type(
+  (string * int) list
+)
+ident(
+  int_ref state "StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+)
+"StackMachine.ml" 28 559 571 "StackMachine.ml" 28 559 572
+type(
+  int
+)
+ident(
+  int_ref n "StackMachine.ml" 27 531 554 "StackMachine.ml" 27 531 555
+)
+"StackMachine.ml" 28 559 574 "StackMachine.ml" 28 559 579
+type(
+  int list
+)
+ident(
+  int_ref stack "StackMachine.ml" 15 193 220 "StackMachine.ml" 15 193 225
+)
+"StackMachine.ml" 28 559 571 "StackMachine.ml" 28 559 579
+type(
+  int list
+)
+"StackMachine.ml" 28 559 581 "StackMachine.ml" 28 559 586
+type(
+  int list
+)
+ident(
+  int_ref input "StackMachine.ml" 15 193 227 "StackMachine.ml" 15 193 232
+)
+"StackMachine.ml" 28 559 588 "StackMachine.ml" 28 559 594
+type(
+  int list
+)
+ident(
+  int_ref output "StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+)
+"StackMachine.ml" 28 559 563 "StackMachine.ml" 28 559 595
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 29 596 617 "StackMachine.ml" 29 596 618
+type(
+  string
+)
+ident(
+  def x "StackMachine.ml" 30 622 626 "StackMachine.ml" 30 622 677
+)
+"StackMachine.ml" 29 596 612 "StackMachine.ml" 29 596 618
+type(
+  i
+)
+"StackMachine.ml" 30 622 627 "StackMachine.ml" 30 622 632
+type(
+  (string * int) list
+)
+ident(
+  int_ref state "StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+)
+"StackMachine.ml" 30 622 635 "StackMachine.ml" 30 622 645
+type(
+  string -> (string * int) list -> int
+)
+ident(
+  ext_ref List.assoc
+)
+"StackMachine.ml" 30 622 646 "StackMachine.ml" 30 622 647
+type(
+  string
+)
+ident(
+  int_ref x "StackMachine.ml" 29 596 617 "StackMachine.ml" 29 596 618
+)
+"StackMachine.ml" 30 622 648 "StackMachine.ml" 30 622 653
+type(
+  (string * int) list
+)
+ident(
+  int_ref state "StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+)
+"StackMachine.ml" 30 622 634 "StackMachine.ml" 30 622 654
+call(
+  stack
+)
+type(
+  int
+)
+"StackMachine.ml" 30 622 656 "StackMachine.ml" 30 622 661
+type(
+  int list
+)
+ident(
+  int_ref stack "StackMachine.ml" 15 193 220 "StackMachine.ml" 15 193 225
+)
+"StackMachine.ml" 30 622 634 "StackMachine.ml" 30 622 661
+type(
+  int list
+)
+"StackMachine.ml" 30 622 663 "StackMachine.ml" 30 622 668
+type(
+  int list
+)
+ident(
+  int_ref input "StackMachine.ml" 15 193 227 "StackMachine.ml" 15 193 232
+)
+"StackMachine.ml" 30 622 670 "StackMachine.ml" 30 622 676
+type(
+  int list
+)
+ident(
+  int_ref output "StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+)
+"StackMachine.ml" 30 622 626 "StackMachine.ml" 30 622 677
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 31 678 699 "StackMachine.ml" 31 678 700
+type(
+  string
+)
+ident(
+  def x "StackMachine.ml" 32 704 708 "StackMachine.ml" 33 733 775
+)
+"StackMachine.ml" 31 678 694 "StackMachine.ml" 31 678 700
+type(
+  i
+)
+"StackMachine.ml" 32 704 712 "StackMachine.ml" 32 704 713
+type(
+  int
+)
+ident(
+  def y "StackMachine.ml" 33 733 737 "StackMachine.ml" 33 733 775
+)
+"StackMachine.ml" 32 704 715 "StackMachine.ml" 32 704 721
+type(
+  int list
+)
+ident(
+  def stack' "StackMachine.ml" 33 733 737 "StackMachine.ml" 33 733 775
+)
+"StackMachine.ml" 32 704 712 "StackMachine.ml" 32 704 721
+type(
+  int list
+)
+"StackMachine.ml" 32 704 724 "StackMachine.ml" 32 704 729
+type(
+  int list
+)
+ident(
+  int_ref stack "StackMachine.ml" 15 193 220 "StackMachine.ml" 15 193 225
+)
+"StackMachine.ml" 33 733 739 "StackMachine.ml" 33 733 740
+type(
+  string
+)
+ident(
+  int_ref x "StackMachine.ml" 31 678 699 "StackMachine.ml" 31 678 700
+)
+"StackMachine.ml" 33 733 742 "StackMachine.ml" 33 733 743
+type(
+  int
+)
+ident(
+  int_ref y "StackMachine.ml" 32 704 712 "StackMachine.ml" 32 704 713
+)
+"StackMachine.ml" 33 733 738 "StackMachine.ml" 33 733 744
+type(
+  string * int
+)
+"StackMachine.ml" 33 733 746 "StackMachine.ml" 33 733 751
+type(
+  (string * int) list
+)
+ident(
+  int_ref state "StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+)
+"StackMachine.ml" 33 733 738 "StackMachine.ml" 33 733 751
+type(
+  (string * int) list
+)
+"StackMachine.ml" 33 733 753 "StackMachine.ml" 33 733 759
+type(
+  int list
+)
+ident(
+  int_ref stack' "StackMachine.ml" 32 704 715 "StackMachine.ml" 32 704 721
+)
+"StackMachine.ml" 33 733 761 "StackMachine.ml" 33 733 766
+type(
+  int list
+)
+ident(
+  int_ref input "StackMachine.ml" 15 193 227 "StackMachine.ml" 15 193 232
+)
+"StackMachine.ml" 33 733 768 "StackMachine.ml" 33 733 774
+type(
+  int list
+)
+ident(
+  int_ref output "StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+)
+"StackMachine.ml" 33 733 737 "StackMachine.ml" 33 733 775
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 32 704 708 "StackMachine.ml" 33 733 775
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 34 776 800 "StackMachine.ml" 34 776 801
+type(
+  string
+)
+ident(
+  def s "StackMachine.ml" 35 805 809 "StackMachine.ml" 36 837 919
+)
+"StackMachine.ml" 34 776 792 "StackMachine.ml" 34 776 801
+type(
+  i
+)
+"StackMachine.ml" 35 805 813 "StackMachine.ml" 35 805 814
+type(
+  int
+)
+ident(
+  def y "StackMachine.ml" 36 837 855 "StackMachine.ml" 36 837 919
+)
+"StackMachine.ml" 35 805 816 "StackMachine.ml" 35 805 817
+type(
+  int
+)
+ident(
+  def x "StackMachine.ml" 36 837 855 "StackMachine.ml" 36 837 919
+)
+"StackMachine.ml" 35 805 819 "StackMachine.ml" 35 805 825
+type(
+  int list
+)
+ident(
+  def stack' "StackMachine.ml" 36 837 855 "StackMachine.ml" 36 837 919
+)
+"StackMachine.ml" 35 805 816 "StackMachine.ml" 35 805 825
+type(
+  int list
+)
+"StackMachine.ml" 35 805 813 "StackMachine.ml" 35 805 825
+type(
+  int list
+)
+"StackMachine.ml" 35 805 828 "StackMachine.ml" 35 805 833
+type(
+  int list
+)
+ident(
+  int_ref stack "StackMachine.ml" 15 193 220 "StackMachine.ml" 15 193 225
+)
+"StackMachine.ml" 36 837 856 "StackMachine.ml" 36 837 861
+type(
+  (string * int) list
+)
+ident(
+  int_ref state "StackMachine.ml" 15 193 213 "StackMachine.ml" 15 193 218
+)
+"StackMachine.ml" 36 837 864 "StackMachine.ml" 36 837 888
+type(
+  string -> int -> int -> int
+)
+ident(
+  ext_ref Interpreter.Expr.eval_op
+)
+"StackMachine.ml" 36 837 889 "StackMachine.ml" 36 837 890
+type(
+  string
+)
+ident(
+  int_ref s "StackMachine.ml" 34 776 800 "StackMachine.ml" 34 776 801
+)
+"StackMachine.ml" 36 837 891 "StackMachine.ml" 36 837 892
+type(
+  int
+)
+ident(
+  int_ref x "StackMachine.ml" 35 805 816 "StackMachine.ml" 35 805 817
+)
+"StackMachine.ml" 36 837 893 "StackMachine.ml" 36 837 894
+type(
+  int
+)
+ident(
+  int_ref y "StackMachine.ml" 35 805 813 "StackMachine.ml" 35 805 814
+)
+"StackMachine.ml" 36 837 863 "StackMachine.ml" 36 837 895
+call(
+  stack
+)
+type(
+  int
+)
+"StackMachine.ml" 36 837 897 "StackMachine.ml" 36 837 903
+type(
+  int list
+)
+ident(
+  int_ref stack' "StackMachine.ml" 35 805 819 "StackMachine.ml" 35 805 825
+)
+"StackMachine.ml" 36 837 863 "StackMachine.ml" 36 837 903
+type(
+  int list
+)
+"StackMachine.ml" 36 837 905 "StackMachine.ml" 36 837 910
+type(
+  int list
+)
+ident(
+  int_ref input "StackMachine.ml" 15 193 227 "StackMachine.ml" 15 193 232
+)
+"StackMachine.ml" 36 837 912 "StackMachine.ml" 36 837 918
+type(
+  int list
+)
+ident(
+  int_ref output "StackMachine.ml" 15 193 234 "StackMachine.ml" 15 193 240
+)
+"StackMachine.ml" 36 837 855 "StackMachine.ml" 36 837 919
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 35 805 809 "StackMachine.ml" 36 837 919
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 20 313 327 "StackMachine.ml" 37 920 935
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 38 936 950 "StackMachine.ml" 38 936 955
+type(
+  i list
+)
+ident(
+  int_ref code' "StackMachine.ml" 18 288 294 "StackMachine.ml" 18 288 299
+)
+"StackMachine.ml" 19 303 308 "StackMachine.ml" 38 936 955
+call(
+  tail
+)
+type(
+  int list
+)
+"StackMachine.ml" 16 249 250 "StackMachine.ml" 38 936 955
+type(
+  int list
+)
+"StackMachine.ml" 15 193 242 "StackMachine.ml" 38 936 955
+type(
+  i list -> int list
+)
+"StackMachine.ml" 15 193 212 "StackMachine.ml" 38 936 955
+type(
+  (string * int) list * int list * int list * int list -> i list -> int list
+)
+"StackMachine.ml" 40 965 971 "StackMachine.ml" 40 965 975
+type(
+  (string * int) list * int list * int list * int list -> i list -> int list
+)
+ident(
+  int_ref run' "StackMachine.ml" 15 193 207 "StackMachine.ml" 15 193 211
+)
+"StackMachine.ml" 40 965 977 "StackMachine.ml" 40 965 979
+type(
+  (string * int) list
+)
+"StackMachine.ml" 40 965 981 "StackMachine.ml" 40 965 983
+type(
+  int list
+)
+"StackMachine.ml" 40 965 985 "StackMachine.ml" 40 965 990
+type(
+  int list
+)
+ident(
+  int_ref input "StackMachine.ml" 14 168 180 "StackMachine.ml" 14 168 185
+)
+"StackMachine.ml" 40 965 992 "StackMachine.ml" 40 965 994
+type(
+  int list
+)
+"StackMachine.ml" 40 965 976 "StackMachine.ml" 40 965 995
+type(
+  (string * int) list * int list * int list * int list
+)
+"StackMachine.ml" 40 965 996 "StackMachine.ml" 40 965 1000
+type(
+  i list
+)
+ident(
+  int_ref code "StackMachine.ml" 14 168 186 "StackMachine.ml" 14 168 190
+)
+"StackMachine.ml" 40 965 971 "StackMachine.ml" 40 965 1000
+call(
+  tail
+)
+type(
+  int list
+)
+"StackMachine.ml" 15 193 199 "StackMachine.ml" 40 965 1000
+type(
+  int list
+)
+"StackMachine.ml" 14 168 186 "StackMachine.ml" 40 965 1000
+type(
+  i list -> int list
+)
+"StackMachine.ml" 14 168 180 "StackMachine.ml" 40 965 1000
+type(
+  int list -> i list -> int list
+)
+"StackMachine.ml" 50 1084 1096 "StackMachine.ml" 50 1084 1100
+type(
+  Language.Expr.t -> i list
+)
+ident(
+  def expr "StackMachine.ml" 50 1084 1088 "StackMachine.ml" 62 1441 1446
+)
+"StackMachine.ml" 51 1112 1124 "StackMachine.ml" 51 1112 1125
+type(
+  string
+)
+ident(
+  def x "StackMachine.ml" 51 1112 1129 "StackMachine.ml" 51 1112 1139
+)
+"StackMachine.ml" 51 1112 1118 "StackMachine.ml" 51 1112 1125
+type(
+  Language.Expr.t
+)
+"StackMachine.ml" 51 1112 1137 "StackMachine.ml" 51 1112 1138
+type(
+  string
+)
+ident(
+  int_ref x "StackMachine.ml" 51 1112 1124 "StackMachine.ml" 51 1112 1125
+)
+"StackMachine.ml" 51 1112 1130 "StackMachine.ml" 51 1112 1138
+type(
+  i
+)
+"StackMachine.ml" 51 1112 1129 "StackMachine.ml" 51 1112 1139
+type(
+  i list
+)
+type(
+  i list
+)
+"StackMachine.ml" 52 1140 1152 "StackMachine.ml" 52 1140 1153
+type(
+  int
+)
+ident(
+  def n "StackMachine.ml" 52 1140 1157 "StackMachine.ml" 52 1140 1167
+)
+"StackMachine.ml" 52 1140 1146 "StackMachine.ml" 52 1140 1153
+type(
+  Language.Expr.t
+)
+"StackMachine.ml" 52 1140 1165 "StackMachine.ml" 52 1140 1166
+type(
+  int
+)
+ident(
+  int_ref n "StackMachine.ml" 52 1140 1152 "StackMachine.ml" 52 1140 1153
+)
+"StackMachine.ml" 52 1140 1158 "StackMachine.ml" 52 1140 1166
+type(
+  i
+)
+"StackMachine.ml" 52 1140 1157 "StackMachine.ml" 52 1140 1167
+type(
+  i list
+)
+type(
+  i list
+)
+"StackMachine.ml" 53 1168 1181 "StackMachine.ml" 53 1168 1182
+type(
+  string
+)
+ident(
+  def s "StackMachine.ml" 53 1168 1193 "StackMachine.ml" 53 1168 1222
+)
+"StackMachine.ml" 53 1168 1184 "StackMachine.ml" 53 1168 1185
+type(
+  Language.Expr.t
+)
+ident(
+  def x "StackMachine.ml" 53 1168 1193 "StackMachine.ml" 53 1168 1222
+)
+"StackMachine.ml" 53 1168 1187 "StackMachine.ml" 53 1168 1188
+type(
+  Language.Expr.t
+)
+ident(
+  def y "StackMachine.ml" 53 1168 1193 "StackMachine.ml" 53 1168 1222
+)
+"StackMachine.ml" 53 1168 1174 "StackMachine.ml" 53 1168 1189
+type(
+  Language.Expr.t
+)
+"StackMachine.ml" 53 1168 1193 "StackMachine.ml" 53 1168 1197
+type(
+  Language.Expr.t -> i list
+)
+ident(
+  int_ref expr "StackMachine.ml" 50 1084 1096 "StackMachine.ml" 50 1084 1100
+)
+"StackMachine.ml" 53 1168 1198 "StackMachine.ml" 53 1168 1199
+type(
+  Language.Expr.t
+)
+ident(
+  int_ref x "StackMachine.ml" 53 1168 1184 "StackMachine.ml" 53 1168 1185
+)
+"StackMachine.ml" 53 1168 1193 "StackMachine.ml" 53 1168 1199
+call(
+  stack
+)
+type(
+  i list
+)
+"StackMachine.ml" 53 1168 1202 "StackMachine.ml" 53 1168 1206
+type(
+  Language.Expr.t -> i list
+)
+ident(
+  int_ref expr "StackMachine.ml" 50 1084 1096 "StackMachine.ml" 50 1084 1100
+)
+"StackMachine.ml" 53 1168 1207 "StackMachine.ml" 53 1168 1208
+type(
+  Language.Expr.t
+)
+ident(
+  int_ref y "StackMachine.ml" 53 1168 1187 "StackMachine.ml" 53 1168 1188
+)
+"StackMachine.ml" 53 1168 1202 "StackMachine.ml" 53 1168 1208
+call(
+  stack
+)
+type(
+  i list
+)
+"StackMachine.ml" 53 1168 1220 "StackMachine.ml" 53 1168 1221
+type(
+  string
+)
+ident(
+  int_ref s "StackMachine.ml" 53 1168 1181 "StackMachine.ml" 53 1168 1182
+)
+"StackMachine.ml" 53 1168 1212 "StackMachine.ml" 53 1168 1221
+type(
+  i
+)
+"StackMachine.ml" 53 1168 1211 "StackMachine.ml" 53 1168 1222
+type(
+  i list
+)
+type(
+  i list
+)
+"StackMachine.ml" 53 1168 1202 "StackMachine.ml" 53 1168 1222
+call(
+  stack
+)
+type(
+  i list
+)
+type(
+  i list -> i list -> i list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"StackMachine.ml" 53 1168 1193 "StackMachine.ml" 53 1168 1222
+call(
+  tail
+)
+type(
+  i list
+)
+type(
+  i list -> i list -> i list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"StackMachine.ml" 50 1084 1103 "StackMachine.ml" 53 1168 1222
+type(
+  Language.Expr.t -> i list
+)
+"StackMachine.ml" 55 1224 1236 "StackMachine.ml" 55 1224 1240
+type(
+  Language.Stmt.t -> i list
+)
+ident(
+  def stmt "StackMachine.ml" 55 1224 1228 "StackMachine.ml" 62 1441 1446
+)
+"StackMachine.ml" 56 1252 1258 "StackMachine.ml" 56 1252 1262
+type(
+  Language.Stmt.t
+)
+"StackMachine.ml" 56 1252 1275 "StackMachine.ml" 56 1252 1277
+type(
+  i list
+)
+"StackMachine.ml" 57 1278 1292 "StackMachine.ml" 57 1278 1293
+type(
+  string
+)
+ident(
+  def x "StackMachine.ml" 57 1278 1301 "StackMachine.ml" 57 1278 1318
+)
+"StackMachine.ml" 57 1278 1295 "StackMachine.ml" 57 1278 1296
+type(
+  Language.Expr.t
+)
+ident(
+  def e "StackMachine.ml" 57 1278 1301 "StackMachine.ml" 57 1278 1318
+)
+"StackMachine.ml" 57 1278 1284 "StackMachine.ml" 57 1278 1297
+type(
+  Language.Stmt.t
+)
+"StackMachine.ml" 57 1278 1301 "StackMachine.ml" 57 1278 1305
+type(
+  Language.Expr.t -> i list
+)
+ident(
+  int_ref expr "StackMachine.ml" 50 1084 1096 "StackMachine.ml" 50 1084 1100
+)
+"StackMachine.ml" 57 1278 1306 "StackMachine.ml" 57 1278 1307
+type(
+  Language.Expr.t
+)
+ident(
+  int_ref e "StackMachine.ml" 57 1278 1295 "StackMachine.ml" 57 1278 1296
+)
+"StackMachine.ml" 57 1278 1301 "StackMachine.ml" 57 1278 1307
+call(
+  stack
+)
+type(
+  i list
+)
+"StackMachine.ml" 57 1278 1316 "StackMachine.ml" 57 1278 1317
+type(
+  string
+)
+ident(
+  int_ref x "StackMachine.ml" 57 1278 1292 "StackMachine.ml" 57 1278 1293
+)
+"StackMachine.ml" 57 1278 1311 "StackMachine.ml" 57 1278 1317
+type(
+  i
+)
+"StackMachine.ml" 57 1278 1310 "StackMachine.ml" 57 1278 1318
+type(
+  i list
+)
+type(
+  i list
+)
+"StackMachine.ml" 57 1278 1301 "StackMachine.ml" 57 1278 1318
+call(
+  tail
+)
+type(
+  i list
+)
+type(
+  i list -> i list -> i list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"StackMachine.ml" 58 1319 1333 "StackMachine.ml" 58 1319 1334
+type(
+  string
+)
+ident(
+  def x "StackMachine.ml" 58 1319 1342 "StackMachine.ml" 58 1319 1358
+)
+"StackMachine.ml" 58 1319 1325 "StackMachine.ml" 58 1319 1334
+type(
+  Language.Stmt.t
+)
+"StackMachine.ml" 58 1319 1343 "StackMachine.ml" 58 1319 1349
+type(
+  i
+)
+"StackMachine.ml" 58 1319 1356 "StackMachine.ml" 58 1319 1357
+type(
+  string
+)
+ident(
+  int_ref x "StackMachine.ml" 58 1319 1333 "StackMachine.ml" 58 1319 1334
+)
+"StackMachine.ml" 58 1319 1351 "StackMachine.ml" 58 1319 1357
+type(
+  i
+)
+"StackMachine.ml" 58 1319 1342 "StackMachine.ml" 58 1319 1358
+type(
+  i list
+)
+type(
+  i list
+)
+type(
+  i list
+)
+"StackMachine.ml" 59 1359 1373 "StackMachine.ml" 59 1359 1374
+type(
+  Language.Expr.t
+)
+ident(
+  def e "StackMachine.ml" 59 1359 1382 "StackMachine.ml" 59 1359 1400
+)
+"StackMachine.ml" 59 1359 1365 "StackMachine.ml" 59 1359 1374
+type(
+  Language.Stmt.t
+)
+"StackMachine.ml" 59 1359 1382 "StackMachine.ml" 59 1359 1386
+type(
+  Language.Expr.t -> i list
+)
+ident(
+  int_ref expr "StackMachine.ml" 50 1084 1096 "StackMachine.ml" 50 1084 1100
+)
+"StackMachine.ml" 59 1359 1387 "StackMachine.ml" 59 1359 1388
+type(
+  Language.Expr.t
+)
+ident(
+  int_ref e "StackMachine.ml" 59 1359 1373 "StackMachine.ml" 59 1359 1374
+)
+"StackMachine.ml" 59 1359 1382 "StackMachine.ml" 59 1359 1388
+call(
+  stack
+)
+type(
+  i list
+)
+"StackMachine.ml" 59 1359 1392 "StackMachine.ml" 59 1359 1399
+type(
+  i
+)
+"StackMachine.ml" 59 1359 1391 "StackMachine.ml" 59 1359 1400
+type(
+  i list
+)
+type(
+  i list
+)
+"StackMachine.ml" 59 1359 1382 "StackMachine.ml" 59 1359 1400
+call(
+  tail
+)
+type(
+  i list
+)
+type(
+  i list -> i list -> i list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"StackMachine.ml" 60 1401 1415 "StackMachine.ml" 60 1401 1416
+type(
+  Language.Stmt.t
+)
+ident(
+  def l "StackMachine.ml" 60 1401 1424 "StackMachine.ml" 60 1401 1439
+)
+"StackMachine.ml" 60 1401 1418 "StackMachine.ml" 60 1401 1419
+type(
+  Language.Stmt.t
+)
+ident(
+  def r "StackMachine.ml" 60 1401 1424 "StackMachine.ml" 60 1401 1439
+)
+"StackMachine.ml" 60 1401 1407 "StackMachine.ml" 60 1401 1420
+type(
+  Language.Stmt.t
+)
+"StackMachine.ml" 60 1401 1424 "StackMachine.ml" 60 1401 1428
+type(
+  Language.Stmt.t -> i list
+)
+ident(
+  int_ref stmt "StackMachine.ml" 55 1224 1236 "StackMachine.ml" 55 1224 1240
+)
+"StackMachine.ml" 60 1401 1429 "StackMachine.ml" 60 1401 1430
+type(
+  Language.Stmt.t
+)
+ident(
+  int_ref l "StackMachine.ml" 60 1401 1415 "StackMachine.ml" 60 1401 1416
+)
+"StackMachine.ml" 60 1401 1424 "StackMachine.ml" 60 1401 1430
+call(
+  stack
+)
+type(
+  i list
+)
+"StackMachine.ml" 60 1401 1433 "StackMachine.ml" 60 1401 1437
+type(
+  Language.Stmt.t -> i list
+)
+ident(
+  int_ref stmt "StackMachine.ml" 55 1224 1236 "StackMachine.ml" 55 1224 1240
+)
+"StackMachine.ml" 60 1401 1438 "StackMachine.ml" 60 1401 1439
+type(
+  Language.Stmt.t
+)
+ident(
+  int_ref r "StackMachine.ml" 60 1401 1418 "StackMachine.ml" 60 1401 1419
+)
+"StackMachine.ml" 60 1401 1433 "StackMachine.ml" 60 1401 1439
+call(
+  stack
+)
+type(
+  i list
+)
+"StackMachine.ml" 60 1401 1424 "StackMachine.ml" 60 1401 1439
+call(
+  tail
+)
+type(
+  i list
+)
+type(
+  i list -> i list -> i list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"StackMachine.ml" 55 1224 1243 "StackMachine.ml" 60 1401 1439
+type(
+  Language.Stmt.t -> i list
+)

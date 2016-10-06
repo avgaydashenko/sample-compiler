@@ -1,0 +1,5 @@
+version = "Revision: 2"
+description = ""
+requires = ""
+archive(byte) = "rc .cma"
+archive(native) = "rc .cmxa"
