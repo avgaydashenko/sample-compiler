@@ -33,6 +33,7 @@ type x86instr =
 | X86Setge
 | X86Sete 
 | X86Setne
+| X86Setnz
 | X86Mov   of opnd * opnd
 | X86Push  of opnd
 | X86Pop   of opnd
@@ -84,7 +85,8 @@ module Show =
     | X86Setg          -> Printf.sprintf "\tsetg\t%%al"       
     | X86Setge         -> Printf.sprintf "\tsetge\t%%al"                                            
     | X86Sete          -> Printf.sprintf "\tsete\t%%al"       
-    | X86Setne         -> Printf.sprintf "\tsetne\t%%al"                                            
+    | X86Setne         -> Printf.sprintf "\tsetne\t%%al"
+    | X86Setnz         -> Printf.sprintf "\tsetnz\t%%al"
     | X86Mov  (s1, s2) -> Printf.sprintf "\tmovl\t%s,\t%s"  (opnd s1) (opnd s2)
     | X86Push  s       -> Printf.sprintf "\tpushl\t%s"      (opnd s )
     | X86Pop   s       -> Printf.sprintf "\tpopl\t%s"       (opnd s )
@@ -129,8 +131,8 @@ module Compile =
                       | "*"  -> [X86Mul   (ebx, eax); X86Mov (eax, y)]                                         
                       | "/"  -> [X86Cltd; X86Div ebx; X86Mov (eax, y)]
                       | "%"  -> [X86Cltd; X86Div ebx; X86Mov (edx, y)]
-                      | "&&" -> [X86And   (ebx, eax); X86Mov (eax, y)]
-                      | "!!" -> [X86Or    (ebx, eax); X86Mov (eax, y)]
+                      | "&&" -> [X86And   (ebx, eax); X86Mov (L 0, eax); X86Setnz;  X86Mov (eax, y)]
+                      | "!!" -> [X86Or    (ebx, eax); X86Mov (L 0, eax); X86Setnz;  X86Mov (eax, y)]
                       | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setl;  X86Mov (eax, y)]
                       | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setle; X86Mov (eax, y)]
                       | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setg;  X86Mov (eax, y)]
@@ -182,4 +184,4 @@ let build stmt name =
   let outf = open_out (Printf.sprintf "%s.s" name) in
   Printf.fprintf outf "%s" (compile stmt);
   close_out outf;
-  ignore (Sys.command (Printf.sprintf "gcc -m32 -o %s ../../runtime/runtime.o %s.s" name name))
+  ignore (Sys.command (Printf.sprintf "gcc -m32 -o %s ../runtime/runtime.o %s.s" name name))

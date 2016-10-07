@@ -65,7 +65,7 @@ main:
 	pushl	%esi
 	call	write
 	popl	%esi
-	movl	$1,	%esi
+	movl	$5,	%esi
 	movl	%esi,	%eax
 	movl	%eax,	x
 	movl	$0,	%esi
@@ -78,6 +78,8 @@ main:
 	movl	%esi,	%eax
 	movl	%edi,	%ebx
 	andl	%ebx,	%eax
+	movl	$0,	%eax
+	setnz	%al
 	movl	%eax,	%esi
 	pushl	%esi
 	call	write
@@ -89,6 +91,8 @@ main:
 	movl	%esi,	%eax
 	movl	%edi,	%ebx
 	orl	%ebx,	%eax
+	movl	$0,	%eax
+	setnz	%al
 	movl	%eax,	%esi
 	pushl	%esi
 	call	write
