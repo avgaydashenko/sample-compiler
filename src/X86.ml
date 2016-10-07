@@ -173,4 +173,4 @@ let build stmt name =
   let outf = open_out (Printf.sprintf "%s.s" name) in
   Printf.fprintf outf "%s" (compile stmt);
   close_out outf;
-  ignore (Sys.command (Printf.sprintf "gcc -m32 -o %s ../runtime/runtime.o %s.s" name name))
+  ignore (Sys.command (Printf.sprintf "gcc -m32 -o %s ../../runtime/runtime.o %s.s" name name))

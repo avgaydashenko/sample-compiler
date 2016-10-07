@@ -16,6 +16,8 @@ main:
 	movl	%esi,	%eax
 	movl	%edi,	%ebx
 	orl	%ebx,	%eax
+	movl	$0,	%eax
+	setnz	%al
 	movl	%eax,	%esi
 	movl	%esi,	%eax
 	movl	%eax,	y
