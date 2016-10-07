@@ -159,69 +159,69 @@ type(
 type(
   opnd
 )
-"X86.ml" 45 741 752 "X86.ml" 45 741 769
+"X86.ml" 39 662 673 "X86.ml" 39 662 690
 call(
   stack
 )
-"X86.ml" 48 786 795 "X86.ml" 48 786 799
+"X86.ml" 42 707 716 "X86.ml" 42 707 720
 type(
   < allocate : int -> unit; allocated : int; local : S.elt -> unit;
     local_vars : S.elt list; .. >
 )
-"X86.ml" 49 801 825 "X86.ml" 49 801 828
+"X86.ml" 43 722 746 "X86.ml" 43 722 749
 type(
   S.t -> S.t ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"X86.ml" 49 801 829 "X86.ml" 49 801 836
+"X86.ml" 43 722 750 "X86.ml" 43 722 757
 type(
   S.t
 )
 ident(
   ext_ref S.empty
 )
-"X86.ml" 49 801 825 "X86.ml" 49 801 836
+"X86.ml" 43 722 746 "X86.ml" 43 722 757
 type(
   S.t ref
 )
-"X86.ml" 50 837 854 "X86.ml" 50 837 855
+"X86.ml" 44 758 775 "X86.ml" 44 758 776
 type(
   S.elt
 )
 ident(
-  def x "X86.ml" 50 837 861 "X86.ml" 50 837 894
+  def x "X86.ml" 44 758 782 "X86.ml" 44 758 815
 )
-"X86.ml" 50 837 861 "X86.ml" 50 837 871
+"X86.ml" 44 758 782 "X86.ml" 44 758 792
 type(
   S.t ref
 )
 ident(
   ext_ref local_vars
 )
-"X86.ml" 50 837 875 "X86.ml" 50 837 880
+"X86.ml" 44 758 796 "X86.ml" 44 758 801
 type(
   S.elt -> S.t -> S.t
 )
 ident(
   ext_ref S.add
 )
-"X86.ml" 50 837 881 "X86.ml" 50 837 882
+"X86.ml" 44 758 802 "X86.ml" 44 758 803
 type(
   S.elt
 )
 ident(
-  int_ref x "X86.ml" 50 837 854 "X86.ml" 50 837 855
+  int_ref x "X86.ml" 44 758 775 "X86.ml" 44 758 776
 )
-"X86.ml" 50 837 884 "X86.ml" 50 837 894
+"X86.ml" 44 758 805 "X86.ml" 44 758 815
 type(
   S.t ref
 )
 ident(
   ext_ref local_vars
 )
-"X86.ml" 50 837 883 "X86.ml" 50 837 894
+"X86.ml" 44 758 804 "X86.ml" 44 758 815
 type(
   S.t
 )
@@ -231,14 +231,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"X86.ml" 50 837 875 "X86.ml" 50 837 894
+"X86.ml" 44 758 796 "X86.ml" 44 758 815
 call(
   stack
 )
 type(
   S.t
 )
-"X86.ml" 50 837 861 "X86.ml" 50 837 894
+"X86.ml" 44 758 782 "X86.ml" 44 758 815
 type(
   unit
 )
@@ -248,35 +248,35 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"X86.ml" 50 837 854 "X86.ml" 50 837 894
+"X86.ml" 44 758 775 "X86.ml" 44 758 815
 type(
   S.elt -> unit
 )
 type(
   S.elt -> unit
 )
-"X86.ml" 50 837 841 "X86.ml" 50 837 894
+"X86.ml" 44 758 762 "X86.ml" 44 758 815
 type(
   (< allocate : int -> unit; allocated : int; local : S.elt -> unit;
      local_vars : S.elt list; .. >
    as 'a) ->
   S.elt -> unit
 )
-"X86.ml" 51 895 919 "X86.ml" 51 895 929
+"X86.ml" 45 816 840 "X86.ml" 45 816 850
 type(
   S.t -> S.elt list
 )
 ident(
   ext_ref S.elements
 )
-"X86.ml" 51 895 931 "X86.ml" 51 895 941
+"X86.ml" 45 816 852 "X86.ml" 45 816 862
 type(
   S.t ref
 )
 ident(
   ext_ref local_vars
 )
-"X86.ml" 51 895 930 "X86.ml" 51 895 941
+"X86.ml" 45 816 851 "X86.ml" 45 816 862
 type(
   S.t
 )
@@ -286,7 +286,7 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"X86.ml" 51 895 919 "X86.ml" 51 895 941
+"X86.ml" 45 816 840 "X86.ml" 45 816 862
 call(
   tail
 )
@@ -296,76 +296,76 @@ type(
 type(
   S.elt list
 )
-"X86.ml" 51 895 899 "X86.ml" 51 895 941
+"X86.ml" 45 816 820 "X86.ml" 45 816 862
 type(
   'a -> S.elt list
 )
-"X86.ml" 53 943 967 "X86.ml" 53 943 970
+"X86.ml" 47 864 888 "X86.ml" 47 864 891
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"X86.ml" 53 943 971 "X86.ml" 53 943 972
+"X86.ml" 47 864 892 "X86.ml" 47 864 893
 type(
   int
 )
-"X86.ml" 53 943 967 "X86.ml" 53 943 972
+"X86.ml" 47 864 888 "X86.ml" 47 864 893
 type(
   int ref
 )
-"X86.ml" 54 973 993 "X86.ml" 54 973 994
+"X86.ml" 48 894 914 "X86.ml" 48 894 915
 type(
   int
 )
 ident(
-  def n "X86.ml" 54 973 997 "X86.ml" 54 973 1030
+  def n "X86.ml" 48 894 918 "X86.ml" 48 894 951
 )
-"X86.ml" 54 973 997 "X86.ml" 54 973 1006
+"X86.ml" 48 894 918 "X86.ml" 48 894 927
 type(
   int ref
 )
 ident(
   ext_ref allocated
 )
-"X86.ml" 54 973 1010 "X86.ml" 54 973 1013
+"X86.ml" 48 894 931 "X86.ml" 48 894 934
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.max
 )
-"X86.ml" 54 973 1015 "X86.ml" 54 973 1016
+"X86.ml" 48 894 936 "X86.ml" 48 894 937
 type(
   int
 )
 ident(
-  int_ref n "X86.ml" 54 973 993 "X86.ml" 54 973 994
+  int_ref n "X86.ml" 48 894 914 "X86.ml" 48 894 915
 )
-"X86.ml" 54 973 1017 "X86.ml" 54 973 1018
+"X86.ml" 48 894 938 "X86.ml" 48 894 939
 type(
   int
 )
-"X86.ml" 54 973 1015 "X86.ml" 54 973 1018
+"X86.ml" 48 894 936 "X86.ml" 48 894 939
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"X86.ml" 54 973 1014 "X86.ml" 54 973 1019
+"X86.ml" 48 894 935 "X86.ml" 48 894 940
 type(
   int
 )
-"X86.ml" 54 973 1021 "X86.ml" 54 973 1030
+"X86.ml" 48 894 942 "X86.ml" 48 894 951
 type(
   int ref
 )
 ident(
   ext_ref allocated
 )
-"X86.ml" 54 973 1020 "X86.ml" 54 973 1030
+"X86.ml" 48 894 941 "X86.ml" 48 894 951
 type(
   int
 )
@@ -375,14 +375,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"X86.ml" 54 973 1010 "X86.ml" 54 973 1030
+"X86.ml" 48 894 931 "X86.ml" 48 894 951
 call(
   stack
 )
 type(
   int
 )
-"X86.ml" 54 973 997 "X86.ml" 54 973 1030
+"X86.ml" 48 894 918 "X86.ml" 48 894 951
 type(
   unit
 )
@@ -392,25 +392,25 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"X86.ml" 54 973 993 "X86.ml" 54 973 1030
+"X86.ml" 48 894 914 "X86.ml" 48 894 951
 type(
   int -> unit
 )
 type(
   int -> unit
 )
-"X86.ml" 54 973 977 "X86.ml" 54 973 1030
+"X86.ml" 48 894 898 "X86.ml" 48 894 951
 type(
   'a -> int -> unit
 )
-"X86.ml" 55 1031 1056 "X86.ml" 55 1031 1065
+"X86.ml" 49 952 977 "X86.ml" 49 952 986
 type(
   int ref
 )
 ident(
   ext_ref allocated
 )
-"X86.ml" 55 1031 1055 "X86.ml" 55 1031 1065
+"X86.ml" 49 952 976 "X86.ml" 49 952 986
 type(
   int
 )
@@ -423,177 +423,177 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"X86.ml" 55 1031 1035 "X86.ml" 55 1031 1065
+"X86.ml" 49 952 956 "X86.ml" 49 952 986
 type(
   'a -> int
 )
-"X86.ml" 58 1073 1077 "X86.ml" 58 1073 1085
+"X86.ml" 52 994 998 "X86.ml" 52 994 1006
 type(
   < allocate : int -> 'a; .. > -> opnd list -> opnd
 )
 ident(
-  def allocate "X86.ml" 65 1336 1336 "X86.ml" 1 0 -1
+  def allocate "X86.ml" 59 1257 1257 "X86.ml" 1 0 -1
 )
-"X86.ml" 58 1073 1086 "X86.ml" 58 1073 1089
+"X86.ml" 52 994 1007 "X86.ml" 52 994 1010
 type(
   < allocate : int -> 'a; .. > as 'b
 )
 ident(
-  def env "X86.ml" 58 1073 1090 "X86.ml" 63 1274 1334
+  def env "X86.ml" 52 994 1011 "X86.ml" 57 1195 1255
 )
-"X86.ml" 58 1073 1090 "X86.ml" 58 1073 1095
+"X86.ml" 52 994 1011 "X86.ml" 52 994 1016
 type(
   opnd list
 )
 ident(
-  def stack "X86.ml" 59 1098 1100 "X86.ml" 63 1274 1334
+  def stack "X86.ml" 53 1019 1021 "X86.ml" 57 1195 1255
 )
-"X86.ml" 59 1098 1106 "X86.ml" 59 1098 1111
+"X86.ml" 53 1019 1027 "X86.ml" 53 1019 1032
 type(
   opnd list
 )
 ident(
-  int_ref stack "X86.ml" 58 1073 1090 "X86.ml" 58 1073 1095
+  int_ref stack "X86.ml" 52 994 1011 "X86.ml" 52 994 1016
 )
-"X86.ml" 60 1117 1121 "X86.ml" 60 1117 1123
+"X86.ml" 54 1038 1042 "X86.ml" 54 1038 1044
 type(
   opnd list
 )
-"X86.ml" 60 1117 1158 "X86.ml" 60 1117 1159
+"X86.ml" 54 1038 1079 "X86.ml" 54 1038 1080
 type(
   int
 )
-"X86.ml" 60 1117 1156 "X86.ml" 60 1117 1159
+"X86.ml" 54 1038 1077 "X86.ml" 54 1038 1080
 type(
   opnd
 )
-"X86.ml" 61 1160 1167 "X86.ml" 61 1160 1168
+"X86.ml" 55 1081 1088 "X86.ml" 55 1081 1089
 type(
   int
 )
 ident(
-  def n "X86.ml" 61 1160 1199 "X86.ml" 61 1160 1226
+  def n "X86.ml" 55 1081 1120 "X86.ml" 55 1081 1147
 )
-"X86.ml" 61 1160 1165 "X86.ml" 61 1160 1168
+"X86.ml" 55 1081 1086 "X86.ml" 55 1081 1089
 type(
   opnd
 )
-"X86.ml" 61 1160 1171 "X86.ml" 61 1160 1172
+"X86.ml" 55 1081 1092 "X86.ml" 55 1081 1093
 type(
   opnd list
 )
-"X86.ml" 61 1160 1164 "X86.ml" 61 1160 1172
+"X86.ml" 55 1081 1085 "X86.ml" 55 1081 1093
 type(
   opnd list
 )
-"X86.ml" 61 1160 1199 "X86.ml" 61 1160 1202
+"X86.ml" 55 1081 1120 "X86.ml" 55 1081 1123
 type(
   'b
 )
 ident(
-  int_ref env "X86.ml" 58 1073 1086 "X86.ml" 58 1073 1089
+  int_ref env "X86.ml" 52 994 1007 "X86.ml" 52 994 1010
 )
-"X86.ml" 61 1160 1199 "X86.ml" 61 1160 1211
+"X86.ml" 55 1081 1120 "X86.ml" 55 1081 1132
 call(
   stack
 )
 type(
   int -> 'a
 )
-"X86.ml" 61 1160 1213 "X86.ml" 61 1160 1214
+"X86.ml" 55 1081 1134 "X86.ml" 55 1081 1135
 type(
   int
 )
 ident(
-  int_ref n "X86.ml" 61 1160 1167 "X86.ml" 61 1160 1168
+  int_ref n "X86.ml" 55 1081 1088 "X86.ml" 55 1081 1089
 )
-"X86.ml" 61 1160 1215 "X86.ml" 61 1160 1216
+"X86.ml" 55 1081 1136 "X86.ml" 55 1081 1137
 type(
   int
 )
-"X86.ml" 61 1160 1213 "X86.ml" 61 1160 1216
+"X86.ml" 55 1081 1134 "X86.ml" 55 1081 1137
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"X86.ml" 61 1160 1212 "X86.ml" 61 1160 1217
+"X86.ml" 55 1081 1133 "X86.ml" 55 1081 1138
 type(
   int
 )
-"X86.ml" 61 1160 1199 "X86.ml" 61 1160 1217
+"X86.ml" 55 1081 1120 "X86.ml" 55 1081 1138
 type(
   'a
 )
-"X86.ml" 61 1160 1222 "X86.ml" 61 1160 1223
+"X86.ml" 55 1081 1143 "X86.ml" 55 1081 1144
 type(
   int
 )
 ident(
-  int_ref n "X86.ml" 61 1160 1167 "X86.ml" 61 1160 1168
+  int_ref n "X86.ml" 55 1081 1088 "X86.ml" 55 1081 1089
 )
-"X86.ml" 61 1160 1224 "X86.ml" 61 1160 1225
+"X86.ml" 55 1081 1145 "X86.ml" 55 1081 1146
 type(
   int
 )
-"X86.ml" 61 1160 1222 "X86.ml" 61 1160 1225
+"X86.ml" 55 1081 1143 "X86.ml" 55 1081 1146
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"X86.ml" 61 1160 1221 "X86.ml" 61 1160 1226
+"X86.ml" 55 1081 1142 "X86.ml" 55 1081 1147
 type(
   int
 )
-"X86.ml" 61 1160 1219 "X86.ml" 61 1160 1226
+"X86.ml" 55 1081 1140 "X86.ml" 55 1081 1147
 type(
   opnd
 )
-"X86.ml" 61 1160 1199 "X86.ml" 61 1160 1226
+"X86.ml" 55 1081 1120 "X86.ml" 55 1081 1147
 type(
   opnd
 )
-"X86.ml" 62 1227 1234 "X86.ml" 62 1227 1235
-type(
-  int
-)
-ident(
-  def n "X86.ml" 62 1227 1245 "X86.ml" 62 1227 1273
-)
-"X86.ml" 62 1227 1232 "X86.ml" 62 1227 1235
-type(
-  opnd
-)
-"X86.ml" 62 1227 1238 "X86.ml" 62 1227 1239
-type(
-  opnd list
-)
-"X86.ml" 62 1227 1231 "X86.ml" 62 1227 1239
-type(
-  opnd list
-)
-"X86.ml" 62 1227 1245 "X86.ml" 62 1227 1246
+"X86.ml" 56 1148 1155 "X86.ml" 56 1148 1156
 type(
   int
 )
 ident(
-  int_ref n "X86.ml" 62 1227 1234 "X86.ml" 62 1227 1235
+  def n "X86.ml" 56 1148 1166 "X86.ml" 56 1148 1194
 )
-"X86.ml" 62 1227 1249 "X86.ml" 62 1227 1260
+"X86.ml" 56 1148 1153 "X86.ml" 56 1148 1156
+type(
+  opnd
+)
+"X86.ml" 56 1148 1159 "X86.ml" 56 1148 1160
+type(
+  opnd list
+)
+"X86.ml" 56 1148 1152 "X86.ml" 56 1148 1160
+type(
+  opnd list
+)
+"X86.ml" 56 1148 1166 "X86.ml" 56 1148 1167
+type(
+  int
+)
+ident(
+  int_ref n "X86.ml" 56 1148 1155 "X86.ml" 56 1148 1156
+)
+"X86.ml" 56 1148 1170 "X86.ml" 56 1148 1181
 type(
   int
 )
 ident(
   int_ref num_of_regs "X86.ml" 12 159 163 "X86.ml" 12 159 174
 )
-"X86.ml" 62 1227 1261 "X86.ml" 62 1227 1262
+"X86.ml" 56 1148 1182 "X86.ml" 56 1148 1183
 type(
   int
 )
-"X86.ml" 62 1227 1249 "X86.ml" 62 1227 1262
+"X86.ml" 56 1148 1170 "X86.ml" 56 1148 1183
 type(
   int
 )
@@ -603,7 +603,7 @@ type(
 ident(
   ext_ref Pervasives.( - )
 )
-"X86.ml" 62 1227 1245 "X86.ml" 62 1227 1262
+"X86.ml" 56 1148 1166 "X86.ml" 56 1148 1183
 type(
   bool
 )
@@ -613,115 +613,115 @@ type(
 ident(
   ext_ref Pervasives.( < )
 )
-"X86.ml" 62 1227 1269 "X86.ml" 62 1227 1270
+"X86.ml" 56 1148 1190 "X86.ml" 56 1148 1191
 type(
   int
 )
 ident(
-  int_ref n "X86.ml" 62 1227 1234 "X86.ml" 62 1227 1235
+  int_ref n "X86.ml" 56 1148 1155 "X86.ml" 56 1148 1156
 )
-"X86.ml" 62 1227 1271 "X86.ml" 62 1227 1272
+"X86.ml" 56 1148 1192 "X86.ml" 56 1148 1193
 type(
   int
 )
-"X86.ml" 62 1227 1269 "X86.ml" 62 1227 1272
+"X86.ml" 56 1148 1190 "X86.ml" 56 1148 1193
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"X86.ml" 62 1227 1268 "X86.ml" 62 1227 1273
+"X86.ml" 56 1148 1189 "X86.ml" 56 1148 1194
 type(
   int
 )
-"X86.ml" 62 1227 1266 "X86.ml" 62 1227 1273
+"X86.ml" 56 1148 1187 "X86.ml" 56 1148 1194
 type(
   opnd
 )
-"X86.ml" 63 1274 1278 "X86.ml" 63 1274 1279
+"X86.ml" 57 1195 1199 "X86.ml" 57 1195 1200
 type(
   opnd list
 )
-"X86.ml" 63 1274 1313 "X86.ml" 63 1274 1316
+"X86.ml" 57 1195 1234 "X86.ml" 57 1195 1237
 type(
   'b
 )
 ident(
-  int_ref env "X86.ml" 58 1073 1086 "X86.ml" 58 1073 1089
+  int_ref env "X86.ml" 52 994 1007 "X86.ml" 52 994 1010
 )
-"X86.ml" 63 1274 1313 "X86.ml" 63 1274 1325
+"X86.ml" 57 1195 1234 "X86.ml" 57 1195 1246
 call(
   stack
 )
 type(
   int -> 'a
 )
-"X86.ml" 63 1274 1326 "X86.ml" 63 1274 1329
+"X86.ml" 57 1195 1247 "X86.ml" 57 1195 1250
 type(
   int
 )
-"X86.ml" 63 1274 1313 "X86.ml" 63 1274 1329
+"X86.ml" 57 1195 1234 "X86.ml" 57 1195 1250
 type(
   'a
 )
-"X86.ml" 63 1274 1333 "X86.ml" 63 1274 1334
+"X86.ml" 57 1195 1254 "X86.ml" 57 1195 1255
 type(
   int
 )
-"X86.ml" 63 1274 1331 "X86.ml" 63 1274 1334
+"X86.ml" 57 1195 1252 "X86.ml" 57 1195 1255
 type(
   opnd
 )
-"X86.ml" 63 1274 1313 "X86.ml" 63 1274 1334
+"X86.ml" 57 1195 1234 "X86.ml" 57 1195 1255
 type(
   opnd
 )
-"X86.ml" 59 1098 1100 "X86.ml" 63 1274 1334
+"X86.ml" 53 1019 1021 "X86.ml" 57 1195 1255
 type(
   opnd
 )
-"X86.ml" 58 1073 1090 "X86.ml" 63 1274 1334
+"X86.ml" 52 994 1011 "X86.ml" 57 1195 1255
 type(
   opnd list -> opnd
 )
-"X86.ml" 58 1073 1086 "X86.ml" 63 1274 1334
+"X86.ml" 52 994 1007 "X86.ml" 57 1195 1255
 type(
   'b -> opnd list -> opnd
 )
-"X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+"X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 type(
   opnd -> string
 )
 ident(
-  def opnd "X86.ml" 74 1518 1522 "X86.ml" 98 3182 3187
+  def opnd "X86.ml" 68 1439 1443 "X86.ml" 86 2675 2680
 )
-"X86.ml" 69 1384 1392 "X86.ml" 69 1384 1393
+"X86.ml" 63 1305 1313 "X86.ml" 63 1305 1314
 type(
   int
 )
 ident(
-  def i "X86.ml" 69 1384 1397 "X86.ml" 69 1384 1408
+  def i "X86.ml" 63 1305 1318 "X86.ml" 63 1305 1329
 )
-"X86.ml" 69 1384 1390 "X86.ml" 69 1384 1393
+"X86.ml" 63 1305 1311 "X86.ml" 63 1305 1314
 type(
   opnd
 )
-"X86.ml" 69 1384 1397 "X86.ml" 69 1384 1404
+"X86.ml" 63 1305 1318 "X86.ml" 63 1305 1325
 type(
   string array
 )
 ident(
   int_ref x86regs "X86.ml" 3 58 62 "X86.ml" 3 58 69
 )
-"X86.ml" 69 1384 1406 "X86.ml" 69 1384 1407
+"X86.ml" 63 1305 1327 "X86.ml" 63 1305 1328
 type(
   int
 )
 ident(
-  int_ref i "X86.ml" 69 1384 1392 "X86.ml" 69 1384 1393
+  int_ref i "X86.ml" 63 1305 1313 "X86.ml" 63 1305 1314
 )
-"X86.ml" 69 1384 1397 "X86.ml" 69 1384 1408
+"X86.ml" 63 1305 1318 "X86.ml" 63 1305 1329
 type(
   string
 )
@@ -731,144 +731,144 @@ type(
 ident(
   ext_ref Array.get
 )
-"X86.ml" 70 1409 1417 "X86.ml" 70 1409 1418
+"X86.ml" 64 1330 1338 "X86.ml" 64 1330 1339
 type(
   int
 )
 ident(
-  def i "X86.ml" 70 1409 1422 "X86.ml" 70 1409 1465
+  def i "X86.ml" 64 1330 1343 "X86.ml" 64 1330 1386
 )
-"X86.ml" 70 1409 1415 "X86.ml" 70 1409 1418
+"X86.ml" 64 1330 1336 "X86.ml" 64 1330 1339
 type(
   opnd
 )
-"X86.ml" 70 1409 1422 "X86.ml" 70 1409 1436
+"X86.ml" 64 1330 1343 "X86.ml" 64 1330 1357
 type(
   (int -> string, unit, string) format -> int -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 70 1409 1437 "X86.ml" 70 1409 1449
+"X86.ml" 64 1330 1358 "X86.ml" 64 1330 1370
 type(
   (int -> string, unit, string) format
 )
-"X86.ml" 70 1409 1451 "X86.ml" 70 1409 1452
+"X86.ml" 64 1330 1372 "X86.ml" 64 1330 1373
 type(
   int
 )
 ident(
-  int_ref i "X86.ml" 70 1409 1417 "X86.ml" 70 1409 1418
+  int_ref i "X86.ml" 64 1330 1338 "X86.ml" 64 1330 1339
 )
-"X86.ml" 70 1409 1455 "X86.ml" 70 1409 1464
+"X86.ml" 64 1330 1376 "X86.ml" 64 1330 1385
 type(
   int
 )
 ident(
   int_ref word_size "X86.ml" 13 198 202 "X86.ml" 13 198 211
 )
-"X86.ml" 70 1409 1451 "X86.ml" 70 1409 1464
+"X86.ml" 64 1330 1372 "X86.ml" 64 1330 1385
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"X86.ml" 70 1409 1450 "X86.ml" 70 1409 1465
+"X86.ml" 64 1330 1371 "X86.ml" 64 1330 1386
 type(
   int
 )
-"X86.ml" 70 1409 1422 "X86.ml" 70 1409 1465
+"X86.ml" 64 1330 1343 "X86.ml" 64 1330 1386
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 71 1466 1474 "X86.ml" 71 1466 1475
+"X86.ml" 65 1387 1395 "X86.ml" 65 1387 1396
 type(
   string
 )
 ident(
-  def x "X86.ml" 71 1466 1479 "X86.ml" 71 1466 1480
+  def x "X86.ml" 65 1387 1400 "X86.ml" 65 1387 1401
 )
-"X86.ml" 71 1466 1472 "X86.ml" 71 1466 1475
+"X86.ml" 65 1387 1393 "X86.ml" 65 1387 1396
 type(
   opnd
 )
-"X86.ml" 71 1466 1479 "X86.ml" 71 1466 1480
+"X86.ml" 65 1387 1400 "X86.ml" 65 1387 1401
 type(
   string
 )
 ident(
-  int_ref x "X86.ml" 71 1466 1474 "X86.ml" 71 1466 1475
+  int_ref x "X86.ml" 65 1387 1395 "X86.ml" 65 1387 1396
 )
-"X86.ml" 72 1481 1489 "X86.ml" 72 1481 1490
+"X86.ml" 66 1402 1410 "X86.ml" 66 1402 1411
 type(
   int
 )
 ident(
-  def i "X86.ml" 72 1481 1494 "X86.ml" 72 1481 1516
+  def i "X86.ml" 66 1402 1415 "X86.ml" 66 1402 1437
 )
-"X86.ml" 72 1481 1487 "X86.ml" 72 1481 1490
+"X86.ml" 66 1402 1408 "X86.ml" 66 1402 1411
 type(
   opnd
 )
-"X86.ml" 72 1481 1494 "X86.ml" 72 1481 1508
+"X86.ml" 66 1402 1415 "X86.ml" 66 1402 1429
 type(
   (int -> string, unit, string) format -> int -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 72 1481 1509 "X86.ml" 72 1481 1514
+"X86.ml" 66 1402 1430 "X86.ml" 66 1402 1435
 type(
   (int -> string, unit, string) format
 )
-"X86.ml" 72 1481 1515 "X86.ml" 72 1481 1516
+"X86.ml" 66 1402 1436 "X86.ml" 66 1402 1437
 type(
   int
 )
 ident(
-  int_ref i "X86.ml" 72 1481 1489 "X86.ml" 72 1481 1490
+  int_ref i "X86.ml" 66 1402 1410 "X86.ml" 66 1402 1411
 )
-"X86.ml" 72 1481 1494 "X86.ml" 72 1481 1516
+"X86.ml" 66 1402 1415 "X86.ml" 66 1402 1437
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 68 1360 1375 "X86.ml" 72 1481 1516
+"X86.ml" 62 1281 1296 "X86.ml" 66 1402 1437
 type(
   opnd -> string
 )
-"X86.ml" 74 1518 1526 "X86.ml" 74 1518 1531
+"X86.ml" 68 1439 1447 "X86.ml" 68 1439 1452
 type(
   x86instr -> string
 )
 ident(
-  def instr "X86.ml" 96 3084 3139 "X86.ml" 98 3182 3187
+  def instr "X86.ml" 84 2570 2632 "X86.ml" 86 2675 2680
 )
-"X86.ml" 76 1544 1559 "X86.ml" 76 1544 1561
+"X86.ml" 70 1465 1480 "X86.ml" 70 1465 1482
 type(
   opnd
 )
 ident(
-  def s1 "X86.ml" 76 1544 1570 "X86.ml" 76 1544 1623
+  def s1 "X86.ml" 70 1465 1491 "X86.ml" 70 1465 1544
 )
-"X86.ml" 76 1544 1563 "X86.ml" 76 1544 1565
+"X86.ml" 70 1465 1484 "X86.ml" 70 1465 1486
 type(
   opnd
 )
 ident(
-  def s2 "X86.ml" 76 1544 1570 "X86.ml" 76 1544 1623
+  def s2 "X86.ml" 70 1465 1491 "X86.ml" 70 1465 1544
 )
-"X86.ml" 76 1544 1550 "X86.ml" 76 1544 1566
+"X86.ml" 70 1465 1471 "X86.ml" 70 1465 1487
 type(
   x86instr
 )
-"X86.ml" 76 1544 1570 "X86.ml" 76 1544 1584
+"X86.ml" 70 1465 1491 "X86.ml" 70 1465 1505
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -876,78 +876,78 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 76 1544 1585 "X86.ml" 76 1544 1602
+"X86.ml" 70 1465 1506 "X86.ml" 70 1465 1523
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 76 1544 1605 "X86.ml" 76 1544 1609
+"X86.ml" 70 1465 1526 "X86.ml" 70 1465 1530
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 76 1544 1610 "X86.ml" 76 1544 1612
+"X86.ml" 70 1465 1531 "X86.ml" 70 1465 1533
 type(
   opnd
 )
 ident(
-  int_ref s1 "X86.ml" 76 1544 1559 "X86.ml" 76 1544 1561
+  int_ref s1 "X86.ml" 70 1465 1480 "X86.ml" 70 1465 1482
 )
-"X86.ml" 76 1544 1604 "X86.ml" 76 1544 1613
+"X86.ml" 70 1465 1525 "X86.ml" 70 1465 1534
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 76 1544 1615 "X86.ml" 76 1544 1619
+"X86.ml" 70 1465 1536 "X86.ml" 70 1465 1540
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 76 1544 1620 "X86.ml" 76 1544 1622
+"X86.ml" 70 1465 1541 "X86.ml" 70 1465 1543
 type(
   opnd
 )
 ident(
-  int_ref s2 "X86.ml" 76 1544 1563 "X86.ml" 76 1544 1565
+  int_ref s2 "X86.ml" 70 1465 1484 "X86.ml" 70 1465 1486
 )
-"X86.ml" 76 1544 1614 "X86.ml" 76 1544 1623
+"X86.ml" 70 1465 1535 "X86.ml" 70 1465 1544
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 76 1544 1570 "X86.ml" 76 1544 1623
+"X86.ml" 70 1465 1491 "X86.ml" 70 1465 1544
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 77 1624 1639 "X86.ml" 77 1624 1641
+"X86.ml" 71 1545 1560 "X86.ml" 71 1545 1562
 type(
   opnd
 )
 ident(
-  def s1 "X86.ml" 77 1624 1650 "X86.ml" 77 1624 1703
+  def s1 "X86.ml" 71 1545 1571 "X86.ml" 71 1545 1624
 )
-"X86.ml" 77 1624 1643 "X86.ml" 77 1624 1645
+"X86.ml" 71 1545 1564 "X86.ml" 71 1545 1566
 type(
   opnd
 )
 ident(
-  def s2 "X86.ml" 77 1624 1650 "X86.ml" 77 1624 1703
+  def s2 "X86.ml" 71 1545 1571 "X86.ml" 71 1545 1624
 )
-"X86.ml" 77 1624 1630 "X86.ml" 77 1624 1646
+"X86.ml" 71 1545 1551 "X86.ml" 71 1545 1567
 type(
   x86instr
 )
-"X86.ml" 77 1624 1650 "X86.ml" 77 1624 1664
+"X86.ml" 71 1545 1571 "X86.ml" 71 1545 1585
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -955,78 +955,78 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 77 1624 1665 "X86.ml" 77 1624 1682
+"X86.ml" 71 1545 1586 "X86.ml" 71 1545 1603
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 77 1624 1685 "X86.ml" 77 1624 1689
+"X86.ml" 71 1545 1606 "X86.ml" 71 1545 1610
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 77 1624 1690 "X86.ml" 77 1624 1692
+"X86.ml" 71 1545 1611 "X86.ml" 71 1545 1613
 type(
   opnd
 )
 ident(
-  int_ref s1 "X86.ml" 77 1624 1639 "X86.ml" 77 1624 1641
+  int_ref s1 "X86.ml" 71 1545 1560 "X86.ml" 71 1545 1562
 )
-"X86.ml" 77 1624 1684 "X86.ml" 77 1624 1693
+"X86.ml" 71 1545 1605 "X86.ml" 71 1545 1614
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 77 1624 1695 "X86.ml" 77 1624 1699
+"X86.ml" 71 1545 1616 "X86.ml" 71 1545 1620
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 77 1624 1700 "X86.ml" 77 1624 1702
+"X86.ml" 71 1545 1621 "X86.ml" 71 1545 1623
 type(
   opnd
 )
 ident(
-  int_ref s2 "X86.ml" 77 1624 1643 "X86.ml" 77 1624 1645
+  int_ref s2 "X86.ml" 71 1545 1564 "X86.ml" 71 1545 1566
 )
-"X86.ml" 77 1624 1694 "X86.ml" 77 1624 1703
+"X86.ml" 71 1545 1615 "X86.ml" 71 1545 1624
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 77 1624 1650 "X86.ml" 77 1624 1703
+"X86.ml" 71 1545 1571 "X86.ml" 71 1545 1624
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 78 1742 1757 "X86.ml" 78 1742 1759
+"X86.ml" 72 1663 1678 "X86.ml" 72 1663 1680
 type(
   opnd
 )
 ident(
-  def s1 "X86.ml" 78 1742 1768 "X86.ml" 78 1742 1821
+  def s1 "X86.ml" 72 1663 1689 "X86.ml" 72 1663 1742
 )
-"X86.ml" 78 1742 1761 "X86.ml" 78 1742 1763
+"X86.ml" 72 1663 1682 "X86.ml" 72 1663 1684
 type(
   opnd
 )
 ident(
-  def s2 "X86.ml" 78 1742 1768 "X86.ml" 78 1742 1821
+  def s2 "X86.ml" 72 1663 1689 "X86.ml" 72 1663 1742
 )
-"X86.ml" 78 1742 1748 "X86.ml" 78 1742 1764
+"X86.ml" 72 1663 1669 "X86.ml" 72 1663 1685
 type(
   x86instr
 )
-"X86.ml" 78 1742 1768 "X86.ml" 78 1742 1782
+"X86.ml" 72 1663 1689 "X86.ml" 72 1663 1703
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -1034,172 +1034,172 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 78 1742 1783 "X86.ml" 78 1742 1801
+"X86.ml" 72 1663 1704 "X86.ml" 72 1663 1722
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 78 1742 1803 "X86.ml" 78 1742 1807
+"X86.ml" 72 1663 1724 "X86.ml" 72 1663 1728
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 78 1742 1808 "X86.ml" 78 1742 1810
+"X86.ml" 72 1663 1729 "X86.ml" 72 1663 1731
 type(
   opnd
 )
 ident(
-  int_ref s1 "X86.ml" 78 1742 1757 "X86.ml" 78 1742 1759
+  int_ref s1 "X86.ml" 72 1663 1678 "X86.ml" 72 1663 1680
 )
-"X86.ml" 78 1742 1802 "X86.ml" 78 1742 1811
+"X86.ml" 72 1663 1723 "X86.ml" 72 1663 1732
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 78 1742 1813 "X86.ml" 78 1742 1817
+"X86.ml" 72 1663 1734 "X86.ml" 72 1663 1738
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 78 1742 1818 "X86.ml" 78 1742 1820
+"X86.ml" 72 1663 1739 "X86.ml" 72 1663 1741
 type(
   opnd
 )
 ident(
-  int_ref s2 "X86.ml" 78 1742 1761 "X86.ml" 78 1742 1763
+  int_ref s2 "X86.ml" 72 1663 1682 "X86.ml" 72 1663 1684
 )
-"X86.ml" 78 1742 1812 "X86.ml" 78 1742 1821
+"X86.ml" 72 1663 1733 "X86.ml" 72 1663 1742
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 78 1742 1768 "X86.ml" 78 1742 1821
+"X86.ml" 72 1663 1689 "X86.ml" 72 1663 1742
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 79 1822 1837 "X86.ml" 79 1822 1838
+"X86.ml" 73 1743 1758 "X86.ml" 73 1743 1759
 type(
   opnd
 )
 ident(
-  def s "X86.ml" 79 1822 1848 "X86.ml" 79 1822 1890
+  def s "X86.ml" 73 1743 1769 "X86.ml" 73 1743 1811
 )
-"X86.ml" 79 1822 1828 "X86.ml" 79 1822 1838
+"X86.ml" 73 1743 1749 "X86.ml" 73 1743 1759
 type(
   x86instr
 )
-"X86.ml" 79 1822 1848 "X86.ml" 79 1822 1862
+"X86.ml" 73 1743 1769 "X86.ml" 73 1743 1783
 type(
   (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 79 1822 1863 "X86.ml" 79 1822 1876
+"X86.ml" 73 1743 1784 "X86.ml" 73 1743 1797
 type(
   (string -> string, unit, string) format
 )
-"X86.ml" 79 1822 1883 "X86.ml" 79 1822 1887
+"X86.ml" 73 1743 1804 "X86.ml" 73 1743 1808
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 79 1822 1888 "X86.ml" 79 1822 1889
+"X86.ml" 73 1743 1809 "X86.ml" 73 1743 1810
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 79 1822 1837 "X86.ml" 79 1822 1838
+  int_ref s "X86.ml" 73 1743 1758 "X86.ml" 73 1743 1759
 )
-"X86.ml" 79 1822 1882 "X86.ml" 79 1822 1890
+"X86.ml" 73 1743 1803 "X86.ml" 73 1743 1811
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 79 1822 1848 "X86.ml" 79 1822 1890
+"X86.ml" 73 1743 1769 "X86.ml" 73 1743 1811
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 80 1891 1906 "X86.ml" 80 1891 1907
+"X86.ml" 74 1812 1827 "X86.ml" 74 1812 1828
 type(
   opnd
 )
 ident(
-  def s "X86.ml" 80 1891 1917 "X86.ml" 80 1891 1959
+  def s "X86.ml" 74 1812 1838 "X86.ml" 74 1812 1880
 )
-"X86.ml" 80 1891 1897 "X86.ml" 80 1891 1907
+"X86.ml" 74 1812 1818 "X86.ml" 74 1812 1828
 type(
   x86instr
 )
-"X86.ml" 80 1891 1917 "X86.ml" 80 1891 1931
+"X86.ml" 74 1812 1838 "X86.ml" 74 1812 1852
 type(
   (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 80 1891 1932 "X86.ml" 80 1891 1945
+"X86.ml" 74 1812 1853 "X86.ml" 74 1812 1866
 type(
   (string -> string, unit, string) format
 )
-"X86.ml" 80 1891 1952 "X86.ml" 80 1891 1956
+"X86.ml" 74 1812 1873 "X86.ml" 74 1812 1877
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 80 1891 1957 "X86.ml" 80 1891 1958
+"X86.ml" 74 1812 1878 "X86.ml" 74 1812 1879
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 80 1891 1906 "X86.ml" 80 1891 1907
+  int_ref s "X86.ml" 74 1812 1827 "X86.ml" 74 1812 1828
 )
-"X86.ml" 80 1891 1951 "X86.ml" 80 1891 1959
+"X86.ml" 74 1812 1872 "X86.ml" 74 1812 1880
 type(
   string
 )
-"X86.ml" 80 1891 1917 "X86.ml" 80 1891 1959
+"X86.ml" 74 1812 1838 "X86.ml" 74 1812 1880
 type(
   string
 )
-"X86.ml" 81 1960 1975 "X86.ml" 81 1960 1977
+"X86.ml" 75 1881 1896 "X86.ml" 75 1881 1898
 type(
   opnd
 )
 ident(
-  def s1 "X86.ml" 81 1960 1986 "X86.ml" 81 1960 2039
+  def s1 "X86.ml" 75 1881 1907 "X86.ml" 75 1881 1960
 )
-"X86.ml" 81 1960 1979 "X86.ml" 81 1960 1981
+"X86.ml" 75 1881 1900 "X86.ml" 75 1881 1902
 type(
   opnd
 )
 ident(
-  def s2 "X86.ml" 81 1960 1986 "X86.ml" 81 1960 2039
+  def s2 "X86.ml" 75 1881 1907 "X86.ml" 75 1881 1960
 )
-"X86.ml" 81 1960 1966 "X86.ml" 81 1960 1982
+"X86.ml" 75 1881 1887 "X86.ml" 75 1881 1903
 type(
   x86instr
 )
-"X86.ml" 81 1960 1986 "X86.ml" 81 1960 2000
+"X86.ml" 75 1881 1907 "X86.ml" 75 1881 1921
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -1207,78 +1207,78 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 81 1960 2001 "X86.ml" 81 1960 2018
+"X86.ml" 75 1881 1922 "X86.ml" 75 1881 1939
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 81 1960 2021 "X86.ml" 81 1960 2025
+"X86.ml" 75 1881 1942 "X86.ml" 75 1881 1946
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 81 1960 2026 "X86.ml" 81 1960 2028
+"X86.ml" 75 1881 1947 "X86.ml" 75 1881 1949
 type(
   opnd
 )
 ident(
-  int_ref s1 "X86.ml" 81 1960 1975 "X86.ml" 81 1960 1977
+  int_ref s1 "X86.ml" 75 1881 1896 "X86.ml" 75 1881 1898
 )
-"X86.ml" 81 1960 2020 "X86.ml" 81 1960 2029
+"X86.ml" 75 1881 1941 "X86.ml" 75 1881 1950
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 81 1960 2031 "X86.ml" 81 1960 2035
+"X86.ml" 75 1881 1952 "X86.ml" 75 1881 1956
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 81 1960 2036 "X86.ml" 81 1960 2038
+"X86.ml" 75 1881 1957 "X86.ml" 75 1881 1959
 type(
   opnd
 )
 ident(
-  int_ref s2 "X86.ml" 81 1960 1979 "X86.ml" 81 1960 1981
+  int_ref s2 "X86.ml" 75 1881 1900 "X86.ml" 75 1881 1902
 )
-"X86.ml" 81 1960 2030 "X86.ml" 81 1960 2039
+"X86.ml" 75 1881 1951 "X86.ml" 75 1881 1960
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 81 1960 1986 "X86.ml" 81 1960 2039
+"X86.ml" 75 1881 1907 "X86.ml" 75 1881 1960
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 82 2040 2055 "X86.ml" 82 2040 2057
+"X86.ml" 76 1961 1976 "X86.ml" 76 1961 1978
 type(
   opnd
 )
 ident(
-  def s1 "X86.ml" 82 2040 2066 "X86.ml" 82 2040 2119
+  def s1 "X86.ml" 76 1961 1987 "X86.ml" 76 1961 2040
 )
-"X86.ml" 82 2040 2059 "X86.ml" 82 2040 2061
+"X86.ml" 76 1961 1980 "X86.ml" 76 1961 1982
 type(
   opnd
 )
 ident(
-  def s2 "X86.ml" 82 2040 2066 "X86.ml" 82 2040 2119
+  def s2 "X86.ml" 76 1961 1987 "X86.ml" 76 1961 2040
 )
-"X86.ml" 82 2040 2046 "X86.ml" 82 2040 2062
+"X86.ml" 76 1961 1967 "X86.ml" 76 1961 1983
 type(
   x86instr
 )
-"X86.ml" 82 2040 2066 "X86.ml" 82 2040 2080
+"X86.ml" 76 1961 1987 "X86.ml" 76 1961 2001
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -1286,232 +1286,114 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 82 2040 2081 "X86.ml" 82 2040 2097
+"X86.ml" 76 1961 2002 "X86.ml" 76 1961 2018
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 82 2040 2101 "X86.ml" 82 2040 2105
+"X86.ml" 76 1961 2022 "X86.ml" 76 1961 2026
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 82 2040 2106 "X86.ml" 82 2040 2108
+"X86.ml" 76 1961 2027 "X86.ml" 76 1961 2029
 type(
   opnd
 )
 ident(
-  int_ref s1 "X86.ml" 82 2040 2055 "X86.ml" 82 2040 2057
+  int_ref s1 "X86.ml" 76 1961 1976 "X86.ml" 76 1961 1978
 )
-"X86.ml" 82 2040 2100 "X86.ml" 82 2040 2109
+"X86.ml" 76 1961 2021 "X86.ml" 76 1961 2030
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 82 2040 2111 "X86.ml" 82 2040 2115
+"X86.ml" 76 1961 2032 "X86.ml" 76 1961 2036
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 82 2040 2116 "X86.ml" 82 2040 2118
+"X86.ml" 76 1961 2037 "X86.ml" 76 1961 2039
 type(
   opnd
 )
 ident(
-  int_ref s2 "X86.ml" 82 2040 2059 "X86.ml" 82 2040 2061
+  int_ref s2 "X86.ml" 76 1961 1980 "X86.ml" 76 1961 1982
 )
-"X86.ml" 82 2040 2110 "X86.ml" 82 2040 2119
+"X86.ml" 76 1961 2031 "X86.ml" 76 1961 2040
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 82 2040 2066 "X86.ml" 82 2040 2119
+"X86.ml" 76 1961 1987 "X86.ml" 76 1961 2040
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 83 2120 2126 "X86.ml" 83 2120 2133
+"X86.ml" 77 2041 2056 "X86.ml" 77 2041 2057
+type(
+  string
+)
+ident(
+  def p "X86.ml" 77 2041 2067 "X86.ml" 77 2041 2103
+)
+"X86.ml" 77 2041 2047 "X86.ml" 77 2041 2057
 type(
   x86instr
 )
-"X86.ml" 83 2120 2146 "X86.ml" 83 2120 2160
+"X86.ml" 77 2041 2067 "X86.ml" 77 2041 2081
 type(
-  (string, unit, string) format -> string
+  (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 83 2120 2161 "X86.ml" 83 2120 2175
+"X86.ml" 77 2041 2082 "X86.ml" 77 2041 2097
 type(
-  (string, unit, string) format
+  (string -> string, unit, string) format
 )
-"X86.ml" 83 2120 2146 "X86.ml" 83 2120 2175
-call(
-  tail
-)
+"X86.ml" 77 2041 2102 "X86.ml" 77 2041 2103
 type(
   string
-)
-"X86.ml" 84 2176 2182 "X86.ml" 84 2176 2190
-type(
-  x86instr
-)
-"X86.ml" 84 2176 2202 "X86.ml" 84 2176 2216
-type(
-  (string, unit, string) format -> string
 )
 ident(
-  ext_ref Printf.sprintf
+  int_ref p "X86.ml" 77 2041 2056 "X86.ml" 77 2041 2057
 )
-"X86.ml" 84 2176 2217 "X86.ml" 84 2176 2232
-type(
-  (string, unit, string) format
-)
-"X86.ml" 84 2176 2202 "X86.ml" 84 2176 2232
+"X86.ml" 77 2041 2067 "X86.ml" 77 2041 2103
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 85 2277 2283 "X86.ml" 85 2277 2290
-type(
-  x86instr
-)
-"X86.ml" 85 2277 2303 "X86.ml" 85 2277 2317
-type(
-  (string, unit, string) format -> string
-)
-ident(
-  ext_ref Printf.sprintf
-)
-"X86.ml" 85 2277 2318 "X86.ml" 85 2277 2332
-type(
-  (string, unit, string) format
-)
-"X86.ml" 85 2277 2303 "X86.ml" 85 2277 2332
-call(
-  tail
-)
-type(
-  string
-)
-"X86.ml" 86 2340 2346 "X86.ml" 86 2340 2354
-type(
-  x86instr
-)
-"X86.ml" 86 2340 2366 "X86.ml" 86 2340 2380
-type(
-  (string, unit, string) format -> string
-)
-ident(
-  ext_ref Printf.sprintf
-)
-"X86.ml" 86 2340 2381 "X86.ml" 86 2340 2396
-type(
-  (string, unit, string) format
-)
-"X86.ml" 86 2340 2366 "X86.ml" 86 2340 2396
-call(
-  tail
-)
-type(
-  string
-)
-"X86.ml" 87 2441 2447 "X86.ml" 87 2441 2454
-type(
-  x86instr
-)
-"X86.ml" 87 2441 2467 "X86.ml" 87 2441 2481
-type(
-  (string, unit, string) format -> string
-)
-ident(
-  ext_ref Printf.sprintf
-)
-"X86.ml" 87 2441 2482 "X86.ml" 87 2441 2496
-type(
-  (string, unit, string) format
-)
-"X86.ml" 87 2441 2467 "X86.ml" 87 2441 2496
-call(
-  tail
-)
-type(
-  string
-)
-"X86.ml" 88 2504 2510 "X86.ml" 88 2504 2518
-type(
-  x86instr
-)
-"X86.ml" 88 2504 2530 "X86.ml" 88 2504 2544
-type(
-  (string, unit, string) format -> string
-)
-ident(
-  ext_ref Printf.sprintf
-)
-"X86.ml" 88 2504 2545 "X86.ml" 88 2504 2560
-type(
-  (string, unit, string) format
-)
-"X86.ml" 88 2504 2530 "X86.ml" 88 2504 2560
-call(
-  tail
-)
-type(
-  string
-)
-"X86.ml" 89 2561 2567 "X86.ml" 89 2561 2575
-type(
-  x86instr
-)
-"X86.ml" 89 2561 2587 "X86.ml" 89 2561 2601
-type(
-  (string, unit, string) format -> string
-)
-ident(
-  ext_ref Printf.sprintf
-)
-"X86.ml" 89 2561 2602 "X86.ml" 89 2561 2617
-type(
-  (string, unit, string) format
-)
-"X86.ml" 89 2561 2587 "X86.ml" 89 2561 2617
-call(
-  tail
-)
-type(
-  string
-)
-"X86.ml" 90 2618 2633 "X86.ml" 90 2618 2635
+"X86.ml" 78 2104 2119 "X86.ml" 78 2104 2121
 type(
   opnd
 )
 ident(
-  def s1 "X86.ml" 90 2618 2644 "X86.ml" 90 2618 2697
+  def s1 "X86.ml" 78 2104 2130 "X86.ml" 78 2104 2183
 )
-"X86.ml" 90 2618 2637 "X86.ml" 90 2618 2639
+"X86.ml" 78 2104 2123 "X86.ml" 78 2104 2125
 type(
   opnd
 )
 ident(
-  def s2 "X86.ml" 90 2618 2644 "X86.ml" 90 2618 2697
+  def s2 "X86.ml" 78 2104 2130 "X86.ml" 78 2104 2183
 )
-"X86.ml" 90 2618 2624 "X86.ml" 90 2618 2640
+"X86.ml" 78 2104 2110 "X86.ml" 78 2104 2126
 type(
   x86instr
 )
-"X86.ml" 90 2618 2644 "X86.ml" 90 2618 2658
+"X86.ml" 78 2104 2130 "X86.ml" 78 2104 2144
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -1519,178 +1401,178 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 90 2618 2659 "X86.ml" 90 2618 2676
+"X86.ml" 78 2104 2145 "X86.ml" 78 2104 2162
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 90 2618 2679 "X86.ml" 90 2618 2683
+"X86.ml" 78 2104 2165 "X86.ml" 78 2104 2169
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 90 2618 2684 "X86.ml" 90 2618 2686
+"X86.ml" 78 2104 2170 "X86.ml" 78 2104 2172
 type(
   opnd
 )
 ident(
-  int_ref s1 "X86.ml" 90 2618 2633 "X86.ml" 90 2618 2635
+  int_ref s1 "X86.ml" 78 2104 2119 "X86.ml" 78 2104 2121
 )
-"X86.ml" 90 2618 2678 "X86.ml" 90 2618 2687
+"X86.ml" 78 2104 2164 "X86.ml" 78 2104 2173
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 90 2618 2689 "X86.ml" 90 2618 2693
+"X86.ml" 78 2104 2175 "X86.ml" 78 2104 2179
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 90 2618 2694 "X86.ml" 90 2618 2696
+"X86.ml" 78 2104 2180 "X86.ml" 78 2104 2182
 type(
   opnd
 )
 ident(
-  int_ref s2 "X86.ml" 90 2618 2637 "X86.ml" 90 2618 2639
+  int_ref s2 "X86.ml" 78 2104 2123 "X86.ml" 78 2104 2125
 )
-"X86.ml" 90 2618 2688 "X86.ml" 90 2618 2697
+"X86.ml" 78 2104 2174 "X86.ml" 78 2104 2183
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 90 2618 2644 "X86.ml" 90 2618 2697
+"X86.ml" 78 2104 2130 "X86.ml" 78 2104 2183
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 91 2698 2713 "X86.ml" 91 2698 2714
+"X86.ml" 79 2184 2199 "X86.ml" 79 2184 2200
 type(
   opnd
 )
 ident(
-  def s "X86.ml" 91 2698 2724 "X86.ml" 91 2698 2767
+  def s "X86.ml" 79 2184 2210 "X86.ml" 79 2184 2253
 )
-"X86.ml" 91 2698 2704 "X86.ml" 91 2698 2714
+"X86.ml" 79 2184 2190 "X86.ml" 79 2184 2200
 type(
   x86instr
 )
-"X86.ml" 91 2698 2724 "X86.ml" 91 2698 2738
+"X86.ml" 79 2184 2210 "X86.ml" 79 2184 2224
 type(
   (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 91 2698 2739 "X86.ml" 91 2698 2752
+"X86.ml" 79 2184 2225 "X86.ml" 79 2184 2238
 type(
   (string -> string, unit, string) format
 )
-"X86.ml" 91 2698 2759 "X86.ml" 91 2698 2763
+"X86.ml" 79 2184 2245 "X86.ml" 79 2184 2249
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 91 2698 2764 "X86.ml" 91 2698 2765
+"X86.ml" 79 2184 2250 "X86.ml" 79 2184 2251
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 91 2698 2713 "X86.ml" 91 2698 2714
+  int_ref s "X86.ml" 79 2184 2199 "X86.ml" 79 2184 2200
 )
-"X86.ml" 91 2698 2758 "X86.ml" 91 2698 2767
+"X86.ml" 79 2184 2244 "X86.ml" 79 2184 2253
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 91 2698 2724 "X86.ml" 91 2698 2767
+"X86.ml" 79 2184 2210 "X86.ml" 79 2184 2253
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 92 2768 2783 "X86.ml" 92 2768 2784
+"X86.ml" 80 2254 2269 "X86.ml" 80 2254 2270
 type(
   opnd
 )
 ident(
-  def s "X86.ml" 92 2768 2794 "X86.ml" 92 2768 2837
+  def s "X86.ml" 80 2254 2280 "X86.ml" 80 2254 2323
 )
-"X86.ml" 92 2768 2774 "X86.ml" 92 2768 2784
+"X86.ml" 80 2254 2260 "X86.ml" 80 2254 2270
 type(
   x86instr
 )
-"X86.ml" 92 2768 2794 "X86.ml" 92 2768 2808
+"X86.ml" 80 2254 2280 "X86.ml" 80 2254 2294
 type(
   (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 92 2768 2809 "X86.ml" 92 2768 2821
+"X86.ml" 80 2254 2295 "X86.ml" 80 2254 2307
 type(
   (string -> string, unit, string) format
 )
-"X86.ml" 92 2768 2829 "X86.ml" 92 2768 2833
+"X86.ml" 80 2254 2315 "X86.ml" 80 2254 2319
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 92 2768 2834 "X86.ml" 92 2768 2835
+"X86.ml" 80 2254 2320 "X86.ml" 80 2254 2321
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 92 2768 2783 "X86.ml" 92 2768 2784
+  int_ref s "X86.ml" 80 2254 2269 "X86.ml" 80 2254 2270
 )
-"X86.ml" 92 2768 2828 "X86.ml" 92 2768 2837
+"X86.ml" 80 2254 2314 "X86.ml" 80 2254 2323
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 92 2768 2794 "X86.ml" 92 2768 2837
+"X86.ml" 80 2254 2280 "X86.ml" 80 2254 2323
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 93 2838 2853 "X86.ml" 93 2838 2855
+"X86.ml" 81 2324 2339 "X86.ml" 81 2324 2341
 type(
   opnd
 )
 ident(
-  def s1 "X86.ml" 93 2838 2864 "X86.ml" 93 2838 2917
+  def s1 "X86.ml" 81 2324 2350 "X86.ml" 81 2324 2403
 )
-"X86.ml" 93 2838 2857 "X86.ml" 93 2838 2859
+"X86.ml" 81 2324 2343 "X86.ml" 81 2324 2345
 type(
   opnd
 )
 ident(
-  def s2 "X86.ml" 93 2838 2864 "X86.ml" 93 2838 2917
+  def s2 "X86.ml" 81 2324 2350 "X86.ml" 81 2324 2403
 )
-"X86.ml" 93 2838 2844 "X86.ml" 93 2838 2860
+"X86.ml" 81 2324 2330 "X86.ml" 81 2324 2346
 type(
   x86instr
 )
-"X86.ml" 93 2838 2864 "X86.ml" 93 2838 2878
+"X86.ml" 81 2324 2350 "X86.ml" 81 2324 2364
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -1698,308 +1580,308 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 93 2838 2879 "X86.ml" 93 2838 2896
+"X86.ml" 81 2324 2365 "X86.ml" 81 2324 2382
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 93 2838 2899 "X86.ml" 93 2838 2903
+"X86.ml" 81 2324 2385 "X86.ml" 81 2324 2389
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 93 2838 2904 "X86.ml" 93 2838 2906
+"X86.ml" 81 2324 2390 "X86.ml" 81 2324 2392
 type(
   opnd
 )
 ident(
-  int_ref s1 "X86.ml" 93 2838 2853 "X86.ml" 93 2838 2855
+  int_ref s1 "X86.ml" 81 2324 2339 "X86.ml" 81 2324 2341
 )
-"X86.ml" 93 2838 2898 "X86.ml" 93 2838 2907
+"X86.ml" 81 2324 2384 "X86.ml" 81 2324 2393
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 93 2838 2909 "X86.ml" 93 2838 2913
+"X86.ml" 81 2324 2395 "X86.ml" 81 2324 2399
 type(
   opnd -> string
 )
 ident(
-  int_ref opnd "X86.ml" 68 1360 1368 "X86.ml" 68 1360 1372
+  int_ref opnd "X86.ml" 62 1281 1289 "X86.ml" 62 1281 1293
 )
-"X86.ml" 93 2838 2914 "X86.ml" 93 2838 2916
+"X86.ml" 81 2324 2400 "X86.ml" 81 2324 2402
 type(
   opnd
 )
 ident(
-  int_ref s2 "X86.ml" 93 2838 2857 "X86.ml" 93 2838 2859
+  int_ref s2 "X86.ml" 81 2324 2343 "X86.ml" 81 2324 2345
 )
-"X86.ml" 93 2838 2908 "X86.ml" 93 2838 2917
+"X86.ml" 81 2324 2394 "X86.ml" 81 2324 2403
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 93 2838 2864 "X86.ml" 93 2838 2917
+"X86.ml" 81 2324 2350 "X86.ml" 81 2324 2403
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 94 2959 2965 "X86.ml" 94 2959 2972
+"X86.ml" 82 2445 2451 "X86.ml" 82 2445 2458
 type(
   x86instr
 )
-"X86.ml" 94 2959 2985 "X86.ml" 94 2959 2999
+"X86.ml" 82 2445 2471 "X86.ml" 82 2445 2485
 type(
   (string, unit, string) format -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 94 2959 3000 "X86.ml" 94 2959 3008
+"X86.ml" 82 2445 2486 "X86.ml" 82 2445 2494
 type(
   (string, unit, string) format
 )
-"X86.ml" 94 2959 2985 "X86.ml" 94 2959 3008
+"X86.ml" 82 2445 2471 "X86.ml" 82 2445 2494
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 95 3050 3056 "X86.ml" 95 3050 3062
+"X86.ml" 83 2536 2542 "X86.ml" 83 2536 2548
 type(
   x86instr
 )
-"X86.ml" 95 3050 3076 "X86.ml" 95 3050 3083
+"X86.ml" 83 2536 2562 "X86.ml" 83 2536 2569
 type(
   string
 )
-"X86.ml" 96 3084 3099 "X86.ml" 96 3084 3100
+"X86.ml" 84 2570 2585 "X86.ml" 84 2570 2586
 type(
   string
 )
 ident(
-  def p "X86.ml" 96 3084 3110 "X86.ml" 96 3084 3139
+  def p "X86.ml" 84 2570 2596 "X86.ml" 84 2570 2632
 )
-"X86.ml" 96 3084 3090 "X86.ml" 96 3084 3100
+"X86.ml" 84 2570 2576 "X86.ml" 84 2570 2586
 type(
   x86instr
 )
-"X86.ml" 96 3084 3110 "X86.ml" 96 3084 3124
+"X86.ml" 84 2570 2596 "X86.ml" 84 2570 2610
 type(
   (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 96 3084 3125 "X86.ml" 96 3084 3137
+"X86.ml" 84 2570 2611 "X86.ml" 84 2570 2623
 type(
   (string -> string, unit, string) format
 )
-"X86.ml" 96 3084 3138 "X86.ml" 96 3084 3139
+"X86.ml" 84 2570 2631 "X86.ml" 84 2570 2632
 type(
   string
 )
 ident(
-  int_ref p "X86.ml" 96 3084 3099 "X86.ml" 96 3084 3100
+  int_ref p "X86.ml" 84 2570 2585 "X86.ml" 84 2570 2586
 )
-"X86.ml" 96 3084 3110 "X86.ml" 96 3084 3139
+"X86.ml" 84 2570 2596 "X86.ml" 84 2570 2632
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 74 1518 1534 "X86.ml" 96 3084 3139
+"X86.ml" 68 1439 1455 "X86.ml" 84 2570 2632
 type(
   x86instr -> string
 )
-"X86.ml" 105 3239 3247 "X86.ml" 105 3239 3260
+"X86.ml" 93 2732 2740 "X86.ml" 93 2732 2753
 type(
   < allocate : int -> 'a; local : string -> 'b; .. > ->
   StackMachine.i list -> x86instr list
 )
 ident(
-  def stack_program "X86.ml" 146 5367 5388 "X86.ml" 148 5390 5395
+  def stack_program "X86.ml" 135 4886 4907 "X86.ml" 137 4909 4914
 )
-"X86.ml" 105 3239 3261 "X86.ml" 105 3239 3264
+"X86.ml" 93 2732 2754 "X86.ml" 93 2732 2757
 type(
   < allocate : int -> 'a; local : string -> 'b; .. > as 'c
 )
 ident(
-  def env "X86.ml" 105 3239 3265 "X86.ml" 146 5367 5388
+  def env "X86.ml" 93 2732 2758 "X86.ml" 135 4886 4907
 )
-"X86.ml" 105 3239 3265 "X86.ml" 105 3239 3269
+"X86.ml" 93 2732 2758 "X86.ml" 93 2732 2762
 type(
   StackMachine.i list
 )
 ident(
-  def code "X86.ml" 106 3272 3278 "X86.ml" 146 5367 5388
+  def code "X86.ml" 94 2765 2771 "X86.ml" 135 4886 4907
 )
-"X86.ml" 106 3272 3286 "X86.ml" 106 3272 3293
+"X86.ml" 94 2765 2779 "X86.ml" 94 2765 2786
 type(
   opnd list -> StackMachine.i list -> x86instr list
 )
 ident(
-  def compile "X86.ml" 106 3272 3278 "X86.ml" 146 5367 5388
+  def compile "X86.ml" 94 2765 2771 "X86.ml" 135 4886 4907
 )
-"X86.ml" 106 3272 3294 "X86.ml" 106 3272 3299
+"X86.ml" 94 2765 2787 "X86.ml" 94 2765 2792
 type(
   opnd list
 )
 ident(
-  def stack "X86.ml" 106 3272 3300 "X86.ml" 144 5322 5357
+  def stack "X86.ml" 94 2765 2793 "X86.ml" 133 4841 4876
 )
-"X86.ml" 106 3272 3300 "X86.ml" 106 3272 3304
+"X86.ml" 94 2765 2793 "X86.ml" 94 2765 2797
 type(
   StackMachine.i list
 )
 ident(
-  def code "X86.ml" 107 3307 3308 "X86.ml" 144 5322 5357
+  def code "X86.ml" 95 2800 2801 "X86.ml" 133 4841 4876
 )
-"X86.ml" 107 3307 3314 "X86.ml" 107 3307 3318
+"X86.ml" 95 2800 2807 "X86.ml" 95 2800 2811
 type(
   StackMachine.i list
 )
 ident(
-  int_ref code "X86.ml" 106 3272 3300 "X86.ml" 106 3272 3304
+  int_ref code "X86.ml" 94 2765 2793 "X86.ml" 94 2765 2797
 )
-"X86.ml" 108 3324 3327 "X86.ml" 108 3324 3329
+"X86.ml" 96 2817 2820 "X86.ml" 96 2817 2822
 type(
   StackMachine.i list
 )
-"X86.ml" 108 3324 3339 "X86.ml" 108 3324 3341
+"X86.ml" 96 2817 2832 "X86.ml" 96 2817 2834
 type(
   x86instr list
 )
-"X86.ml" 109 3342 3345 "X86.ml" 109 3342 3346
+"X86.ml" 97 2835 2838 "X86.ml" 97 2835 2839
 type(
   StackMachine.i
 )
 ident(
-  def i "X86.ml" 110 3357 3362 "X86.ml" 144 5322 5357
+  def i "X86.ml" 98 2850 2855 "X86.ml" 133 4841 4876
 )
-"X86.ml" 109 3342 3348 "X86.ml" 109 3342 3353
+"X86.ml" 97 2835 2841 "X86.ml" 97 2835 2846
 type(
   StackMachine.i list
 )
 ident(
-  def code' "X86.ml" 110 3357 3362 "X86.ml" 144 5322 5357
+  def code' "X86.ml" 98 2850 2855 "X86.ml" 133 4841 4876
 )
-"X86.ml" 109 3342 3345 "X86.ml" 109 3342 3353
+"X86.ml" 97 2835 2838 "X86.ml" 97 2835 2846
 type(
   StackMachine.i list
 )
-"X86.ml" 110 3357 3367 "X86.ml" 110 3357 3373
+"X86.ml" 98 2850 2860 "X86.ml" 98 2850 2866
 type(
   opnd list
 )
 ident(
-  def stack' "X86.ml" 144 5322 5327 "X86.ml" 144 5322 5357
+  def stack' "X86.ml" 133 4841 4846 "X86.ml" 133 4841 4876
 )
-"X86.ml" 110 3357 3375 "X86.ml" 110 3357 3382
+"X86.ml" 98 2850 2868 "X86.ml" 98 2850 2875
 type(
   x86instr list
 )
 ident(
-  def x86code "X86.ml" 144 5322 5327 "X86.ml" 144 5322 5357
+  def x86code "X86.ml" 133 4841 4846 "X86.ml" 133 4841 4876
 )
-"X86.ml" 110 3357 3367 "X86.ml" 110 3357 3382
+"X86.ml" 98 2850 2860 "X86.ml" 98 2850 2875
 type(
   opnd list * x86instr list
 )
-"X86.ml" 111 3386 3406 "X86.ml" 111 3386 3407
+"X86.ml" 99 2879 2899 "X86.ml" 99 2879 2900
 type(
   StackMachine.i
 )
 ident(
-  int_ref i "X86.ml" 109 3342 3345 "X86.ml" 109 3342 3346
+  int_ref i "X86.ml" 97 2835 2838 "X86.ml" 97 2835 2839
 )
-"X86.ml" 112 3413 3429 "X86.ml" 112 3413 3435
+"X86.ml" 100 2906 2922 "X86.ml" 100 2906 2928
 type(
   StackMachine.i
 )
-"X86.ml" 112 3413 3443 "X86.ml" 112 3413 3446
+"X86.ml" 100 2906 2936 "X86.ml" 100 2906 2939
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 112 3413 3442 "X86.ml" 112 3413 3447
+"X86.ml" 100 2906 2935 "X86.ml" 100 2906 2940
 type(
   opnd list
 )
 type(
   opnd list
 )
-"X86.ml" 112 3413 3458 "X86.ml" 112 3413 3464
+"X86.ml" 100 2906 2951 "X86.ml" 100 2906 2957
 type(
   string
 )
-"X86.ml" 112 3413 3450 "X86.ml" 112 3413 3464
+"X86.ml" 100 2906 2943 "X86.ml" 100 2906 2957
 type(
   x86instr
 )
-"X86.ml" 112 3413 3449 "X86.ml" 112 3413 3465
+"X86.ml" 100 2906 2942 "X86.ml" 100 2906 2958
 type(
   x86instr list
 )
 type(
   x86instr list
 )
-"X86.ml" 112 3413 3441 "X86.ml" 112 3413 3466
+"X86.ml" 100 2906 2934 "X86.ml" 100 2906 2959
 type(
   opnd list * x86instr list
 )
-"X86.ml" 113 3467 3483 "X86.ml" 113 3467 3490
+"X86.ml" 101 2960 2976 "X86.ml" 101 2960 2983
 type(
   StackMachine.i
 )
-"X86.ml" 113 3467 3496 "X86.ml" 113 3467 3498
+"X86.ml" 101 2960 2989 "X86.ml" 101 2960 2991
 type(
   opnd list
 )
-"X86.ml" 113 3467 3512 "X86.ml" 113 3467 3513
+"X86.ml" 101 2960 3005 "X86.ml" 101 2960 3006
 type(
   int
 )
-"X86.ml" 113 3467 3509 "X86.ml" 113 3467 3514
+"X86.ml" 101 2960 3002 "X86.ml" 101 2960 3007
 type(
   opnd
 )
-"X86.ml" 113 3467 3501 "X86.ml" 113 3467 3514
+"X86.ml" 101 2960 2994 "X86.ml" 101 2960 3007
 type(
   x86instr
 )
-"X86.ml" 113 3467 3524 "X86.ml" 113 3467 3531
+"X86.ml" 101 2960 3017 "X86.ml" 101 2960 3024
 type(
   string
 )
-"X86.ml" 113 3467 3516 "X86.ml" 113 3467 3531
+"X86.ml" 101 2960 3009 "X86.ml" 101 2960 3024
 type(
   x86instr
 )
-"X86.ml" 113 3467 3543 "X86.ml" 113 3467 3544
+"X86.ml" 101 2960 3036 "X86.ml" 101 2960 3037
 type(
   int
 )
-"X86.ml" 113 3467 3540 "X86.ml" 113 3467 3545
+"X86.ml" 101 2960 3033 "X86.ml" 101 2960 3038
 type(
   opnd
 )
-"X86.ml" 113 3467 3533 "X86.ml" 113 3467 3545
+"X86.ml" 101 2960 3026 "X86.ml" 101 2960 3038
 type(
   x86instr
 )
-"X86.ml" 113 3467 3500 "X86.ml" 113 3467 3546
+"X86.ml" 101 2960 2993 "X86.ml" 101 2960 3039
 type(
   x86instr list
 )
@@ -2012,241 +1894,241 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 113 3467 3495 "X86.ml" 113 3467 3547
+"X86.ml" 101 2960 2988 "X86.ml" 101 2960 3040
 type(
   opnd list * x86instr list
 )
-"X86.ml" 114 3548 3571 "X86.ml" 114 3548 3572
+"X86.ml" 102 3041 3064 "X86.ml" 102 3041 3065
 type(
   int
 )
 ident(
-  def n "X86.ml" 115 3576 3580 "X86.ml" 116 3610 3643
+  def n "X86.ml" 103 3069 3073 "X86.ml" 104 3103 3136
 )
-"X86.ml" 114 3548 3564 "X86.ml" 114 3548 3572
+"X86.ml" 102 3041 3057 "X86.ml" 102 3041 3065
 type(
   StackMachine.i
 )
-"X86.ml" 115 3576 3584 "X86.ml" 115 3576 3585
+"X86.ml" 103 3069 3077 "X86.ml" 103 3069 3078
 type(
   opnd
 )
 ident(
-  def s "X86.ml" 116 3610 3614 "X86.ml" 116 3610 3643
+  def s "X86.ml" 104 3103 3107 "X86.ml" 104 3103 3136
 )
-"X86.ml" 115 3576 3588 "X86.ml" 115 3576 3596
+"X86.ml" 103 3069 3081 "X86.ml" 103 3069 3089
 type(
   'c -> opnd list -> opnd
 )
 ident(
-  int_ref allocate "X86.ml" 58 1073 1077 "X86.ml" 58 1073 1085
+  int_ref allocate "X86.ml" 52 994 998 "X86.ml" 52 994 1006
 )
-"X86.ml" 115 3576 3597 "X86.ml" 115 3576 3600
+"X86.ml" 103 3069 3090 "X86.ml" 103 3069 3093
 type(
   'c
 )
 ident(
-  int_ref env "X86.ml" 105 3239 3261 "X86.ml" 105 3239 3264
+  int_ref env "X86.ml" 93 2732 2754 "X86.ml" 93 2732 2757
 )
-"X86.ml" 115 3576 3601 "X86.ml" 115 3576 3606
+"X86.ml" 103 3069 3094 "X86.ml" 103 3069 3099
 type(
   opnd list
 )
 ident(
-  int_ref stack "X86.ml" 106 3272 3294 "X86.ml" 106 3272 3299
+  int_ref stack "X86.ml" 94 2765 2787 "X86.ml" 94 2765 2792
 )
-"X86.ml" 115 3576 3588 "X86.ml" 115 3576 3606
+"X86.ml" 103 3069 3081 "X86.ml" 103 3069 3099
 call(
   stack
 )
 type(
   opnd
 )
-"X86.ml" 116 3610 3615 "X86.ml" 116 3610 3616
+"X86.ml" 104 3103 3108 "X86.ml" 104 3103 3109
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 115 3576 3584 "X86.ml" 115 3576 3585
+  int_ref s "X86.ml" 103 3069 3077 "X86.ml" 103 3069 3078
 )
-"X86.ml" 116 3610 3618 "X86.ml" 116 3610 3623
+"X86.ml" 104 3103 3111 "X86.ml" 104 3103 3116
 type(
   opnd list
 )
 ident(
-  int_ref stack "X86.ml" 106 3272 3294 "X86.ml" 106 3272 3299
+  int_ref stack "X86.ml" 94 2765 2787 "X86.ml" 94 2765 2792
 )
-"X86.ml" 116 3610 3615 "X86.ml" 116 3610 3623
+"X86.ml" 104 3103 3108 "X86.ml" 104 3103 3116
 type(
   opnd list
 )
-"X86.ml" 116 3610 3636 "X86.ml" 116 3610 3637
+"X86.ml" 104 3103 3129 "X86.ml" 104 3103 3130
 type(
   int
 )
 ident(
-  int_ref n "X86.ml" 114 3548 3571 "X86.ml" 114 3548 3572
+  int_ref n "X86.ml" 102 3041 3064 "X86.ml" 102 3041 3065
 )
-"X86.ml" 116 3610 3634 "X86.ml" 116 3610 3637
+"X86.ml" 104 3103 3127 "X86.ml" 104 3103 3130
 type(
   opnd
 )
-"X86.ml" 116 3610 3639 "X86.ml" 116 3610 3640
+"X86.ml" 104 3103 3132 "X86.ml" 104 3103 3133
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 115 3576 3584 "X86.ml" 115 3576 3585
+  int_ref s "X86.ml" 103 3069 3077 "X86.ml" 103 3069 3078
 )
-"X86.ml" 116 3610 3626 "X86.ml" 116 3610 3641
+"X86.ml" 104 3103 3119 "X86.ml" 104 3103 3134
 type(
   x86instr
 )
-"X86.ml" 116 3610 3625 "X86.ml" 116 3610 3642
+"X86.ml" 104 3103 3118 "X86.ml" 104 3103 3135
 type(
   x86instr list
 )
 type(
   x86instr list
 )
-"X86.ml" 116 3610 3614 "X86.ml" 116 3610 3643
+"X86.ml" 104 3103 3107 "X86.ml" 104 3103 3136
 type(
   opnd list * x86instr list
 )
-"X86.ml" 115 3576 3580 "X86.ml" 116 3610 3643
+"X86.ml" 103 3069 3073 "X86.ml" 104 3103 3136
 type(
   opnd list * x86instr list
 )
-"X86.ml" 117 3644 3665 "X86.ml" 117 3644 3666
+"X86.ml" 105 3137 3158 "X86.ml" 105 3137 3159
 type(
   string
 )
 ident(
-  def x "X86.ml" 118 3672 3676 "X86.ml" 120 3723 3775
+  def x "X86.ml" 106 3165 3169 "X86.ml" 108 3216 3268
 )
-"X86.ml" 117 3644 3660 "X86.ml" 117 3644 3666
+"X86.ml" 105 3137 3153 "X86.ml" 105 3137 3159
 type(
   StackMachine.i
 )
-"X86.ml" 118 3672 3676 "X86.ml" 118 3672 3679
+"X86.ml" 106 3165 3169 "X86.ml" 106 3165 3172
 type(
   'c
 )
 ident(
-  int_ref env "X86.ml" 105 3239 3261 "X86.ml" 105 3239 3264
+  int_ref env "X86.ml" 93 2732 2754 "X86.ml" 93 2732 2757
 )
-"X86.ml" 118 3672 3676 "X86.ml" 118 3672 3685
+"X86.ml" 106 3165 3169 "X86.ml" 106 3165 3178
 call(
   stack
 )
 type(
   string -> 'b
 )
-"X86.ml" 118 3672 3686 "X86.ml" 118 3672 3687
+"X86.ml" 106 3165 3179 "X86.ml" 106 3165 3180
 type(
   string
 )
 ident(
-  int_ref x "X86.ml" 117 3644 3665 "X86.ml" 117 3644 3666
+  int_ref x "X86.ml" 105 3137 3158 "X86.ml" 105 3137 3159
 )
-"X86.ml" 118 3672 3676 "X86.ml" 118 3672 3687
+"X86.ml" 106 3165 3169 "X86.ml" 106 3165 3180
 type(
   'b
 )
-"X86.ml" 119 3689 3697 "X86.ml" 119 3689 3698
+"X86.ml" 107 3182 3190 "X86.ml" 107 3182 3191
 type(
   opnd
 )
 ident(
-  def s "X86.ml" 120 3723 3727 "X86.ml" 120 3723 3775
+  def s "X86.ml" 108 3216 3220 "X86.ml" 108 3216 3268
 )
-"X86.ml" 119 3689 3701 "X86.ml" 119 3689 3709
+"X86.ml" 107 3182 3194 "X86.ml" 107 3182 3202
 type(
   'c -> opnd list -> opnd
 )
 ident(
-  int_ref allocate "X86.ml" 58 1073 1077 "X86.ml" 58 1073 1085
+  int_ref allocate "X86.ml" 52 994 998 "X86.ml" 52 994 1006
 )
-"X86.ml" 119 3689 3710 "X86.ml" 119 3689 3713
+"X86.ml" 107 3182 3203 "X86.ml" 107 3182 3206
 type(
   'c
 )
 ident(
-  int_ref env "X86.ml" 105 3239 3261 "X86.ml" 105 3239 3264
+  int_ref env "X86.ml" 93 2732 2754 "X86.ml" 93 2732 2757
 )
-"X86.ml" 119 3689 3714 "X86.ml" 119 3689 3719
+"X86.ml" 107 3182 3207 "X86.ml" 107 3182 3212
 type(
   opnd list
 )
 ident(
-  int_ref stack "X86.ml" 106 3272 3294 "X86.ml" 106 3272 3299
+  int_ref stack "X86.ml" 94 2765 2787 "X86.ml" 94 2765 2792
 )
-"X86.ml" 119 3689 3701 "X86.ml" 119 3689 3719
+"X86.ml" 107 3182 3194 "X86.ml" 107 3182 3212
 call(
   stack
 )
 type(
   opnd
 )
-"X86.ml" 120 3723 3728 "X86.ml" 120 3723 3729
+"X86.ml" 108 3216 3221 "X86.ml" 108 3216 3222
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 119 3689 3697 "X86.ml" 119 3689 3698
+  int_ref s "X86.ml" 107 3182 3190 "X86.ml" 107 3182 3191
 )
-"X86.ml" 120 3723 3731 "X86.ml" 120 3723 3736
+"X86.ml" 108 3216 3224 "X86.ml" 108 3216 3229
 type(
   opnd list
 )
 ident(
-  int_ref stack "X86.ml" 106 3272 3294 "X86.ml" 106 3272 3299
+  int_ref stack "X86.ml" 94 2765 2787 "X86.ml" 94 2765 2792
 )
-"X86.ml" 120 3723 3728 "X86.ml" 120 3723 3736
+"X86.ml" 108 3216 3221 "X86.ml" 108 3216 3229
 type(
   opnd list
 )
-"X86.ml" 120 3723 3749 "X86.ml" 120 3723 3750
+"X86.ml" 108 3216 3242 "X86.ml" 108 3216 3243
 type(
   string
 )
 ident(
-  int_ref x "X86.ml" 117 3644 3665 "X86.ml" 117 3644 3666
+  int_ref x "X86.ml" 105 3137 3158 "X86.ml" 105 3137 3159
 )
-"X86.ml" 120 3723 3747 "X86.ml" 120 3723 3750
+"X86.ml" 108 3216 3240 "X86.ml" 108 3216 3243
 type(
   opnd
 )
-"X86.ml" 120 3723 3752 "X86.ml" 120 3723 3755
+"X86.ml" 108 3216 3245 "X86.ml" 108 3216 3248
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 120 3723 3739 "X86.ml" 120 3723 3756
+"X86.ml" 108 3216 3232 "X86.ml" 108 3216 3249
 type(
   x86instr
 )
-"X86.ml" 120 3723 3766 "X86.ml" 120 3723 3769
+"X86.ml" 108 3216 3259 "X86.ml" 108 3216 3262
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 120 3723 3771 "X86.ml" 120 3723 3772
+"X86.ml" 108 3216 3264 "X86.ml" 108 3216 3265
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 119 3689 3697 "X86.ml" 119 3689 3698
+  int_ref s "X86.ml" 107 3182 3190 "X86.ml" 107 3182 3191
 )
-"X86.ml" 120 3723 3758 "X86.ml" 120 3723 3773
+"X86.ml" 108 3216 3251 "X86.ml" 108 3216 3266
 type(
   x86instr
 )
-"X86.ml" 120 3723 3738 "X86.ml" 120 3723 3774
+"X86.ml" 108 3216 3231 "X86.ml" 108 3216 3267
 type(
   x86instr list
 )
@@ -2256,127 +2138,127 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 120 3723 3727 "X86.ml" 120 3723 3775
+"X86.ml" 108 3216 3220 "X86.ml" 108 3216 3268
 type(
   opnd list * x86instr list
 )
-"X86.ml" 119 3689 3693 "X86.ml" 120 3723 3775
+"X86.ml" 107 3182 3186 "X86.ml" 108 3216 3268
 type(
   opnd list * x86instr list
 )
-"X86.ml" 118 3672 3676 "X86.ml" 120 3723 3775
+"X86.ml" 106 3165 3169 "X86.ml" 108 3216 3268
 type(
   opnd list * x86instr list
 )
-"X86.ml" 121 3776 3797 "X86.ml" 121 3776 3798
+"X86.ml" 109 3269 3290 "X86.ml" 109 3269 3291
 type(
   string
 )
 ident(
-  def x "X86.ml" 122 3804 3808 "X86.ml" 124 3850 3900
+  def x "X86.ml" 110 3297 3301 "X86.ml" 112 3343 3393
 )
-"X86.ml" 121 3776 3792 "X86.ml" 121 3776 3798
+"X86.ml" 109 3269 3285 "X86.ml" 109 3269 3291
 type(
   StackMachine.i
 )
-"X86.ml" 122 3804 3808 "X86.ml" 122 3804 3811
+"X86.ml" 110 3297 3301 "X86.ml" 110 3297 3304
 type(
   'c
 )
 ident(
-  int_ref env "X86.ml" 105 3239 3261 "X86.ml" 105 3239 3264
+  int_ref env "X86.ml" 93 2732 2754 "X86.ml" 93 2732 2757
 )
-"X86.ml" 122 3804 3808 "X86.ml" 122 3804 3817
+"X86.ml" 110 3297 3301 "X86.ml" 110 3297 3310
 call(
   stack
 )
 type(
   string -> 'b
 )
-"X86.ml" 122 3804 3818 "X86.ml" 122 3804 3819
+"X86.ml" 110 3297 3311 "X86.ml" 110 3297 3312
 type(
   string
 )
 ident(
-  int_ref x "X86.ml" 121 3776 3797 "X86.ml" 121 3776 3798
+  int_ref x "X86.ml" 109 3269 3290 "X86.ml" 109 3269 3291
 )
-"X86.ml" 122 3804 3808 "X86.ml" 122 3804 3819
+"X86.ml" 110 3297 3301 "X86.ml" 110 3297 3312
 type(
   'b
 )
-"X86.ml" 123 3821 3829 "X86.ml" 123 3821 3830
+"X86.ml" 111 3314 3322 "X86.ml" 111 3314 3323
 type(
   opnd
 )
 ident(
-  def s "X86.ml" 124 3850 3854 "X86.ml" 124 3850 3900
+  def s "X86.ml" 112 3343 3347 "X86.ml" 112 3343 3393
 )
-"X86.ml" 123 3821 3832 "X86.ml" 123 3821 3838
+"X86.ml" 111 3314 3325 "X86.ml" 111 3314 3331
 type(
   opnd list
 )
 ident(
-  def stack' "X86.ml" 124 3850 3854 "X86.ml" 124 3850 3900
+  def stack' "X86.ml" 112 3343 3347 "X86.ml" 112 3343 3393
 )
-"X86.ml" 123 3821 3829 "X86.ml" 123 3821 3838
+"X86.ml" 111 3314 3322 "X86.ml" 111 3314 3331
 type(
   opnd list
 )
-"X86.ml" 123 3821 3841 "X86.ml" 123 3821 3846
-type(
-  opnd list
-)
-ident(
-  int_ref stack "X86.ml" 106 3272 3294 "X86.ml" 106 3272 3299
-)
-"X86.ml" 124 3850 3855 "X86.ml" 124 3850 3861
+"X86.ml" 111 3314 3334 "X86.ml" 111 3314 3339
 type(
   opnd list
 )
 ident(
-  int_ref stack' "X86.ml" 123 3821 3832 "X86.ml" 123 3821 3838
+  int_ref stack "X86.ml" 94 2765 2787 "X86.ml" 94 2765 2792
 )
-"X86.ml" 124 3850 3872 "X86.ml" 124 3850 3873
+"X86.ml" 112 3343 3348 "X86.ml" 112 3343 3354
+type(
+  opnd list
+)
+ident(
+  int_ref stack' "X86.ml" 111 3314 3325 "X86.ml" 111 3314 3331
+)
+"X86.ml" 112 3343 3365 "X86.ml" 112 3343 3366
 type(
   opnd
 )
 ident(
-  int_ref s "X86.ml" 123 3821 3829 "X86.ml" 123 3821 3830
+  int_ref s "X86.ml" 111 3314 3322 "X86.ml" 111 3314 3323
 )
-"X86.ml" 124 3850 3875 "X86.ml" 124 3850 3878
+"X86.ml" 112 3343 3368 "X86.ml" 112 3343 3371
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 124 3850 3864 "X86.ml" 124 3850 3879
+"X86.ml" 112 3343 3357 "X86.ml" 112 3343 3372
 type(
   x86instr
 )
-"X86.ml" 124 3850 3889 "X86.ml" 124 3850 3892
+"X86.ml" 112 3343 3382 "X86.ml" 112 3343 3385
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 124 3850 3896 "X86.ml" 124 3850 3897
+"X86.ml" 112 3343 3389 "X86.ml" 112 3343 3390
 type(
   string
 )
 ident(
-  int_ref x "X86.ml" 121 3776 3797 "X86.ml" 121 3776 3798
+  int_ref x "X86.ml" 109 3269 3290 "X86.ml" 109 3269 3291
 )
-"X86.ml" 124 3850 3894 "X86.ml" 124 3850 3897
+"X86.ml" 112 3343 3387 "X86.ml" 112 3343 3390
 type(
   opnd
 )
-"X86.ml" 124 3850 3881 "X86.ml" 124 3850 3898
+"X86.ml" 112 3343 3374 "X86.ml" 112 3343 3391
 type(
   x86instr
 )
-"X86.ml" 124 3850 3863 "X86.ml" 124 3850 3899
+"X86.ml" 112 3343 3356 "X86.ml" 112 3343 3392
 type(
   x86instr list
 )
@@ -2386,120 +2268,120 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 124 3850 3854 "X86.ml" 124 3850 3900
+"X86.ml" 112 3343 3347 "X86.ml" 112 3343 3393
 type(
   opnd list * x86instr list
 )
-"X86.ml" 123 3821 3825 "X86.ml" 124 3850 3900
+"X86.ml" 111 3314 3318 "X86.ml" 112 3343 3393
 type(
   opnd list * x86instr list
 )
-"X86.ml" 122 3804 3808 "X86.ml" 124 3850 3900
+"X86.ml" 110 3297 3301 "X86.ml" 112 3343 3393
 type(
   opnd list * x86instr list
 )
-"X86.ml" 125 3901 3924 "X86.ml" 125 3901 3926
+"X86.ml" 113 3394 3417 "X86.ml" 113 3394 3419
 type(
   string
 )
 ident(
-  def op "X86.ml" 126 3930 3938 "X86.ml" 142 5267 5313
+  def op "X86.ml" 114 3423 3431 "X86.ml" 131 4786 4832
 )
-"X86.ml" 125 3901 3916 "X86.ml" 125 3901 3926
+"X86.ml" 113 3394 3409 "X86.ml" 113 3394 3419
 type(
   StackMachine.i
 )
-"X86.ml" 126 3930 3942 "X86.ml" 126 3930 3943
+"X86.ml" 114 3423 3435 "X86.ml" 114 3423 3436
 type(
   opnd
 )
 ident(
-  def x "X86.ml" 127 3966 3984 "X86.ml" 142 5267 5313
+  def x "X86.ml" 115 3459 3477 "X86.ml" 131 4786 4832
 )
-"X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+"X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 type(
   opnd
 )
 ident(
-  def y "X86.ml" 127 3966 3984 "X86.ml" 142 5267 5313
+  def y "X86.ml" 115 3459 3477 "X86.ml" 131 4786 4832
 )
-"X86.ml" 126 3930 3948 "X86.ml" 126 3930 3954
+"X86.ml" 114 3423 3441 "X86.ml" 114 3423 3447
 type(
   opnd list
 )
 ident(
-  def stack' "X86.ml" 127 3966 3984 "X86.ml" 142 5267 5313
+  def stack' "X86.ml" 115 3459 3477 "X86.ml" 131 4786 4832
 )
-"X86.ml" 126 3930 3945 "X86.ml" 126 3930 3954
+"X86.ml" 114 3423 3438 "X86.ml" 114 3423 3447
 type(
   opnd list
 )
-"X86.ml" 126 3930 3942 "X86.ml" 126 3930 3954
+"X86.ml" 114 3423 3435 "X86.ml" 114 3423 3447
 type(
   opnd list
 )
-"X86.ml" 126 3930 3957 "X86.ml" 126 3930 3962
+"X86.ml" 114 3423 3450 "X86.ml" 114 3423 3455
 type(
   opnd list
 )
 ident(
-  int_ref stack "X86.ml" 106 3272 3294 "X86.ml" 106 3272 3299
+  int_ref stack "X86.ml" 94 2765 2787 "X86.ml" 94 2765 2792
 )
-"X86.ml" 127 3966 3985 "X86.ml" 127 3966 3986
+"X86.ml" 115 3459 3478 "X86.ml" 115 3459 3479
 type(
   opnd
 )
 ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 )
-"X86.ml" 127 3966 3988 "X86.ml" 127 3966 3994
+"X86.ml" 115 3459 3481 "X86.ml" 115 3459 3487
 type(
   opnd list
 )
 ident(
-  int_ref stack' "X86.ml" 126 3930 3948 "X86.ml" 126 3930 3954
+  int_ref stack' "X86.ml" 114 3423 3441 "X86.ml" 114 3423 3447
 )
-"X86.ml" 127 3966 3985 "X86.ml" 127 3966 3994
+"X86.ml" 115 3459 3478 "X86.ml" 115 3459 3487
 type(
   opnd list
 )
-"X86.ml" 127 3966 4005 "X86.ml" 127 3966 4006
+"X86.ml" 115 3459 3498 "X86.ml" 115 3459 3499
 type(
   opnd
 )
 ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 )
-"X86.ml" 127 3966 4008 "X86.ml" 127 3966 4011
+"X86.ml" 115 3459 3501 "X86.ml" 115 3459 3504
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 127 3966 3997 "X86.ml" 127 3966 4012
+"X86.ml" 115 3459 3490 "X86.ml" 115 3459 3505
 type(
   x86instr
 )
-"X86.ml" 127 3966 4022 "X86.ml" 127 3966 4023
+"X86.ml" 115 3459 3515 "X86.ml" 115 3459 3516
 type(
   opnd
 )
 ident(
-  int_ref x "X86.ml" 126 3930 3942 "X86.ml" 126 3930 3943
+  int_ref x "X86.ml" 114 3423 3435 "X86.ml" 114 3423 3436
 )
-"X86.ml" 127 3966 4025 "X86.ml" 127 3966 4028
+"X86.ml" 115 3459 3518 "X86.ml" 115 3459 3521
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 127 3966 4014 "X86.ml" 127 3966 4029
+"X86.ml" 115 3459 3507 "X86.ml" 115 3459 3522
 type(
   x86instr
 )
-"X86.ml" 127 3966 3996 "X86.ml" 127 3966 4030
+"X86.ml" 115 3459 3489 "X86.ml" 115 3459 3523
 type(
   x86instr list
 )
@@ -2509,54 +2391,54 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 128 4033 4061 "X86.ml" 128 4033 4063
+"X86.ml" 116 3526 3554 "X86.ml" 116 3526 3556
 type(
   string
 )
 ident(
-  int_ref op "X86.ml" 125 3901 3924 "X86.ml" 125 3901 3926
+  int_ref op "X86.ml" 113 3394 3417 "X86.ml" 113 3394 3419
 )
-"X86.ml" 129 4069 4093 "X86.ml" 129 4069 4096
+"X86.ml" 117 3562 3586 "X86.ml" 117 3562 3589
 type(
   string
 )
-"X86.ml" 129 4069 4112 "X86.ml" 129 4069 4115
+"X86.ml" 117 3562 3605 "X86.ml" 117 3562 3608
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 129 4069 4117 "X86.ml" 129 4069 4120
+"X86.ml" 117 3562 3610 "X86.ml" 117 3562 3613
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 129 4069 4102 "X86.ml" 129 4069 4121
+"X86.ml" 117 3562 3595 "X86.ml" 117 3562 3614
 type(
   x86instr
 )
-"X86.ml" 129 4069 4131 "X86.ml" 129 4069 4134
+"X86.ml" 117 3562 3624 "X86.ml" 117 3562 3627
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 129 4069 4136 "X86.ml" 129 4069 4137
+"X86.ml" 117 3562 3629 "X86.ml" 117 3562 3630
 type(
   opnd
 )
 ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 )
-"X86.ml" 129 4069 4123 "X86.ml" 129 4069 4138
+"X86.ml" 117 3562 3616 "X86.ml" 117 3562 3631
 type(
   x86instr
 )
-"X86.ml" 129 4069 4101 "X86.ml" 129 4069 4139
+"X86.ml" 117 3562 3594 "X86.ml" 117 3562 3632
 type(
   x86instr list
 )
@@ -2566,47 +2448,47 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 130 4140 4164 "X86.ml" 130 4140 4167
+"X86.ml" 118 3633 3657 "X86.ml" 118 3633 3660
 type(
   string
 )
-"X86.ml" 130 4140 4183 "X86.ml" 130 4140 4186
+"X86.ml" 118 3633 3676 "X86.ml" 118 3633 3679
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 130 4140 4188 "X86.ml" 130 4140 4191
+"X86.ml" 118 3633 3681 "X86.ml" 118 3633 3684
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 130 4140 4173 "X86.ml" 130 4140 4192
+"X86.ml" 118 3633 3666 "X86.ml" 118 3633 3685
 type(
   x86instr
 )
-"X86.ml" 130 4140 4202 "X86.ml" 130 4140 4205
+"X86.ml" 118 3633 3695 "X86.ml" 118 3633 3698
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 130 4140 4207 "X86.ml" 130 4140 4208
+"X86.ml" 118 3633 3700 "X86.ml" 118 3633 3701
 type(
   opnd
 )
 ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 )
-"X86.ml" 130 4140 4194 "X86.ml" 130 4140 4209
+"X86.ml" 118 3633 3687 "X86.ml" 118 3633 3702
 type(
   x86instr
 )
-"X86.ml" 130 4140 4172 "X86.ml" 130 4140 4210
+"X86.ml" 118 3633 3665 "X86.ml" 118 3633 3703
 type(
   x86instr list
 )
@@ -2616,47 +2498,47 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 131 4211 4235 "X86.ml" 131 4211 4238
+"X86.ml" 119 3704 3728 "X86.ml" 119 3704 3731
 type(
   string
 )
-"X86.ml" 131 4211 4254 "X86.ml" 131 4211 4257
+"X86.ml" 119 3704 3747 "X86.ml" 119 3704 3750
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 131 4211 4259 "X86.ml" 131 4211 4262
+"X86.ml" 119 3704 3752 "X86.ml" 119 3704 3755
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 131 4211 4244 "X86.ml" 131 4211 4263
+"X86.ml" 119 3704 3737 "X86.ml" 119 3704 3756
 type(
   x86instr
 )
-"X86.ml" 131 4211 4273 "X86.ml" 131 4211 4276
+"X86.ml" 119 3704 3766 "X86.ml" 119 3704 3769
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 131 4211 4278 "X86.ml" 131 4211 4279
+"X86.ml" 119 3704 3771 "X86.ml" 119 3704 3772
 type(
   opnd
 )
 ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 )
-"X86.ml" 131 4211 4265 "X86.ml" 131 4211 4280
+"X86.ml" 119 3704 3758 "X86.ml" 119 3704 3773
 type(
   x86instr
 )
-"X86.ml" 131 4211 4243 "X86.ml" 131 4211 4281
+"X86.ml" 119 3704 3736 "X86.ml" 119 3704 3774
 type(
   x86instr list
 )
@@ -2666,44 +2548,44 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 132 4323 4347 "X86.ml" 132 4323 4350
+"X86.ml" 120 3816 3840 "X86.ml" 120 3816 3843
 type(
   string
 )
-"X86.ml" 132 4323 4356 "X86.ml" 132 4323 4363
+"X86.ml" 120 3816 3849 "X86.ml" 120 3816 3856
 type(
   x86instr
 )
-"X86.ml" 132 4323 4372 "X86.ml" 132 4323 4375
+"X86.ml" 120 3816 3865 "X86.ml" 120 3816 3868
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 132 4323 4365 "X86.ml" 132 4323 4375
+"X86.ml" 120 3816 3858 "X86.ml" 120 3816 3868
 type(
   x86instr
 )
-"X86.ml" 132 4323 4385 "X86.ml" 132 4323 4388
+"X86.ml" 120 3816 3878 "X86.ml" 120 3816 3881
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 132 4323 4390 "X86.ml" 132 4323 4391
+"X86.ml" 120 3816 3883 "X86.ml" 120 3816 3884
 type(
   opnd
 )
 ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 )
-"X86.ml" 132 4323 4377 "X86.ml" 132 4323 4392
+"X86.ml" 120 3816 3870 "X86.ml" 120 3816 3885
 type(
   x86instr
 )
-"X86.ml" 132 4323 4355 "X86.ml" 132 4323 4393
+"X86.ml" 120 3816 3848 "X86.ml" 120 3816 3886
 type(
   x86instr list
 )
@@ -2716,44 +2598,44 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 133 4394 4418 "X86.ml" 133 4394 4421
+"X86.ml" 121 3887 3911 "X86.ml" 121 3887 3914
 type(
   string
 )
-"X86.ml" 133 4394 4427 "X86.ml" 133 4394 4434
+"X86.ml" 121 3887 3920 "X86.ml" 121 3887 3927
 type(
   x86instr
 )
-"X86.ml" 133 4394 4443 "X86.ml" 133 4394 4446
+"X86.ml" 121 3887 3936 "X86.ml" 121 3887 3939
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 133 4394 4436 "X86.ml" 133 4394 4446
+"X86.ml" 121 3887 3929 "X86.ml" 121 3887 3939
 type(
   x86instr
 )
-"X86.ml" 133 4394 4456 "X86.ml" 133 4394 4459
+"X86.ml" 121 3887 3949 "X86.ml" 121 3887 3952
 type(
   opnd
 )
 ident(
   int_ref edx "X86.ml" 18 259 263 "X86.ml" 18 259 266
 )
-"X86.ml" 133 4394 4461 "X86.ml" 133 4394 4462
+"X86.ml" 121 3887 3954 "X86.ml" 121 3887 3955
 type(
   opnd
 )
 ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
 )
-"X86.ml" 133 4394 4448 "X86.ml" 133 4394 4463
+"X86.ml" 121 3887 3941 "X86.ml" 121 3887 3956
 type(
   x86instr
 )
-"X86.ml" 133 4394 4426 "X86.ml" 133 4394 4464
+"X86.ml" 121 3887 3919 "X86.ml" 121 3887 3957
 type(
   x86instr list
 )
@@ -2766,665 +2648,697 @@ type(
 type(
   x86instr list
 )
-"X86.ml" 134 4465 4489 "X86.ml" 134 4465 4493
+"X86.ml" 123 3959 3983 "X86.ml" 123 3959 3987
 type(
   string
 )
-"X86.ml" 134 4465 4508 "X86.ml" 134 4465 4511
+"X86.ml" 123 3959 4002 "X86.ml" 123 3959 4005
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 134 4465 4513 "X86.ml" 134 4465 4516
+"X86.ml" 123 3959 4007 "X86.ml" 123 3959 4010
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 134 4465 4498 "X86.ml" 134 4465 4517
+"X86.ml" 123 3959 3992 "X86.ml" 123 3959 4011
 type(
   x86instr
 )
-"X86.ml" 134 4465 4529 "X86.ml" 134 4465 4530
+"X86.ml" 123 3959 4023 "X86.ml" 123 3959 4024
 type(
   int
 )
-"X86.ml" 134 4465 4527 "X86.ml" 134 4465 4530
+"X86.ml" 123 3959 4021 "X86.ml" 123 3959 4024
 type(
   opnd
 )
-"X86.ml" 134 4465 4532 "X86.ml" 134 4465 4535
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 134 4465 4519 "X86.ml" 134 4465 4536
-type(
-  x86instr
-)
-"X86.ml" 134 4465 4538 "X86.ml" 134 4465 4546
-type(
-  x86instr
-)
-"X86.ml" 134 4465 4557 "X86.ml" 134 4465 4560
+"X86.ml" 123 3959 4026 "X86.ml" 123 3959 4029
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 134 4465 4562 "X86.ml" 134 4465 4563
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 134 4465 4549 "X86.ml" 134 4465 4564
+"X86.ml" 123 3959 4013 "X86.ml" 123 3959 4030
 type(
   x86instr
 )
-"X86.ml" 134 4465 4497 "X86.ml" 134 4465 4565
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 135 4566 4590 "X86.ml" 135 4566 4594
+"X86.ml" 123 3959 4039 "X86.ml" 123 3959 4043
 type(
   string
 )
-"X86.ml" 135 4566 4609 "X86.ml" 135 4566 4612
+"X86.ml" 123 3959 4032 "X86.ml" 123 3959 4043
+type(
+  x86instr
+)
+"X86.ml" 123 3959 4053 "X86.ml" 123 3959 4056
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 123 3959 4058 "X86.ml" 123 3959 4059
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 123 3959 4045 "X86.ml" 123 3959 4060
+type(
+  x86instr
+)
+"X86.ml" 123 3959 3991 "X86.ml" 123 3959 4061
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 124 4062 4086 "X86.ml" 124 4062 4090
+type(
+  string
+)
+"X86.ml" 124 4062 4105 "X86.ml" 124 4062 4108
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 135 4566 4614 "X86.ml" 135 4566 4617
+"X86.ml" 124 4062 4110 "X86.ml" 124 4062 4113
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 135 4566 4599 "X86.ml" 135 4566 4618
+"X86.ml" 124 4062 4095 "X86.ml" 124 4062 4114
 type(
   x86instr
 )
-"X86.ml" 135 4566 4630 "X86.ml" 135 4566 4631
+"X86.ml" 124 4062 4126 "X86.ml" 124 4062 4127
 type(
   int
 )
-"X86.ml" 135 4566 4628 "X86.ml" 135 4566 4631
+"X86.ml" 124 4062 4124 "X86.ml" 124 4062 4127
 type(
   opnd
 )
-"X86.ml" 135 4566 4633 "X86.ml" 135 4566 4636
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 135 4566 4620 "X86.ml" 135 4566 4637
-type(
-  x86instr
-)
-"X86.ml" 135 4566 4639 "X86.ml" 135 4566 4647
-type(
-  x86instr
-)
-"X86.ml" 135 4566 4658 "X86.ml" 135 4566 4661
+"X86.ml" 124 4062 4129 "X86.ml" 124 4062 4132
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 135 4566 4663 "X86.ml" 135 4566 4664
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 135 4566 4650 "X86.ml" 135 4566 4665
+"X86.ml" 124 4062 4116 "X86.ml" 124 4062 4133
 type(
   x86instr
 )
-"X86.ml" 135 4566 4598 "X86.ml" 135 4566 4666
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 136 4667 4691 "X86.ml" 136 4667 4694
+"X86.ml" 124 4062 4142 "X86.ml" 124 4062 4146
 type(
   string
 )
-"X86.ml" 136 4667 4710 "X86.ml" 136 4667 4713
+"X86.ml" 124 4062 4135 "X86.ml" 124 4062 4146
+type(
+  x86instr
+)
+"X86.ml" 124 4062 4156 "X86.ml" 124 4062 4159
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 124 4062 4161 "X86.ml" 124 4062 4162
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 124 4062 4148 "X86.ml" 124 4062 4163
+type(
+  x86instr
+)
+"X86.ml" 124 4062 4094 "X86.ml" 124 4062 4164
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 125 4165 4189 "X86.ml" 125 4165 4192
+type(
+  string
+)
+"X86.ml" 125 4165 4208 "X86.ml" 125 4165 4211
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 136 4667 4715 "X86.ml" 136 4667 4718
+"X86.ml" 125 4165 4213 "X86.ml" 125 4165 4216
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 136 4667 4700 "X86.ml" 136 4667 4719
+"X86.ml" 125 4165 4198 "X86.ml" 125 4165 4217
 type(
   x86instr
 )
-"X86.ml" 136 4667 4731 "X86.ml" 136 4667 4732
+"X86.ml" 125 4165 4229 "X86.ml" 125 4165 4230
 type(
   int
 )
-"X86.ml" 136 4667 4729 "X86.ml" 136 4667 4732
+"X86.ml" 125 4165 4227 "X86.ml" 125 4165 4230
 type(
   opnd
 )
-"X86.ml" 136 4667 4734 "X86.ml" 136 4667 4737
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 136 4667 4721 "X86.ml" 136 4667 4738
-type(
-  x86instr
-)
-"X86.ml" 136 4667 4740 "X86.ml" 136 4667 4747
-type(
-  x86instr
-)
-"X86.ml" 136 4667 4758 "X86.ml" 136 4667 4761
+"X86.ml" 125 4165 4232 "X86.ml" 125 4165 4235
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 136 4667 4763 "X86.ml" 136 4667 4764
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 136 4667 4750 "X86.ml" 136 4667 4765
+"X86.ml" 125 4165 4219 "X86.ml" 125 4165 4236
 type(
   x86instr
 )
-"X86.ml" 136 4667 4699 "X86.ml" 136 4667 4766
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 137 4767 4791 "X86.ml" 137 4767 4795
+"X86.ml" 125 4165 4246 "X86.ml" 125 4165 4249
 type(
   string
 )
-"X86.ml" 137 4767 4810 "X86.ml" 137 4767 4813
+"X86.ml" 125 4165 4238 "X86.ml" 125 4165 4249
+type(
+  x86instr
+)
+"X86.ml" 125 4165 4260 "X86.ml" 125 4165 4263
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 125 4165 4265 "X86.ml" 125 4165 4266
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 125 4165 4252 "X86.ml" 125 4165 4267
+type(
+  x86instr
+)
+"X86.ml" 125 4165 4197 "X86.ml" 125 4165 4268
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 126 4269 4293 "X86.ml" 126 4269 4297
+type(
+  string
+)
+"X86.ml" 126 4269 4312 "X86.ml" 126 4269 4315
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 137 4767 4815 "X86.ml" 137 4767 4818
+"X86.ml" 126 4269 4317 "X86.ml" 126 4269 4320
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 137 4767 4800 "X86.ml" 137 4767 4819
+"X86.ml" 126 4269 4302 "X86.ml" 126 4269 4321
 type(
   x86instr
 )
-"X86.ml" 137 4767 4831 "X86.ml" 137 4767 4832
+"X86.ml" 126 4269 4333 "X86.ml" 126 4269 4334
 type(
   int
 )
-"X86.ml" 137 4767 4829 "X86.ml" 137 4767 4832
+"X86.ml" 126 4269 4331 "X86.ml" 126 4269 4334
 type(
   opnd
 )
-"X86.ml" 137 4767 4834 "X86.ml" 137 4767 4837
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 137 4767 4821 "X86.ml" 137 4767 4838
-type(
-  x86instr
-)
-"X86.ml" 137 4767 4840 "X86.ml" 137 4767 4848
-type(
-  x86instr
-)
-"X86.ml" 137 4767 4858 "X86.ml" 137 4767 4861
+"X86.ml" 126 4269 4336 "X86.ml" 126 4269 4339
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 137 4767 4863 "X86.ml" 137 4767 4864
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 137 4767 4850 "X86.ml" 137 4767 4865
+"X86.ml" 126 4269 4323 "X86.ml" 126 4269 4340
 type(
   x86instr
 )
-"X86.ml" 137 4767 4799 "X86.ml" 137 4767 4866
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 138 4867 4891 "X86.ml" 138 4867 4894
+"X86.ml" 126 4269 4349 "X86.ml" 126 4269 4353
 type(
   string
 )
-"X86.ml" 138 4867 4910 "X86.ml" 138 4867 4913
+"X86.ml" 126 4269 4342 "X86.ml" 126 4269 4353
+type(
+  x86instr
+)
+"X86.ml" 126 4269 4363 "X86.ml" 126 4269 4366
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 126 4269 4368 "X86.ml" 126 4269 4369
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 126 4269 4355 "X86.ml" 126 4269 4370
+type(
+  x86instr
+)
+"X86.ml" 126 4269 4301 "X86.ml" 126 4269 4371
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 127 4372 4396 "X86.ml" 127 4372 4399
+type(
+  string
+)
+"X86.ml" 127 4372 4415 "X86.ml" 127 4372 4418
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 138 4867 4915 "X86.ml" 138 4867 4918
+"X86.ml" 127 4372 4420 "X86.ml" 127 4372 4423
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 138 4867 4900 "X86.ml" 138 4867 4919
+"X86.ml" 127 4372 4405 "X86.ml" 127 4372 4424
 type(
   x86instr
 )
-"X86.ml" 138 4867 4931 "X86.ml" 138 4867 4932
+"X86.ml" 127 4372 4436 "X86.ml" 127 4372 4437
 type(
   int
 )
-"X86.ml" 138 4867 4929 "X86.ml" 138 4867 4932
+"X86.ml" 127 4372 4434 "X86.ml" 127 4372 4437
 type(
   opnd
 )
-"X86.ml" 138 4867 4934 "X86.ml" 138 4867 4937
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 138 4867 4921 "X86.ml" 138 4867 4938
-type(
-  x86instr
-)
-"X86.ml" 138 4867 4940 "X86.ml" 138 4867 4947
-type(
-  x86instr
-)
-"X86.ml" 138 4867 4958 "X86.ml" 138 4867 4961
+"X86.ml" 127 4372 4439 "X86.ml" 127 4372 4442
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 138 4867 4963 "X86.ml" 138 4867 4964
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 138 4867 4950 "X86.ml" 138 4867 4965
+"X86.ml" 127 4372 4426 "X86.ml" 127 4372 4443
 type(
   x86instr
 )
-"X86.ml" 138 4867 4899 "X86.ml" 138 4867 4966
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 139 4967 4991 "X86.ml" 139 4967 4995
+"X86.ml" 127 4372 4453 "X86.ml" 127 4372 4456
 type(
   string
 )
-"X86.ml" 139 4967 5010 "X86.ml" 139 4967 5013
+"X86.ml" 127 4372 4445 "X86.ml" 127 4372 4456
+type(
+  x86instr
+)
+"X86.ml" 127 4372 4467 "X86.ml" 127 4372 4470
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 127 4372 4472 "X86.ml" 127 4372 4473
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 127 4372 4459 "X86.ml" 127 4372 4474
+type(
+  x86instr
+)
+"X86.ml" 127 4372 4404 "X86.ml" 127 4372 4475
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 128 4476 4500 "X86.ml" 128 4476 4504
+type(
+  string
+)
+"X86.ml" 128 4476 4519 "X86.ml" 128 4476 4522
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 139 4967 5015 "X86.ml" 139 4967 5018
+"X86.ml" 128 4476 4524 "X86.ml" 128 4476 4527
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 139 4967 5000 "X86.ml" 139 4967 5019
+"X86.ml" 128 4476 4509 "X86.ml" 128 4476 4528
 type(
   x86instr
 )
-"X86.ml" 139 4967 5031 "X86.ml" 139 4967 5032
+"X86.ml" 128 4476 4540 "X86.ml" 128 4476 4541
 type(
   int
 )
-"X86.ml" 139 4967 5029 "X86.ml" 139 4967 5032
+"X86.ml" 128 4476 4538 "X86.ml" 128 4476 4541
 type(
   opnd
 )
-"X86.ml" 139 4967 5034 "X86.ml" 139 4967 5037
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 139 4967 5021 "X86.ml" 139 4967 5038
-type(
-  x86instr
-)
-"X86.ml" 139 4967 5040 "X86.ml" 139 4967 5048
-type(
-  x86instr
-)
-"X86.ml" 139 4967 5058 "X86.ml" 139 4967 5061
+"X86.ml" 128 4476 4543 "X86.ml" 128 4476 4546
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 139 4967 5063 "X86.ml" 139 4967 5064
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 139 4967 5050 "X86.ml" 139 4967 5065
+"X86.ml" 128 4476 4530 "X86.ml" 128 4476 4547
 type(
   x86instr
 )
-"X86.ml" 139 4967 4999 "X86.ml" 139 4967 5066
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 140 5067 5091 "X86.ml" 140 5067 5095
+"X86.ml" 128 4476 4556 "X86.ml" 128 4476 4560
 type(
   string
 )
-"X86.ml" 140 5067 5110 "X86.ml" 140 5067 5113
+"X86.ml" 128 4476 4549 "X86.ml" 128 4476 4560
+type(
+  x86instr
+)
+"X86.ml" 128 4476 4570 "X86.ml" 128 4476 4573
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 128 4476 4575 "X86.ml" 128 4476 4576
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 128 4476 4562 "X86.ml" 128 4476 4577
+type(
+  x86instr
+)
+"X86.ml" 128 4476 4508 "X86.ml" 128 4476 4578
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 129 4579 4603 "X86.ml" 129 4579 4607
+type(
+  string
+)
+"X86.ml" 129 4579 4622 "X86.ml" 129 4579 4625
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 140 5067 5115 "X86.ml" 140 5067 5118
+"X86.ml" 129 4579 4627 "X86.ml" 129 4579 4630
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 140 5067 5100 "X86.ml" 140 5067 5119
+"X86.ml" 129 4579 4612 "X86.ml" 129 4579 4631
 type(
   x86instr
 )
-"X86.ml" 140 5067 5131 "X86.ml" 140 5067 5132
+"X86.ml" 129 4579 4643 "X86.ml" 129 4579 4644
 type(
   int
 )
-"X86.ml" 140 5067 5129 "X86.ml" 140 5067 5132
+"X86.ml" 129 4579 4641 "X86.ml" 129 4579 4644
 type(
   opnd
 )
-"X86.ml" 140 5067 5134 "X86.ml" 140 5067 5137
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 140 5067 5121 "X86.ml" 140 5067 5138
-type(
-  x86instr
-)
-"X86.ml" 140 5067 5140 "X86.ml" 140 5067 5148
-type(
-  x86instr
-)
-"X86.ml" 140 5067 5158 "X86.ml" 140 5067 5161
+"X86.ml" 129 4579 4646 "X86.ml" 129 4579 4649
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 140 5067 5163 "X86.ml" 140 5067 5164
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 140 5067 5150 "X86.ml" 140 5067 5165
+"X86.ml" 129 4579 4633 "X86.ml" 129 4579 4650
 type(
   x86instr
 )
-"X86.ml" 140 5067 5099 "X86.ml" 140 5067 5166
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 141 5167 5191 "X86.ml" 141 5167 5195
+"X86.ml" 129 4579 4659 "X86.ml" 129 4579 4663
 type(
   string
 )
-"X86.ml" 141 5167 5210 "X86.ml" 141 5167 5213
+"X86.ml" 129 4579 4652 "X86.ml" 129 4579 4663
+type(
+  x86instr
+)
+"X86.ml" 129 4579 4673 "X86.ml" 129 4579 4676
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 129 4579 4678 "X86.ml" 129 4579 4679
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 129 4579 4665 "X86.ml" 129 4579 4680
+type(
+  x86instr
+)
+"X86.ml" 129 4579 4611 "X86.ml" 129 4579 4681
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 130 4682 4706 "X86.ml" 130 4682 4710
+type(
+  string
+)
+"X86.ml" 130 4682 4725 "X86.ml" 130 4682 4728
 type(
   opnd
 )
 ident(
   int_ref ebx "X86.ml" 16 231 235 "X86.ml" 16 231 238
 )
-"X86.ml" 141 5167 5215 "X86.ml" 141 5167 5218
+"X86.ml" 130 4682 4730 "X86.ml" 130 4682 4733
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 141 5167 5200 "X86.ml" 141 5167 5219
+"X86.ml" 130 4682 4715 "X86.ml" 130 4682 4734
 type(
   x86instr
 )
-"X86.ml" 141 5167 5231 "X86.ml" 141 5167 5232
+"X86.ml" 130 4682 4746 "X86.ml" 130 4682 4747
 type(
   int
 )
-"X86.ml" 141 5167 5229 "X86.ml" 141 5167 5232
+"X86.ml" 130 4682 4744 "X86.ml" 130 4682 4747
 type(
   opnd
 )
-"X86.ml" 141 5167 5234 "X86.ml" 141 5167 5237
-type(
-  opnd
-)
-ident(
-  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
-)
-"X86.ml" 141 5167 5221 "X86.ml" 141 5167 5238
-type(
-  x86instr
-)
-"X86.ml" 141 5167 5240 "X86.ml" 141 5167 5247
-type(
-  x86instr
-)
-"X86.ml" 141 5167 5258 "X86.ml" 141 5167 5261
+"X86.ml" 130 4682 4749 "X86.ml" 130 4682 4752
 type(
   opnd
 )
 ident(
   int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
 )
-"X86.ml" 141 5167 5263 "X86.ml" 141 5167 5264
-type(
-  opnd
-)
-ident(
-  int_ref y "X86.ml" 126 3930 3945 "X86.ml" 126 3930 3946
-)
-"X86.ml" 141 5167 5250 "X86.ml" 141 5167 5265
+"X86.ml" 130 4682 4736 "X86.ml" 130 4682 4753
 type(
   x86instr
 )
-"X86.ml" 141 5167 5199 "X86.ml" 141 5167 5266
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-type(
-  x86instr list
-)
-"X86.ml" 142 5267 5291 "X86.ml" 142 5267 5292
+"X86.ml" 130 4682 4763 "X86.ml" 130 4682 4766
 type(
   string
 )
-"X86.ml" 142 5267 5296 "X86.ml" 142 5267 5304
+"X86.ml" 130 4682 4755 "X86.ml" 130 4682 4766
+type(
+  x86instr
+)
+"X86.ml" 130 4682 4777 "X86.ml" 130 4682 4780
+type(
+  opnd
+)
+ident(
+  int_ref eax "X86.ml" 15 217 221 "X86.ml" 15 217 224
+)
+"X86.ml" 130 4682 4782 "X86.ml" 130 4682 4783
+type(
+  opnd
+)
+ident(
+  int_ref y "X86.ml" 114 3423 3438 "X86.ml" 114 3423 3439
+)
+"X86.ml" 130 4682 4769 "X86.ml" 130 4682 4784
+type(
+  x86instr
+)
+"X86.ml" 130 4682 4714 "X86.ml" 130 4682 4785
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+type(
+  x86instr list
+)
+"X86.ml" 131 4786 4810 "X86.ml" 131 4786 4811
+type(
+  string
+)
+"X86.ml" 131 4786 4815 "X86.ml" 131 4786 4823
 type(
   string -> x86instr list
 )
 ident(
   ext_ref Pervasives.failwith
 )
-"X86.ml" 142 5267 5305 "X86.ml" 142 5267 5312
+"X86.ml" 131 4786 4824 "X86.ml" 131 4786 4831
 type(
   string
 )
-"X86.ml" 142 5267 5296 "X86.ml" 142 5267 5312
+"X86.ml" 131 4786 4815 "X86.ml" 131 4786 4831
 call(
   stack
 )
 type(
   x86instr list
 )
-"X86.ml" 128 4033 4055 "X86.ml" 142 5267 5312
+"X86.ml" 116 3526 3548 "X86.ml" 131 4786 4831
 type(
   x86instr list
 )
-"X86.ml" 127 3966 3996 "X86.ml" 142 5267 5312
+"X86.ml" 115 3459 3489 "X86.ml" 131 4786 4831
 call(
   stack
 )
@@ -3437,54 +3351,54 @@ type(
 ident(
   ext_ref Pervasives.( @ )
 )
-"X86.ml" 127 3966 3984 "X86.ml" 142 5267 5313
+"X86.ml" 115 3459 3477 "X86.ml" 131 4786 4832
 type(
   opnd list * x86instr list
 )
-"X86.ml" 126 3930 3938 "X86.ml" 142 5267 5313
+"X86.ml" 114 3423 3431 "X86.ml" 131 4786 4832
 type(
   opnd list * x86instr list
 )
-"X86.ml" 111 3386 3400 "X86.ml" 142 5267 5313
+"X86.ml" 99 2879 2893 "X86.ml" 131 4786 4832
 type(
   opnd list * x86instr list
 )
-"X86.ml" 144 5322 5327 "X86.ml" 144 5322 5334
+"X86.ml" 133 4841 4846 "X86.ml" 133 4841 4853
 type(
   x86instr list
 )
 ident(
-  int_ref x86code "X86.ml" 110 3357 3375 "X86.ml" 110 3357 3382
+  int_ref x86code "X86.ml" 98 2850 2868 "X86.ml" 98 2850 2875
 )
-"X86.ml" 144 5322 5337 "X86.ml" 144 5322 5344
+"X86.ml" 133 4841 4856 "X86.ml" 133 4841 4863
 type(
   opnd list -> StackMachine.i list -> x86instr list
 )
 ident(
-  int_ref compile "X86.ml" 106 3272 3286 "X86.ml" 106 3272 3293
+  int_ref compile "X86.ml" 94 2765 2779 "X86.ml" 94 2765 2786
 )
-"X86.ml" 144 5322 5345 "X86.ml" 144 5322 5351
+"X86.ml" 133 4841 4864 "X86.ml" 133 4841 4870
 type(
   opnd list
 )
 ident(
-  int_ref stack' "X86.ml" 110 3357 3367 "X86.ml" 110 3357 3373
+  int_ref stack' "X86.ml" 98 2850 2860 "X86.ml" 98 2850 2866
 )
-"X86.ml" 144 5322 5352 "X86.ml" 144 5322 5357
+"X86.ml" 133 4841 4871 "X86.ml" 133 4841 4876
 type(
   StackMachine.i list
 )
 ident(
-  int_ref code' "X86.ml" 109 3342 3348 "X86.ml" 109 3342 3353
+  int_ref code' "X86.ml" 97 2835 2841 "X86.ml" 97 2835 2846
 )
-"X86.ml" 144 5322 5337 "X86.ml" 144 5322 5357
+"X86.ml" 133 4841 4856 "X86.ml" 133 4841 4876
 call(
   stack
 )
 type(
   x86instr list
 )
-"X86.ml" 144 5322 5327 "X86.ml" 144 5322 5357
+"X86.ml" 133 4841 4846 "X86.ml" 133 4841 4876
 call(
   tail
 )
@@ -3497,134 +3411,134 @@ type(
 ident(
   ext_ref Pervasives.( @ )
 )
-"X86.ml" 110 3357 3362 "X86.ml" 144 5322 5357
+"X86.ml" 98 2850 2855 "X86.ml" 133 4841 4876
 type(
   x86instr list
 )
-"X86.ml" 107 3307 3308 "X86.ml" 144 5322 5357
+"X86.ml" 95 2800 2801 "X86.ml" 133 4841 4876
 type(
   x86instr list
 )
-"X86.ml" 106 3272 3300 "X86.ml" 144 5322 5357
+"X86.ml" 94 2765 2793 "X86.ml" 133 4841 4876
 type(
   StackMachine.i list -> x86instr list
 )
-"X86.ml" 106 3272 3294 "X86.ml" 144 5322 5357
+"X86.ml" 94 2765 2787 "X86.ml" 133 4841 4876
 type(
   opnd list -> StackMachine.i list -> x86instr list
 )
-"X86.ml" 146 5367 5373 "X86.ml" 146 5367 5380
+"X86.ml" 135 4886 4892 "X86.ml" 135 4886 4899
 type(
   opnd list -> StackMachine.i list -> x86instr list
 )
 ident(
-  int_ref compile "X86.ml" 106 3272 3286 "X86.ml" 106 3272 3293
+  int_ref compile "X86.ml" 94 2765 2779 "X86.ml" 94 2765 2786
 )
-"X86.ml" 146 5367 5381 "X86.ml" 146 5367 5383
+"X86.ml" 135 4886 4900 "X86.ml" 135 4886 4902
 type(
   opnd list
 )
-"X86.ml" 146 5367 5384 "X86.ml" 146 5367 5388
+"X86.ml" 135 4886 4903 "X86.ml" 135 4886 4907
 type(
   StackMachine.i list
 )
 ident(
-  int_ref code "X86.ml" 105 3239 3265 "X86.ml" 105 3239 3269
+  int_ref code "X86.ml" 93 2732 2758 "X86.ml" 93 2732 2762
 )
-"X86.ml" 146 5367 5373 "X86.ml" 146 5367 5388
+"X86.ml" 135 4886 4892 "X86.ml" 135 4886 4907
 call(
   tail
 )
 type(
   x86instr list
 )
-"X86.ml" 106 3272 3278 "X86.ml" 146 5367 5388
+"X86.ml" 94 2765 2771 "X86.ml" 135 4886 4907
 type(
   x86instr list
 )
-"X86.ml" 105 3239 3265 "X86.ml" 146 5367 5388
+"X86.ml" 93 2732 2758 "X86.ml" 135 4886 4907
 type(
   StackMachine.i list -> x86instr list
 )
-"X86.ml" 105 3239 3261 "X86.ml" 146 5367 5388
+"X86.ml" 93 2732 2754 "X86.ml" 135 4886 4907
 type(
   'c -> StackMachine.i list -> x86instr list
 )
-"X86.ml" 150 5397 5401 "X86.ml" 150 5397 5408
+"X86.ml" 139 4916 4920 "X86.ml" 139 4916 4927
 type(
   Language.Stmt.t -> string
 )
 ident(
-  def compile "X86.ml" 183 6271 6271 "X86.ml" 1 0 -1
+  def compile "X86.ml" 172 5790 5790 "X86.ml" 1 0 -1
 )
-"X86.ml" 150 5397 5409 "X86.ml" 150 5397 5413
+"X86.ml" 139 4916 4928 "X86.ml" 139 4916 4932
 type(
   Language.Stmt.t
 )
 ident(
-  def stmt "X86.ml" 151 5416 5418 "X86.ml" 181 6248 6269
+  def stmt "X86.ml" 140 4935 4937 "X86.ml" 170 5767 5788
 )
-"X86.ml" 151 5416 5422 "X86.ml" 151 5416 5425
+"X86.ml" 140 4935 4941 "X86.ml" 140 4935 4944
 type(
   x86env
 )
 ident(
-  def env "X86.ml" 152 5442 5444 "X86.ml" 181 6248 6269
+  def env "X86.ml" 141 4961 4963 "X86.ml" 170 5767 5788
 )
-"X86.ml" 151 5416 5428 "X86.ml" 151 5416 5438
+"X86.ml" 140 4935 4947 "X86.ml" 140 4935 4957
 call(
   stack
 )
 type(
   x86env
 )
-"X86.ml" 152 5442 5448 "X86.ml" 152 5442 5452
+"X86.ml" 141 4961 4967 "X86.ml" 141 4961 4971
 type(
   x86instr list
 )
 ident(
-  def code "X86.ml" 153 5518 5520 "X86.ml" 181 6248 6269
+  def code "X86.ml" 142 5037 5039 "X86.ml" 170 5767 5788
 )
-"X86.ml" 152 5442 5455 "X86.ml" 152 5442 5476
+"X86.ml" 141 4961 4974 "X86.ml" 141 4961 4995
 type(
   x86env -> StackMachine.i list -> x86instr list
 )
 ident(
-  int_ref Compile.stack_program "X86.ml" 105 3239 3247 "X86.ml" 105 3239 3260
+  int_ref Compile.stack_program "X86.ml" 93 2732 2740 "X86.ml" 93 2732 2753
 )
-"X86.ml" 152 5442 5477 "X86.ml" 152 5442 5480
+"X86.ml" 141 4961 4996 "X86.ml" 141 4961 4999
 type(
   x86env
 )
 ident(
-  int_ref env "X86.ml" 151 5416 5422 "X86.ml" 151 5416 5425
+  int_ref env "X86.ml" 140 4935 4941 "X86.ml" 140 4935 4944
 )
-"X86.ml" 152 5442 5455 "X86.ml" 152 5442 5480
+"X86.ml" 141 4961 4974 "X86.ml" 141 4961 4999
 type(
   StackMachine.i list -> x86instr list
 )
-"X86.ml" 152 5442 5484 "X86.ml" 152 5442 5509
+"X86.ml" 141 4961 5003 "X86.ml" 141 4961 5028
 type(
   Language.Stmt.t -> StackMachine.i list
 )
 ident(
   ext_ref StackMachine.Compile.stmt
 )
-"X86.ml" 152 5442 5510 "X86.ml" 152 5442 5514
+"X86.ml" 141 4961 5029 "X86.ml" 141 4961 5033
 type(
   Language.Stmt.t
 )
 ident(
-  int_ref stmt "X86.ml" 150 5397 5409 "X86.ml" 150 5397 5413
+  int_ref stmt "X86.ml" 139 4916 4928 "X86.ml" 139 4916 4932
 )
-"X86.ml" 152 5442 5484 "X86.ml" 152 5442 5514
+"X86.ml" 141 4961 5003 "X86.ml" 141 4961 5033
 call(
   stack
 )
 type(
   StackMachine.i list
 )
-"X86.ml" 152 5442 5455 "X86.ml" 152 5442 5514
+"X86.ml" 141 4961 4974 "X86.ml" 141 4961 5033
 call(
   stack
 )
@@ -3638,99 +3552,99 @@ type(
 ident(
   ext_ref Pervasives.( @@ )
 )
-"X86.ml" 153 5518 5524 "X86.ml" 153 5518 5527
+"X86.ml" 142 5037 5043 "X86.ml" 142 5037 5046
 type(
   Buffer.t
 )
 ident(
-  def asm "X86.ml" 154 5553 5555 "X86.ml" 181 6248 6269
+  def asm "X86.ml" 143 5072 5074 "X86.ml" 170 5767 5788
 )
-"X86.ml" 153 5518 5531 "X86.ml" 153 5518 5544
+"X86.ml" 142 5037 5050 "X86.ml" 142 5037 5063
 type(
   int -> Buffer.t
 )
 ident(
   ext_ref Buffer.create
 )
-"X86.ml" 153 5518 5545 "X86.ml" 153 5518 5549
+"X86.ml" 142 5037 5064 "X86.ml" 142 5037 5068
 type(
   int
 )
-"X86.ml" 153 5518 5531 "X86.ml" 153 5518 5549
+"X86.ml" 142 5037 5050 "X86.ml" 142 5037 5068
 call(
   stack
 )
 type(
   Buffer.t
 )
-"X86.ml" 154 5553 5559 "X86.ml" 154 5553 5563
+"X86.ml" 143 5072 5078 "X86.ml" 143 5072 5082
 type(
   string -> unit
 )
 ident(
-  def !! "X86.ml" 155 5595 5597 "X86.ml" 181 6248 6269
+  def !! "X86.ml" 144 5114 5116 "X86.ml" 170 5767 5788
 )
-"X86.ml" 154 5553 5564 "X86.ml" 154 5553 5565
+"X86.ml" 143 5072 5083 "X86.ml" 143 5072 5084
 type(
   string
 )
 ident(
-  def s "X86.ml" 154 5553 5568 "X86.ml" 154 5553 5591
+  def s "X86.ml" 143 5072 5087 "X86.ml" 143 5072 5110
 )
-"X86.ml" 154 5553 5568 "X86.ml" 154 5553 5585
+"X86.ml" 143 5072 5087 "X86.ml" 143 5072 5104
 type(
   Buffer.t -> string -> unit
 )
 ident(
   ext_ref Buffer.add_string
 )
-"X86.ml" 154 5553 5586 "X86.ml" 154 5553 5589
+"X86.ml" 143 5072 5105 "X86.ml" 143 5072 5108
 type(
   Buffer.t
 )
 ident(
-  int_ref asm "X86.ml" 153 5518 5524 "X86.ml" 153 5518 5527
+  int_ref asm "X86.ml" 142 5037 5043 "X86.ml" 142 5037 5046
 )
-"X86.ml" 154 5553 5590 "X86.ml" 154 5553 5591
+"X86.ml" 143 5072 5109 "X86.ml" 143 5072 5110
 type(
   string
 )
 ident(
-  int_ref s "X86.ml" 154 5553 5564 "X86.ml" 154 5553 5565
+  int_ref s "X86.ml" 143 5072 5083 "X86.ml" 143 5072 5084
 )
-"X86.ml" 154 5553 5568 "X86.ml" 154 5553 5591
+"X86.ml" 143 5072 5087 "X86.ml" 143 5072 5110
 call(
   tail
 )
 type(
   unit
 )
-"X86.ml" 154 5553 5564 "X86.ml" 154 5553 5591
+"X86.ml" 143 5072 5083 "X86.ml" 143 5072 5110
 type(
   string -> unit
 )
-"X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+"X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 type(
   string -> unit
 )
 ident(
-  def ! "X86.ml" 156 5625 5627 "X86.ml" 181 6248 6269
+  def ! "X86.ml" 145 5144 5146 "X86.ml" 170 5767 5788
 )
-"X86.ml" 155 5595 5606 "X86.ml" 155 5595 5607
+"X86.ml" 144 5114 5125 "X86.ml" 144 5114 5126
 type(
   string
 )
 ident(
-  def s "X86.ml" 155 5595 5610 "X86.ml" 155 5595 5621
+  def s "X86.ml" 144 5114 5129 "X86.ml" 144 5114 5140
 )
-"X86.ml" 155 5595 5612 "X86.ml" 155 5595 5613
+"X86.ml" 144 5114 5131 "X86.ml" 144 5114 5132
 type(
   string
 )
 ident(
-  int_ref s "X86.ml" 155 5595 5606 "X86.ml" 155 5595 5607
+  int_ref s "X86.ml" 144 5114 5125 "X86.ml" 144 5114 5126
 )
-"X86.ml" 155 5595 5610 "X86.ml" 155 5595 5613
+"X86.ml" 144 5114 5129 "X86.ml" 144 5114 5132
 call(
   stack
 )
@@ -3741,13 +3655,13 @@ type(
   string -> unit
 )
 ident(
-  int_ref !! "X86.ml" 154 5553 5559 "X86.ml" 154 5553 5563
+  int_ref !! "X86.ml" 143 5072 5078 "X86.ml" 143 5072 5082
 )
-"X86.ml" 155 5595 5617 "X86.ml" 155 5595 5621
+"X86.ml" 144 5114 5136 "X86.ml" 144 5114 5140
 type(
   string
 )
-"X86.ml" 155 5595 5615 "X86.ml" 155 5595 5621
+"X86.ml" 144 5114 5134 "X86.ml" 144 5114 5140
 call(
   tail
 )
@@ -3758,21 +3672,21 @@ type(
   string -> unit
 )
 ident(
-  int_ref !! "X86.ml" 154 5553 5559 "X86.ml" 154 5553 5563
+  int_ref !! "X86.ml" 143 5072 5078 "X86.ml" 143 5072 5082
 )
-"X86.ml" 155 5595 5610 "X86.ml" 155 5595 5621
+"X86.ml" 144 5114 5129 "X86.ml" 144 5114 5140
 type(
   unit
 )
-"X86.ml" 155 5595 5606 "X86.ml" 155 5595 5621
+"X86.ml" 144 5114 5125 "X86.ml" 144 5114 5140
 type(
   string -> unit
 )
-"X86.ml" 156 5625 5628 "X86.ml" 156 5625 5637
+"X86.ml" 145 5144 5147 "X86.ml" 145 5144 5156
 type(
   string
 )
-"X86.ml" 156 5625 5627 "X86.ml" 156 5625 5637
+"X86.ml" 145 5144 5146 "X86.ml" 145 5144 5156
 call(
   stack
 )
@@ -3783,23 +3697,23 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 157 5639 5641 "X86.ml" 157 5639 5650
+"X86.ml" 146 5158 5160 "X86.ml" 146 5158 5169
 type(
   (S.elt -> unit) -> S.elt list -> unit
 )
 ident(
   ext_ref List.iter
 )
-"X86.ml" 157 5639 5656 "X86.ml" 157 5639 5657
+"X86.ml" 146 5158 5175 "X86.ml" 146 5158 5176
 type(
   S.elt
 )
 ident(
-  def x "X86.ml" 158 5661 5667 "X86.ml" 158 5661 5730
+  def x "X86.ml" 147 5180 5186 "X86.ml" 147 5180 5249
 )
-"X86.ml" 158 5661 5669 "X86.ml" 158 5661 5683
+"X86.ml" 147 5180 5188 "X86.ml" 147 5180 5202
 type(
   (S.elt -> int -> int -> string, unit, string) format ->
   S.elt -> int -> int -> string
@@ -3807,39 +3721,39 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 158 5661 5684 "X86.ml" 158 5661 5707
+"X86.ml" 147 5180 5203 "X86.ml" 147 5180 5226
 type(
   (S.elt -> int -> int -> string, unit, string) format
 )
-"X86.ml" 158 5661 5708 "X86.ml" 158 5661 5709
+"X86.ml" 147 5180 5227 "X86.ml" 147 5180 5228
 type(
   S.elt
 )
 ident(
-  int_ref x "X86.ml" 157 5639 5656 "X86.ml" 157 5639 5657
+  int_ref x "X86.ml" 146 5158 5175 "X86.ml" 146 5158 5176
 )
-"X86.ml" 158 5661 5710 "X86.ml" 158 5661 5719
+"X86.ml" 147 5180 5229 "X86.ml" 147 5180 5238
 type(
   int
 )
 ident(
   int_ref word_size "X86.ml" 13 198 202 "X86.ml" 13 198 211
 )
-"X86.ml" 158 5661 5720 "X86.ml" 158 5661 5729
+"X86.ml" 147 5180 5239 "X86.ml" 147 5180 5248
 type(
   int
 )
 ident(
   int_ref word_size "X86.ml" 13 198 202 "X86.ml" 13 198 211
 )
-"X86.ml" 158 5661 5668 "X86.ml" 158 5661 5730
+"X86.ml" 147 5180 5187 "X86.ml" 147 5180 5249
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 158 5661 5667 "X86.ml" 158 5661 5730
+"X86.ml" 147 5180 5186 "X86.ml" 147 5180 5249
 call(
   tail
 )
@@ -3850,38 +3764,38 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 157 5639 5651 "X86.ml" 158 5661 5731
+"X86.ml" 146 5158 5170 "X86.ml" 147 5180 5250
 type(
   S.elt -> unit
 )
-"X86.ml" 159 5732 5736 "X86.ml" 159 5732 5739
+"X86.ml" 148 5251 5255 "X86.ml" 148 5251 5258
 type(
   x86env
 )
 ident(
-  int_ref env "X86.ml" 151 5416 5422 "X86.ml" 151 5416 5425
+  int_ref env "X86.ml" 140 4935 4941 "X86.ml" 140 4935 4944
 )
-"X86.ml" 159 5732 5736 "X86.ml" 159 5732 5750
+"X86.ml" 148 5251 5255 "X86.ml" 148 5251 5269
 call(
   stack
 )
 type(
   S.elt list
 )
-"X86.ml" 157 5639 5641 "X86.ml" 159 5732 5750
+"X86.ml" 146 5158 5160 "X86.ml" 148 5251 5269
 call(
   stack
 )
 type(
   unit
 )
-"X86.ml" 160 5752 5755 "X86.ml" 160 5752 5771
+"X86.ml" 149 5271 5274 "X86.ml" 149 5271 5290
 type(
   string
 )
-"X86.ml" 160 5752 5754 "X86.ml" 160 5752 5771
+"X86.ml" 149 5271 5273 "X86.ml" 149 5271 5290
 call(
   stack
 )
@@ -3892,45 +3806,45 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 161 5773 5779 "X86.ml" 161 5773 5787
+"X86.ml" 150 5292 5298 "X86.ml" 150 5292 5306
 type(
   unit -> unit
 )
 ident(
-  def prologue "X86.ml" 175 6125 6127 "X86.ml" 181 6248 6269
+  def prologue "X86.ml" 164 5644 5646 "X86.ml" 170 5767 5788
 )
-"X86.ml" 161 5773 5789 "X86.ml" 161 5773 5797
+"X86.ml" 150 5292 5308 "X86.ml" 150 5292 5316
 type(
   unit -> unit
 )
 ident(
-  def epilogue "X86.ml" 175 6125 6127 "X86.ml" 181 6248 6269
+  def epilogue "X86.ml" 164 5644 5646 "X86.ml" 170 5767 5788
 )
-"X86.ml" 161 5773 5779 "X86.ml" 161 5773 5797
+"X86.ml" 150 5292 5298 "X86.ml" 150 5292 5316
 type(
   (unit -> unit) * (unit -> unit)
 )
-"X86.ml" 162 5800 5807 "X86.ml" 162 5800 5810
+"X86.ml" 151 5319 5326 "X86.ml" 151 5319 5329
 type(
   x86env
 )
 ident(
-  int_ref env "X86.ml" 151 5416 5422 "X86.ml" 151 5416 5425
+  int_ref env "X86.ml" 140 4935 4941 "X86.ml" 140 4935 4944
 )
-"X86.ml" 162 5800 5807 "X86.ml" 162 5800 5820
+"X86.ml" 151 5319 5326 "X86.ml" 151 5319 5339
 call(
   stack
 )
 type(
   int
 )
-"X86.ml" 162 5800 5823 "X86.ml" 162 5800 5824
+"X86.ml" 151 5319 5342 "X86.ml" 151 5319 5343
 type(
   int
 )
-"X86.ml" 162 5800 5807 "X86.ml" 162 5800 5824
+"X86.ml" 151 5319 5326 "X86.ml" 151 5319 5343
 type(
   bool
 )
@@ -3940,43 +3854,43 @@ type(
 ident(
   ext_ref Pervasives.( = )
 )
-"X86.ml" 163 5825 5839 "X86.ml" 163 5825 5841
+"X86.ml" 152 5344 5358 "X86.ml" 152 5344 5360
 type(
   unit
 )
-"X86.ml" 163 5825 5845 "X86.ml" 163 5825 5847
+"X86.ml" 152 5344 5364 "X86.ml" 152 5344 5366
 type(
   unit
 )
-"X86.ml" 163 5825 5834 "X86.ml" 163 5825 5848
+"X86.ml" 152 5344 5353 "X86.ml" 152 5344 5367
 type(
   unit -> unit
 )
-"X86.ml" 163 5825 5855 "X86.ml" 163 5825 5857
+"X86.ml" 152 5344 5374 "X86.ml" 152 5344 5376
 type(
   unit
 )
-"X86.ml" 163 5825 5861 "X86.ml" 163 5825 5863
+"X86.ml" 152 5344 5380 "X86.ml" 152 5344 5382
 type(
   unit
 )
-"X86.ml" 163 5825 5850 "X86.ml" 163 5825 5864
+"X86.ml" 152 5344 5369 "X86.ml" 152 5344 5383
 type(
   unit -> unit
 )
-"X86.ml" 163 5825 5834 "X86.ml" 163 5825 5864
+"X86.ml" 152 5344 5353 "X86.ml" 152 5344 5383
 type(
   (unit -> unit) * (unit -> unit)
 )
-"X86.ml" 165 5874 5885 "X86.ml" 165 5874 5887
+"X86.ml" 154 5393 5404 "X86.ml" 154 5393 5406
 type(
   unit
 )
-"X86.ml" 166 5891 5901 "X86.ml" 166 5891 5916
+"X86.ml" 155 5410 5420 "X86.ml" 155 5410 5435
 type(
   string
 )
-"X86.ml" 166 5891 5900 "X86.ml" 166 5891 5916
+"X86.ml" 155 5410 5419 "X86.ml" 155 5410 5435
 call(
   stack
 )
@@ -3987,13 +3901,13 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 167 5918 5928 "X86.ml" 167 5918 5949
+"X86.ml" 156 5437 5447 "X86.ml" 156 5437 5468
 type(
   string
 )
-"X86.ml" 167 5918 5927 "X86.ml" 167 5918 5949
+"X86.ml" 156 5437 5446 "X86.ml" 156 5437 5468
 call(
   stack
 )
@@ -4004,59 +3918,59 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 168 5951 5962 "X86.ml" 168 5951 5976
+"X86.ml" 157 5470 5481 "X86.ml" 157 5470 5495
 type(
   (int -> string, unit, string) format -> int -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 168 5951 5977 "X86.ml" 168 5951 5998
+"X86.ml" 157 5470 5496 "X86.ml" 157 5470 5517
 type(
   (int -> string, unit, string) format
 )
-"X86.ml" 168 5951 6000 "X86.ml" 168 5951 6003
+"X86.ml" 157 5470 5519 "X86.ml" 157 5470 5522
 type(
   x86env
 )
 ident(
-  int_ref env "X86.ml" 151 5416 5422 "X86.ml" 151 5416 5425
+  int_ref env "X86.ml" 140 4935 4941 "X86.ml" 140 4935 4944
 )
-"X86.ml" 168 5951 6000 "X86.ml" 168 5951 6013
+"X86.ml" 157 5470 5519 "X86.ml" 157 5470 5532
 call(
   stack
 )
 type(
   int
 )
-"X86.ml" 168 5951 6016 "X86.ml" 168 5951 6025
+"X86.ml" 157 5470 5535 "X86.ml" 157 5470 5544
 type(
   int
 )
 ident(
   int_ref word_size "X86.ml" 13 198 202 "X86.ml" 13 198 211
 )
-"X86.ml" 168 5951 6000 "X86.ml" 168 5951 6025
+"X86.ml" 157 5470 5519 "X86.ml" 157 5470 5544
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"X86.ml" 168 5951 5999 "X86.ml" 168 5951 6026
+"X86.ml" 157 5470 5518 "X86.ml" 157 5470 5545
 type(
   int
 )
-"X86.ml" 168 5951 5961 "X86.ml" 168 5951 6027
+"X86.ml" 157 5470 5480 "X86.ml" 157 5470 5546
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 168 5951 5960 "X86.ml" 168 5951 6027
+"X86.ml" 157 5470 5479 "X86.ml" 157 5470 5546
 call(
   tail
 )
@@ -4067,28 +3981,28 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 166 5891 5900 "X86.ml" 168 5951 6027
+"X86.ml" 155 5410 5419 "X86.ml" 157 5470 5546
 type(
   unit
 )
 type(
   unit
 )
-"X86.ml" 165 5874 5880 "X86.ml" 169 6028 6035
+"X86.ml" 154 5393 5399 "X86.ml" 158 5547 5554
 type(
   unit -> unit
 )
-"X86.ml" 170 6037 6048 "X86.ml" 170 6037 6050
+"X86.ml" 159 5556 5567 "X86.ml" 159 5556 5569
 type(
   unit
 )
-"X86.ml" 171 6054 6064 "X86.ml" 171 6054 6085
+"X86.ml" 160 5573 5583 "X86.ml" 160 5573 5604
 type(
   string
 )
-"X86.ml" 171 6054 6063 "X86.ml" 171 6054 6085
+"X86.ml" 160 5573 5582 "X86.ml" 160 5573 5604
 call(
   stack
 )
@@ -4099,13 +4013,13 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 172 6087 6097 "X86.ml" 172 6087 6111
+"X86.ml" 161 5606 5616 "X86.ml" 161 5606 5630
 type(
   string
 )
-"X86.ml" 172 6087 6096 "X86.ml" 172 6087 6111
+"X86.ml" 161 5606 5615 "X86.ml" 161 5606 5630
 call(
   tail
 )
@@ -4116,29 +4030,29 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 171 6054 6063 "X86.ml" 172 6087 6111
+"X86.ml" 160 5573 5582 "X86.ml" 161 5606 5630
 type(
   unit
 )
-"X86.ml" 170 6037 6043 "X86.ml" 173 6112 6119
+"X86.ml" 159 5556 5562 "X86.ml" 162 5631 5638
 type(
   unit -> unit
 )
-"X86.ml" 165 5874 5880 "X86.ml" 173 6112 6119
+"X86.ml" 154 5393 5399 "X86.ml" 162 5631 5638
 type(
   (unit -> unit) * (unit -> unit)
 )
-"X86.ml" 162 5800 5804 "X86.ml" 173 6112 6119
+"X86.ml" 151 5319 5323 "X86.ml" 162 5631 5638
 type(
   (unit -> unit) * (unit -> unit)
 )
-"X86.ml" 175 6125 6128 "X86.ml" 175 6125 6135
+"X86.ml" 164 5644 5647 "X86.ml" 164 5644 5654
 type(
   string
 )
-"X86.ml" 175 6125 6127 "X86.ml" 175 6125 6135
+"X86.ml" 164 5644 5646 "X86.ml" 164 5644 5654
 call(
   stack
 )
@@ -4149,62 +4063,62 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 176 6137 6139 "X86.ml" 176 6137 6147
+"X86.ml" 165 5656 5658 "X86.ml" 165 5656 5666
 type(
   unit -> unit
 )
 ident(
-  int_ref prologue "X86.ml" 161 5773 5779 "X86.ml" 161 5773 5787
+  int_ref prologue "X86.ml" 150 5292 5298 "X86.ml" 150 5292 5306
 )
-"X86.ml" 176 6137 6147 "X86.ml" 176 6137 6149
+"X86.ml" 165 5656 5666 "X86.ml" 165 5656 5668
 type(
   unit
 )
-"X86.ml" 176 6137 6139 "X86.ml" 176 6137 6149
+"X86.ml" 165 5656 5658 "X86.ml" 165 5656 5668
 call(
   stack
 )
 type(
   unit
 )
-"X86.ml" 177 6151 6153 "X86.ml" 177 6151 6162
+"X86.ml" 166 5670 5672 "X86.ml" 166 5670 5681
 type(
   (x86instr -> unit) -> x86instr list -> unit
 )
 ident(
   ext_ref List.iter
 )
-"X86.ml" 177 6151 6168 "X86.ml" 177 6151 6169
+"X86.ml" 166 5670 5687 "X86.ml" 166 5670 5688
 type(
   x86instr
 )
 ident(
-  def i "X86.ml" 177 6151 6173 "X86.ml" 177 6151 6188
+  def i "X86.ml" 166 5670 5692 "X86.ml" 166 5670 5707
 )
-"X86.ml" 177 6151 6175 "X86.ml" 177 6151 6185
+"X86.ml" 166 5670 5694 "X86.ml" 166 5670 5704
 type(
   x86instr -> string
 )
 ident(
-  int_ref Show.instr "X86.ml" 74 1518 1526 "X86.ml" 74 1518 1531
+  int_ref Show.instr "X86.ml" 68 1439 1447 "X86.ml" 68 1439 1452
 )
-"X86.ml" 177 6151 6186 "X86.ml" 177 6151 6187
+"X86.ml" 166 5670 5705 "X86.ml" 166 5670 5706
 type(
   x86instr
 )
 ident(
-  int_ref i "X86.ml" 177 6151 6168 "X86.ml" 177 6151 6169
+  int_ref i "X86.ml" 166 5670 5687 "X86.ml" 166 5670 5688
 )
-"X86.ml" 177 6151 6174 "X86.ml" 177 6151 6188
+"X86.ml" 166 5670 5693 "X86.ml" 166 5670 5707
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 177 6151 6173 "X86.ml" 177 6151 6188
+"X86.ml" 166 5670 5692 "X86.ml" 166 5670 5707
 call(
   tail
 )
@@ -4215,49 +4129,49 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 177 6151 6163 "X86.ml" 177 6151 6189
+"X86.ml" 166 5670 5682 "X86.ml" 166 5670 5708
 type(
   x86instr -> unit
 )
-"X86.ml" 177 6151 6190 "X86.ml" 177 6151 6194
+"X86.ml" 166 5670 5709 "X86.ml" 166 5670 5713
 type(
   x86instr list
 )
 ident(
-  int_ref code "X86.ml" 152 5442 5448 "X86.ml" 152 5442 5452
+  int_ref code "X86.ml" 141 4961 4967 "X86.ml" 141 4961 4971
 )
-"X86.ml" 177 6151 6153 "X86.ml" 177 6151 6194
+"X86.ml" 166 5670 5672 "X86.ml" 166 5670 5713
 call(
   stack
 )
 type(
   unit
 )
-"X86.ml" 178 6196 6198 "X86.ml" 178 6196 6206
+"X86.ml" 167 5715 5717 "X86.ml" 167 5715 5725
 type(
   unit -> unit
 )
 ident(
-  int_ref epilogue "X86.ml" 161 5773 5789 "X86.ml" 161 5773 5797
+  int_ref epilogue "X86.ml" 150 5292 5308 "X86.ml" 150 5292 5316
 )
-"X86.ml" 178 6196 6206 "X86.ml" 178 6196 6208
+"X86.ml" 167 5715 5725 "X86.ml" 167 5715 5727
 type(
   unit
 )
-"X86.ml" 178 6196 6198 "X86.ml" 178 6196 6208
+"X86.ml" 167 5715 5717 "X86.ml" 167 5715 5727
 call(
   stack
 )
 type(
   unit
 )
-"X86.ml" 179 6210 6213 "X86.ml" 179 6210 6234
+"X86.ml" 168 5729 5732 "X86.ml" 168 5729 5753
 type(
   string
 )
-"X86.ml" 179 6210 6212 "X86.ml" 179 6210 6234
+"X86.ml" 168 5729 5731 "X86.ml" 168 5729 5753
 call(
   stack
 )
@@ -4268,13 +4182,13 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 180 6236 6239 "X86.ml" 180 6236 6246
+"X86.ml" 169 5755 5758 "X86.ml" 169 5755 5765
 type(
   string
 )
-"X86.ml" 180 6236 6238 "X86.ml" 180 6236 6246
+"X86.ml" 169 5755 5757 "X86.ml" 169 5755 5765
 call(
   stack
 )
@@ -4285,30 +4199,30 @@ type(
   string -> unit
 )
 ident(
-  int_ref ! "X86.ml" 155 5595 5601 "X86.ml" 155 5595 5604
+  int_ref ! "X86.ml" 144 5114 5120 "X86.ml" 144 5114 5123
 )
-"X86.ml" 181 6248 6250 "X86.ml" 181 6248 6265
+"X86.ml" 170 5767 5769 "X86.ml" 170 5767 5784
 type(
   Buffer.t -> string
 )
 ident(
   ext_ref Buffer.contents
 )
-"X86.ml" 181 6248 6266 "X86.ml" 181 6248 6269
+"X86.ml" 170 5767 5785 "X86.ml" 170 5767 5788
 type(
   Buffer.t
 )
 ident(
-  int_ref asm "X86.ml" 153 5518 5524 "X86.ml" 153 5518 5527
+  int_ref asm "X86.ml" 142 5037 5043 "X86.ml" 142 5037 5046
 )
-"X86.ml" 181 6248 6250 "X86.ml" 181 6248 6269
+"X86.ml" 170 5767 5769 "X86.ml" 170 5767 5788
 call(
   tail
 )
 type(
   string
 )
-"X86.ml" 175 6125 6127 "X86.ml" 181 6248 6269
+"X86.ml" 164 5644 5646 "X86.ml" 170 5767 5788
 type(
   string
 )
@@ -4327,11 +4241,11 @@ type(
 type(
   string
 )
-"X86.ml" 161 5773 5775 "X86.ml" 181 6248 6269
+"X86.ml" 150 5292 5294 "X86.ml" 170 5767 5788
 type(
   string
 )
-"X86.ml" 156 5625 5627 "X86.ml" 181 6248 6269
+"X86.ml" 145 5144 5146 "X86.ml" 170 5767 5788
 type(
   string
 )
@@ -4341,179 +4255,179 @@ type(
 type(
   string
 )
-"X86.ml" 155 5595 5597 "X86.ml" 181 6248 6269
+"X86.ml" 144 5114 5116 "X86.ml" 170 5767 5788
 type(
   string
 )
-"X86.ml" 154 5553 5555 "X86.ml" 181 6248 6269
+"X86.ml" 143 5072 5074 "X86.ml" 170 5767 5788
 type(
   string
 )
-"X86.ml" 153 5518 5520 "X86.ml" 181 6248 6269
+"X86.ml" 142 5037 5039 "X86.ml" 170 5767 5788
 type(
   string
 )
-"X86.ml" 152 5442 5444 "X86.ml" 181 6248 6269
+"X86.ml" 141 4961 4963 "X86.ml" 170 5767 5788
 type(
   string
 )
-"X86.ml" 151 5416 5418 "X86.ml" 181 6248 6269
+"X86.ml" 140 4935 4937 "X86.ml" 170 5767 5788
 type(
   string
 )
-"X86.ml" 150 5397 5409 "X86.ml" 181 6248 6269
+"X86.ml" 139 4916 4928 "X86.ml" 170 5767 5788
 type(
   Language.Stmt.t -> string
 )
-"X86.ml" 183 6271 6275 "X86.ml" 183 6271 6280
+"X86.ml" 172 5790 5794 "X86.ml" 172 5790 5799
 type(
   Language.Stmt.t -> string -> unit
 )
 ident(
-  def build "X86.ml" 187 6408 6500 "X86.ml" 1 0 -1
+  def build "X86.ml" 176 5927 6019 "X86.ml" 1 0 -1
 )
-"X86.ml" 183 6271 6281 "X86.ml" 183 6271 6285
+"X86.ml" 172 5790 5800 "X86.ml" 172 5790 5804
 type(
   Language.Stmt.t
 )
 ident(
-  def stmt "X86.ml" 183 6271 6286 "X86.ml" 187 6408 6500
+  def stmt "X86.ml" 172 5790 5805 "X86.ml" 176 5927 6019
 )
-"X86.ml" 183 6271 6286 "X86.ml" 183 6271 6290
+"X86.ml" 172 5790 5805 "X86.ml" 172 5790 5809
 type(
   string
 )
 ident(
-  def name "X86.ml" 184 6293 6295 "X86.ml" 187 6408 6500
+  def name "X86.ml" 173 5812 5814 "X86.ml" 176 5927 6019
 )
-"X86.ml" 184 6293 6299 "X86.ml" 184 6293 6303
+"X86.ml" 173 5812 5818 "X86.ml" 173 5812 5822
 type(
   out_channel
 )
 ident(
-  def outf "X86.ml" 185 6347 6349 "X86.ml" 187 6408 6500
+  def outf "X86.ml" 174 5866 5868 "X86.ml" 176 5927 6019
 )
-"X86.ml" 184 6293 6306 "X86.ml" 184 6293 6314
+"X86.ml" 173 5812 5825 "X86.ml" 173 5812 5833
 type(
   string -> out_channel
 )
 ident(
   ext_ref Pervasives.open_out
 )
-"X86.ml" 184 6293 6316 "X86.ml" 184 6293 6330
+"X86.ml" 173 5812 5835 "X86.ml" 173 5812 5849
 type(
   (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 184 6293 6331 "X86.ml" 184 6293 6337
+"X86.ml" 173 5812 5850 "X86.ml" 173 5812 5856
 type(
   (string -> string, unit, string) format
 )
-"X86.ml" 184 6293 6338 "X86.ml" 184 6293 6342
+"X86.ml" 173 5812 5857 "X86.ml" 173 5812 5861
 type(
   string
 )
 ident(
-  int_ref name "X86.ml" 183 6271 6286 "X86.ml" 183 6271 6290
+  int_ref name "X86.ml" 172 5790 5805 "X86.ml" 172 5790 5809
 )
-"X86.ml" 184 6293 6315 "X86.ml" 184 6293 6343
+"X86.ml" 173 5812 5834 "X86.ml" 173 5812 5862
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 184 6293 6306 "X86.ml" 184 6293 6343
+"X86.ml" 173 5812 5825 "X86.ml" 173 5812 5862
 call(
   stack
 )
 type(
   out_channel
 )
-"X86.ml" 185 6347 6349 "X86.ml" 185 6347 6363
+"X86.ml" 174 5866 5868 "X86.ml" 174 5866 5882
 type(
   out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
 )
 ident(
   ext_ref Printf.fprintf
 )
-"X86.ml" 185 6347 6364 "X86.ml" 185 6347 6368
+"X86.ml" 174 5866 5883 "X86.ml" 174 5866 5887
 type(
   out_channel
 )
 ident(
-  int_ref outf "X86.ml" 184 6293 6299 "X86.ml" 184 6293 6303
+  int_ref outf "X86.ml" 173 5812 5818 "X86.ml" 173 5812 5822
 )
-"X86.ml" 185 6347 6369 "X86.ml" 185 6347 6373
+"X86.ml" 174 5866 5888 "X86.ml" 174 5866 5892
 type(
   (string -> unit, out_channel, unit) format
 )
-"X86.ml" 185 6347 6375 "X86.ml" 185 6347 6382
+"X86.ml" 174 5866 5894 "X86.ml" 174 5866 5901
 type(
   Language.Stmt.t -> string
 )
 ident(
-  int_ref compile "X86.ml" 150 5397 5401 "X86.ml" 150 5397 5408
+  int_ref compile "X86.ml" 139 4916 4920 "X86.ml" 139 4916 4927
 )
-"X86.ml" 185 6347 6383 "X86.ml" 185 6347 6387
+"X86.ml" 174 5866 5902 "X86.ml" 174 5866 5906
 type(
   Language.Stmt.t
 )
 ident(
-  int_ref stmt "X86.ml" 183 6271 6281 "X86.ml" 183 6271 6285
+  int_ref stmt "X86.ml" 172 5790 5800 "X86.ml" 172 5790 5804
 )
-"X86.ml" 185 6347 6374 "X86.ml" 185 6347 6388
+"X86.ml" 174 5866 5893 "X86.ml" 174 5866 5907
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 185 6347 6349 "X86.ml" 185 6347 6388
+"X86.ml" 174 5866 5868 "X86.ml" 174 5866 5907
 call(
   stack
 )
 type(
   unit
 )
-"X86.ml" 186 6390 6392 "X86.ml" 186 6390 6401
+"X86.ml" 175 5909 5911 "X86.ml" 175 5909 5920
 type(
   out_channel -> unit
 )
 ident(
   ext_ref Pervasives.close_out
 )
-"X86.ml" 186 6390 6402 "X86.ml" 186 6390 6406
+"X86.ml" 175 5909 5921 "X86.ml" 175 5909 5925
 type(
   out_channel
 )
 ident(
-  int_ref outf "X86.ml" 184 6293 6299 "X86.ml" 184 6293 6303
+  int_ref outf "X86.ml" 173 5812 5818 "X86.ml" 173 5812 5822
 )
-"X86.ml" 186 6390 6392 "X86.ml" 186 6390 6406
+"X86.ml" 175 5909 5911 "X86.ml" 175 5909 5925
 call(
   stack
 )
 type(
   unit
 )
-"X86.ml" 187 6408 6410 "X86.ml" 187 6408 6416
+"X86.ml" 176 5927 5929 "X86.ml" 176 5927 5935
 type(
   int -> unit
 )
 ident(
   ext_ref Pervasives.ignore
 )
-"X86.ml" 187 6408 6418 "X86.ml" 187 6408 6429
+"X86.ml" 176 5927 5937 "X86.ml" 176 5927 5948
 type(
   string -> int
 )
 ident(
   ext_ref Sys.command
 )
-"X86.ml" 187 6408 6431 "X86.ml" 187 6408 6445
+"X86.ml" 176 5927 5950 "X86.ml" 176 5927 5964
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -4521,55 +4435,55 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"X86.ml" 187 6408 6446 "X86.ml" 187 6408 6488
+"X86.ml" 176 5927 5965 "X86.ml" 176 5927 6007
 type(
   (string -> string -> string, unit, string) format
 )
-"X86.ml" 187 6408 6489 "X86.ml" 187 6408 6493
+"X86.ml" 176 5927 6008 "X86.ml" 176 5927 6012
 type(
   string
 )
 ident(
-  int_ref name "X86.ml" 183 6271 6286 "X86.ml" 183 6271 6290
+  int_ref name "X86.ml" 172 5790 5805 "X86.ml" 172 5790 5809
 )
-"X86.ml" 187 6408 6494 "X86.ml" 187 6408 6498
+"X86.ml" 176 5927 6013 "X86.ml" 176 5927 6017
 type(
   string
 )
 ident(
-  int_ref name "X86.ml" 183 6271 6286 "X86.ml" 183 6271 6290
+  int_ref name "X86.ml" 172 5790 5805 "X86.ml" 172 5790 5809
 )
-"X86.ml" 187 6408 6430 "X86.ml" 187 6408 6499
+"X86.ml" 176 5927 5949 "X86.ml" 176 5927 6018
 call(
   stack
 )
 type(
   string
 )
-"X86.ml" 187 6408 6417 "X86.ml" 187 6408 6500
+"X86.ml" 176 5927 5936 "X86.ml" 176 5927 6019
 type(
   int
 )
-"X86.ml" 187 6408 6410 "X86.ml" 187 6408 6500
+"X86.ml" 176 5927 5929 "X86.ml" 176 5927 6019
 type(
   unit
 )
-"X86.ml" 185 6347 6349 "X86.ml" 187 6408 6500
+"X86.ml" 174 5866 5868 "X86.ml" 176 5927 6019
 type(
   unit
 )
 type(
   unit
 )
-"X86.ml" 184 6293 6295 "X86.ml" 187 6408 6500
+"X86.ml" 173 5812 5814 "X86.ml" 176 5927 6019
 type(
   unit
 )
-"X86.ml" 183 6271 6286 "X86.ml" 187 6408 6500
+"X86.ml" 172 5790 5805 "X86.ml" 176 5927 6019
 type(
   string -> unit
 )
-"X86.ml" 183 6271 6281 "X86.ml" 187 6408 6500
+"X86.ml" 172 5790 5800 "X86.ml" 176 5927 6019
 type(
   Language.Stmt.t -> string -> unit
 )

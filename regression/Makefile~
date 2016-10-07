@@ -1,5 +1,9 @@
-#TESTS=$(basename $(wildcard test*.expr))
-TESTS=test001 test002 test003 test004 test005 test006 test007 test008
+<<<<<<< HEAD
+TESTS=test001 test002 test003 test004 test005
+=======
+TESTS=$(basename $(wildcard test*.expr))
+
+>>>>>>> bcbdf62124f3e45cf8095bf075ffe202a0976a2e
 
 .PHONY: check $(TESTS)
 

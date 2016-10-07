@@ -27,13 +27,7 @@ type x86instr =
 | X86Mod   of opnd
 | X86And   of opnd * opnd
 | X86Or    of opnd * opnd
-| X86Setl                        
-| X86Setle
-| X86Setg 
-| X86Setge
-| X86Sete 
-| X86Setne
-| X86Setnz
+| X86Set   of string
 | X86Mov   of opnd * opnd
 | X86Push  of opnd
 | X86Pop   of opnd
@@ -80,20 +74,14 @@ module Show =
     | X86Mod   s       -> Printf.sprintf "\tidivl\t%s"      (opnd s)
     | X86And  (s1, s2) -> Printf.sprintf "\tandl\t%s,\t%s"  (opnd s1) (opnd s2)
     | X86Or   (s1, s2) -> Printf.sprintf "\torl\t%s,\t%s"   (opnd s1) (opnd s2)
-    | X86Setl          -> Printf.sprintf "\tsetl\t%%al"
-    | X86Setle         -> Printf.sprintf "\tsetle\t%%al"                                            
-    | X86Setg          -> Printf.sprintf "\tsetg\t%%al"       
-    | X86Setge         -> Printf.sprintf "\tsetge\t%%al"                                            
-    | X86Sete          -> Printf.sprintf "\tsete\t%%al"       
-    | X86Setne         -> Printf.sprintf "\tsetne\t%%al"
-    | X86Setnz         -> Printf.sprintf "\tsetnz\t%%al"
+    | X86Set   p       -> Printf.sprintf "\tset%s\t%%al"     p
     | X86Mov  (s1, s2) -> Printf.sprintf "\tmovl\t%s,\t%s"  (opnd s1) (opnd s2)
     | X86Push  s       -> Printf.sprintf "\tpushl\t%s"      (opnd s )
     | X86Pop   s       -> Printf.sprintf "\tpopl\t%s"       (opnd s )
     | X86Cmp  (s1, s2) -> Printf.sprintf "\tcmpl\t%s,\t%s"  (opnd s1) (opnd s2)                                         
     | X86Cltd          -> Printf.sprintf "\tcltd"                                         
     | X86Ret           -> "\tret"
-    | X86Call  p       -> Printf.sprintf "\tcall\t%s" p
+    | X86Call  p       -> Printf.sprintf "\tcall\t%s"        p
                                          
   end
 
@@ -131,14 +119,15 @@ module Compile =
                       | "*"  -> [X86Mul   (ebx, eax); X86Mov (eax, y)]                                         
                       | "/"  -> [X86Cltd; X86Div ebx; X86Mov (eax, y)]
                       | "%"  -> [X86Cltd; X86Div ebx; X86Mov (edx, y)]
-                      | "&&" -> [X86And   (ebx, eax); X86Mov (L 0, eax); X86Setnz;  X86Mov (eax, y)]
-                      | "!!" -> [X86Or    (ebx, eax); X86Mov (L 0, eax); X86Setnz;  X86Mov (eax, y)]
-                      | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setl;  X86Mov (eax, y)]
-                      | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setle; X86Mov (eax, y)]
-                      | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setg;  X86Mov (eax, y)]
-                      | ">=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setge; X86Mov (eax, y)]
-                      | "!=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Setne; X86Mov (eax, y)]
-                      | "==" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Sete;  X86Mov (eax, y)]
+
+                      | "&&" -> [X86And   (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                      | "!!" -> [X86Or    (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                      | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "l";  X86Mov (eax, y)]
+                      | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "le"; X86Mov (eax, y)]
+                      | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "g";  X86Mov (eax, y)]
+                      | ">=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ge"; X86Mov (eax, y)]
+                      | "!=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ne"; X86Mov (eax, y)]
+                      | "==" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "e";  X86Mov (eax, y)]
                       | _ -> failwith "x86op")
 	    in
 	    x86code @ compile stack' code'
