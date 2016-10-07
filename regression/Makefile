@@ -1,4 +1,4 @@
-TESTS=test001 test002 test003 test004 test005
+TESTS=$(basename $(wildcard test*.expr))
 
 .PHONY: check $(TESTS)
 
