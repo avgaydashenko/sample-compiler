@@ -8,7 +8,7 @@ let x86regs = [|
   "%esi"; 
   "%edi"
 |]
-
+                
 let num_of_regs = Array.length x86regs
 let word_size = 4
 
@@ -27,18 +27,14 @@ type x86instr =
 | X86Mod   of opnd
 | X86And   of opnd * opnd
 | X86Or    of opnd * opnd
-| X86Setl  of opnd                       
-| X86Setle of opnd
-| X86Setg  of opnd
-| X86Setge of opnd
-| X86Sete  of opnd
-| X86Setne of opnd
+| X86Set   of string
 | X86Mov   of opnd * opnd
 | X86Push  of opnd
 | X86Pop   of opnd
 | X86Ret
 | X86Call  of string
-| X86Cltd                
+| X86Cltd
+| X86Cmp   of opnd * opnd
 
 module S = Set.Make (String)
 
@@ -49,7 +45,7 @@ class x86env =
     method local_vars = S.elements !local_vars
 
     val    allocated  = ref 0
-    method allocate n = allocated := max n !allocated
+    method allocate n = allocated := max (n+1) !allocated
     method allocated  = !allocated
   end
 
@@ -78,18 +74,14 @@ module Show =
     | X86Mod   s       -> Printf.sprintf "\tidivl\t%s"      (opnd s)
     | X86And  (s1, s2) -> Printf.sprintf "\tandl\t%s,\t%s"  (opnd s1) (opnd s2)
     | X86Or   (s1, s2) -> Printf.sprintf "\torl\t%s,\t%s"   (opnd s1) (opnd s2)
-    | X86Setl  s       -> Printf.sprintf "\tsetl\t%s"       (opnd s)
-    | X86Setle s       -> Printf.sprintf "\tsetle\t%s"      (opnd s)                                      
-    | X86Setg  s       -> Printf.sprintf "\tsetg\t%s"       (opnd s)
-    | X86Setge s       -> Printf.sprintf "\tsetge\t%s"      (opnd s)                                      
-    | X86Sete  s       -> Printf.sprintf "\tsetn\t%s"       (opnd s)
-    | X86Setne s       -> Printf.sprintf "\tsetne\t%s"      (opnd s)                                      
+    | X86Set   p       -> Printf.sprintf "\tset%s\t%%al"     p
     | X86Mov  (s1, s2) -> Printf.sprintf "\tmovl\t%s,\t%s"  (opnd s1) (opnd s2)
     | X86Push  s       -> Printf.sprintf "\tpushl\t%s"      (opnd s )
     | X86Pop   s       -> Printf.sprintf "\tpopl\t%s"       (opnd s )
+    | X86Cmp  (s1, s2) -> Printf.sprintf "\tcmpl\t%s,\t%s"  (opnd s1) (opnd s2)                                         
     | X86Cltd          -> Printf.sprintf "\tcltd"                                         
     | X86Ret           -> "\tret"
-    | X86Call  p       -> Printf.sprintf "\tcall\t%s" p
+    | X86Call  p       -> Printf.sprintf "\tcall\t%s"        p
                                          
   end
 
@@ -122,23 +114,21 @@ module Compile =
     		  let x::y::stack' = stack in
                   (y::stack', [X86Mov (y, eax); X86Mov (x, ebx)] @
                       match op with
-                      | "+" -> [X86Add (ebx, eax); X86Mov (eax, y)]
-                      | "-" -> [X86Sub (ebx, eax); X86Mov (eax, y)]
-                      | "*" -> [X86Mul (ebx, eax); X86Mov (eax, y)]                                         
-                      | "/" -> [X86Cltd; X86Div ebx; X86Mov (eax, y)]
-                      | "%" -> [X86Cltd; X86Div ebx; X86Mov (edx, y)]                                         
+                      | "+"  -> [X86Add   (ebx, eax); X86Mov (eax, y)]
+                      | "-"  -> [X86Sub   (ebx, eax); X86Mov (eax, y)]
+                      | "*"  -> [X86Mul   (ebx, eax); X86Mov (eax, y)]                                         
+                      | "/"  -> [X86Cltd; X86Div ebx; X86Mov (eax, y)]
+                      | "%"  -> [X86Cltd; X86Div ebx; X86Mov (edx, y)]
 
+                      | "&&" -> [X86And   (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                      | "!!" -> [X86Or    (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                      | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "l";  X86Mov (eax, y)]
+                      | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "le"; X86Mov (eax, y)]
+                      | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "g";  X86Mov (eax, y)]
+                      | ">=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ge"; X86Mov (eax, y)]
+                      | "!=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ne"; X86Mov (eax, y)]
+                      | "==" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "e";  X86Mov (eax, y)]
                       | _ -> failwith "x86op")
-(*                 
-              | S_BINOP "<" ->
-              | S_BINOP "<=" ->
-              | S_BINOP ">" ->
-              | S_BINOP ">=" ->
-              | S_BINOP "==" ->
-              | S_BINOP "!=" ->
-              | S_BINOP "&&" ->
-              | S_BINOP "!!" ->
- *)
 	    in
 	    x86code @ compile stack' code'
       in

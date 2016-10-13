@@ -122,12 +122,12 @@ module Compile =
 
                       | "&&" -> [X86And   (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
                       | "!!" -> [X86Or    (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
-                      | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "l";  X86Mov (eax, y)]
+                      | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "l"; X86Mov (eax, y)]
                       | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "le"; X86Mov (eax, y)]
-                      | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "g";  X86Mov (eax, y)]
+                      | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "g"; X86Mov (eax, y)]
                       | ">=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ge"; X86Mov (eax, y)]
                       | "!=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ne"; X86Mov (eax, y)]
-                      | "==" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "e";  X86Mov (eax, y)]
+                      | "==" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "e"; X86Mov (eax, y)]
                       | _ -> failwith "x86op")
 	    in
 	    x86code @ compile stack' code'
@@ -173,4 +173,4 @@ let build stmt name =
   let outf = open_out (Printf.sprintf "%s.s" name) in
   Printf.fprintf outf "%s" (compile stmt);
   close_out outf;
-  ignore (Sys.command (Printf.sprintf "gcc -m32 -o %s ../../runtime/runtime.o %s.s" name name))
+  ignore (Sys.command (Printf.sprintf "gcc -m32 -o %s $RC_RUNTIME/runtime.o %s.s" name name))

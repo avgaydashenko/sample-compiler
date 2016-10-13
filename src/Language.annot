@@ -1,11 +1,11 @@
-"Language.ml" 14 160 168 "Language.ml" 14 160 170
+"Language.ml" 15 161 169 "Language.ml" 15 161 171
 type(
   t
 )
 ident(
-  def l "Language.ml" 14 160 168 "Language.ml" 16 284 293
+  def l "Language.ml" 15 161 169 "Language.ml" 17 274 283
 )
-"Language.ml" 14 160 170 "Language.ml" 14 160 175
+"Language.ml" 15 161 171 "Language.ml" 15 161 175
 type(
   (< getDECIMAL : ('a, int, < add : 'b -> 'b; .. > as 'b) Ostap.Types.result;
      getIDENT : ('a, string, 'b) Ostap.Types.result;
@@ -15,16 +15,16 @@ type(
   Ostap.Types.parse
 )
 ident(
-  int_ref compi "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref andi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 14 160 176 "Language.ml" 14 160 180
+"Language.ml" 15 161 176 "Language.ml" 15 161 180
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def suf "Language.ml" 15 205 216 "Language.ml" 15 205 283
+  def suf "Language.ml" 16 195 206 "Language.ml" 16 195 273
 )
-"Language.ml" 14 160 182 "Language.ml" 14 160 186
+"Language.ml" 15 161 181 "Language.ml" 15 161 185
 call(
   tail
 )
@@ -44,65 +44,22 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 14 160 182 "Language.ml" 14 160 186
+  int_ref _ostap_stream "Language.ml" 15 161 181 "Language.ml" 15 161 185
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 14 160 182 "Language.ml" 14 160 186
+  def _ostap_stream "Language.ml" 15 161 181 "Language.ml" 15 161 185
 )
-"Language.ml" 14 160 189 "Language.ml" 14 160 193
-call(
-  tail
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  string
-)
-type(
-  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  'a
-)
-ident(
-  int_ref _ostap_stream "Language.ml" 14 160 189 "Language.ml" 14 160 193
-)
-type(
-  'a
-)
-ident(
-  def _ostap_stream "Language.ml" 14 160 189 "Language.ml" 14 160 193
-)
-"Language.ml" 14 160 182 "Language.ml" 14 160 193
-call(
-  stack
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-ident(
-  ext_ref Ostap.Combinators.alt
-)
-"Language.ml" 14 160 195 "Language.ml" 14 160 200
+"Language.ml" 15 161 186 "Language.ml" 15 161 190
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref compi "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref andi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 14 160 181 "Language.ml" 14 160 200
+"Language.ml" 15 161 181 "Language.ml" 15 161 190
 call(
   stack
 )
@@ -129,19 +86,19 @@ type(
   t
 )
 ident(
-  int_ref _0 "Language.ml" 14 160 181 "Language.ml" 14 160 200
+  int_ref _0 "Language.ml" 15 161 181 "Language.ml" 15 161 190
 )
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref _1 "Language.ml" 14 160 181 "Language.ml" 14 160 200
+  int_ref _1 "Language.ml" 15 161 181 "Language.ml" 15 161 190
 )
 type(
   t
 )
 ident(
-  def _0 "Language.ml" 14 160 181 "Language.ml" 14 160 200
+  def _0 "Language.ml" 15 161 181 "Language.ml" 15 161 190
 )
 type(
   t
@@ -158,7 +115,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _1 "Language.ml" 14 160 181 "Language.ml" 14 160 200
+  def _1 "Language.ml" 15 161 181 "Language.ml" 15 161 190
 )
 type(
   Ostap.Matcher.Token.t
@@ -172,7 +129,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 14 160 180 "Language.ml" 14 160 202
+"Language.ml" 15 161 180 "Language.ml" 15 161 192
 call(
   stack
 )
@@ -186,7 +143,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.many
 )
-"Language.ml" 15 205 216 "Language.ml" 15 205 230
+"Language.ml" 16 195 206 "Language.ml" 16 195 220
 type(
   (t -> Ostap.Matcher.Token.t * t -> t) ->
   t -> (Ostap.Matcher.Token.t * t) list -> t
@@ -194,100 +151,100 @@ type(
 ident(
   ext_ref List.fold_left
 )
-"Language.ml" 15 205 236 "Language.ml" 15 205 237
+"Language.ml" 16 195 226 "Language.ml" 16 195 227
 type(
   t
 )
 ident(
-  def l "Language.ml" 15 205 238 "Language.ml" 15 205 276
+  def l "Language.ml" 16 195 228 "Language.ml" 16 195 266
 )
-"Language.ml" 15 205 239 "Language.ml" 15 205 241
+"Language.ml" 16 195 229 "Language.ml" 16 195 231
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def op "Language.ml" 15 205 249 "Language.ml" 15 205 276
+  def op "Language.ml" 16 195 239 "Language.ml" 16 195 266
 )
-"Language.ml" 15 205 243 "Language.ml" 15 205 244
+"Language.ml" 16 195 233 "Language.ml" 16 195 234
 type(
   t
 )
 ident(
-  def r "Language.ml" 15 205 249 "Language.ml" 15 205 276
+  def r "Language.ml" 16 195 239 "Language.ml" 16 195 266
 )
-"Language.ml" 15 205 239 "Language.ml" 15 205 244
+"Language.ml" 16 195 229 "Language.ml" 16 195 234
 type(
   Ostap.Matcher.Token.t * t
 )
-"Language.ml" 15 205 256 "Language.ml" 15 205 266
+"Language.ml" 16 195 246 "Language.ml" 16 195 256
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
   ext_ref Ostap.Matcher.Token.repr
 )
-"Language.ml" 15 205 267 "Language.ml" 15 205 269
+"Language.ml" 16 195 257 "Language.ml" 16 195 259
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref op "Language.ml" 15 205 239 "Language.ml" 15 205 241
+  int_ref op "Language.ml" 16 195 229 "Language.ml" 16 195 231
 )
-"Language.ml" 15 205 256 "Language.ml" 15 205 269
+"Language.ml" 16 195 246 "Language.ml" 16 195 259
 call(
   stack
 )
 type(
   string
 )
-"Language.ml" 15 205 271 "Language.ml" 15 205 272
+"Language.ml" 16 195 261 "Language.ml" 16 195 262
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 15 205 236 "Language.ml" 15 205 237
+  int_ref l "Language.ml" 16 195 226 "Language.ml" 16 195 227
 )
-"Language.ml" 15 205 274 "Language.ml" 15 205 275
+"Language.ml" 16 195 264 "Language.ml" 16 195 265
 type(
   t
 )
 ident(
-  int_ref r "Language.ml" 15 205 243 "Language.ml" 15 205 244
+  int_ref r "Language.ml" 16 195 233 "Language.ml" 16 195 234
 )
-"Language.ml" 15 205 249 "Language.ml" 15 205 276
+"Language.ml" 16 195 239 "Language.ml" 16 195 266
 type(
   t
 )
-"Language.ml" 15 205 238 "Language.ml" 15 205 276
+"Language.ml" 16 195 228 "Language.ml" 16 195 266
 type(
   Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 15 205 231 "Language.ml" 15 205 277
+"Language.ml" 16 195 221 "Language.ml" 16 195 267
 type(
   t -> Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 15 205 278 "Language.ml" 15 205 279
+"Language.ml" 16 195 268 "Language.ml" 16 195 269
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 14 160 168 "Language.ml" 14 160 170
+  int_ref l "Language.ml" 15 161 169 "Language.ml" 15 161 171
 )
-"Language.ml" 15 205 280 "Language.ml" 15 205 283
+"Language.ml" 16 195 270 "Language.ml" 16 195 273
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  int_ref suf "Language.ml" 14 160 176 "Language.ml" 14 160 180
+  int_ref suf "Language.ml" 15 161 176 "Language.ml" 15 161 180
 )
-"Language.ml" 15 205 216 "Language.ml" 15 205 283
+"Language.ml" 16 195 206 "Language.ml" 16 195 273
 call(
   tail
 )
 type(
   t
 )
-"Language.ml" 14 160 168 "Language.ml" 16 284 293
+"Language.ml" 15 161 169 "Language.ml" 17 274 283
 call(
   stack
 )
@@ -310,7 +267,7 @@ type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def _0 "Language.ml" 15 205 216 "Language.ml" 15 205 283
+  def _0 "Language.ml" 16 195 206 "Language.ml" 16 195 273
 )
 type(
   ((Ostap.Matcher.Token.t * t) list -> t) ->
@@ -324,7 +281,7 @@ type(
   t
 )
 ident(
-  def _1 "Language.ml" 14 160 168 "Language.ml" 16 284 293
+  def _1 "Language.ml" 15 161 169 "Language.ml" 17 274 283
 )
 type(
   ('a, t, 'b) Ostap.Types.parse ->
@@ -333,14 +290,14 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 17 294 302 "Language.ml" 17 294 307
+"Language.ml" 18 284 292 "Language.ml" 18 284 296
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref compi "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref andi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 14 160 168 "Language.ml" 17 294 307
+"Language.ml" 15 161 169 "Language.ml" 18 284 296
 type(
   ('a, t, 'b) Ostap.Types.parse ->
   ('a, t, 'b) Ostap.Types.parse -> ('a, t, 'b) Ostap.Types.parse
@@ -348,7 +305,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"Language.ml" 13 147 153 "Language.ml" 17 294 307
+"Language.ml" 14 148 154 "Language.ml" 18 284 296
 call(
   tail
 )
@@ -362,36 +319,36 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 13 147 153 "Language.ml" 17 294 307
+  int_ref _ostap_stream "Language.ml" 14 148 154 "Language.ml" 18 284 296
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 13 147 153 "Language.ml" 17 294 307
+  def _ostap_stream "Language.ml" 14 148 154 "Language.ml" 18 284 296
 )
-"Language.ml" 20 323 331 "Language.ml" 20 323 333
+"Language.ml" 21 311 319 "Language.ml" 21 311 321
 type(
   t
 )
 ident(
-  def l "Language.ml" 20 323 331 "Language.ml" 22 471 480
+  def l "Language.ml" 21 311 319 "Language.ml" 23 426 435
 )
-"Language.ml" 20 323 333 "Language.ml" 20 323 337
+"Language.ml" 21 311 321 "Language.ml" 21 311 326
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref addi "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref compi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 20 323 338 "Language.ml" 20 323 342
+"Language.ml" 21 311 327 "Language.ml" 21 311 331
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def suf "Language.ml" 21 392 403 "Language.ml" 21 392 470
+  def suf "Language.ml" 22 347 358 "Language.ml" 22 347 425
 )
-"Language.ml" 20 323 344 "Language.ml" 20 323 348
+"Language.ml" 21 311 332 "Language.ml" 21 311 336
 call(
   tail
 )
@@ -411,233 +368,22 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 20 323 344 "Language.ml" 20 323 348
+  int_ref _ostap_stream "Language.ml" 21 311 332 "Language.ml" 21 311 336
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 20 323 344 "Language.ml" 20 323 348
+  def _ostap_stream "Language.ml" 21 311 332 "Language.ml" 21 311 336
 )
-"Language.ml" 20 323 351 "Language.ml" 20 323 354
-call(
-  tail
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  string
-)
-type(
-  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  'a
-)
-ident(
-  int_ref _ostap_stream "Language.ml" 20 323 351 "Language.ml" 20 323 354
-)
-type(
-  'a
-)
-ident(
-  def _ostap_stream "Language.ml" 20 323 351 "Language.ml" 20 323 354
-)
-"Language.ml" 20 323 357 "Language.ml" 20 323 361
-call(
-  tail
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  string
-)
-type(
-  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  'a
-)
-ident(
-  int_ref _ostap_stream "Language.ml" 20 323 357 "Language.ml" 20 323 361
-)
-type(
-  'a
-)
-ident(
-  def _ostap_stream "Language.ml" 20 323 357 "Language.ml" 20 323 361
-)
-"Language.ml" 20 323 364 "Language.ml" 20 323 368
-call(
-  tail
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  string
-)
-type(
-  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  'a
-)
-ident(
-  int_ref _ostap_stream "Language.ml" 20 323 364 "Language.ml" 20 323 368
-)
-type(
-  'a
-)
-ident(
-  def _ostap_stream "Language.ml" 20 323 364 "Language.ml" 20 323 368
-)
-"Language.ml" 20 323 371 "Language.ml" 20 323 375
-call(
-  tail
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  string
-)
-type(
-  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  'a
-)
-ident(
-  int_ref _ostap_stream "Language.ml" 20 323 371 "Language.ml" 20 323 375
-)
-type(
-  'a
-)
-ident(
-  def _ostap_stream "Language.ml" 20 323 371 "Language.ml" 20 323 375
-)
-"Language.ml" 20 323 378 "Language.ml" 20 323 381
-call(
-  tail
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  string
-)
-type(
-  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  'a
-)
-ident(
-  int_ref _ostap_stream "Language.ml" 20 323 378 "Language.ml" 20 323 381
-)
-type(
-  'a
-)
-ident(
-  def _ostap_stream "Language.ml" 20 323 378 "Language.ml" 20 323 381
-)
-"Language.ml" 20 323 344 "Language.ml" 20 323 381
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-ident(
-  ext_ref Ostap.Combinators.alt
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-ident(
-  ext_ref Ostap.Combinators.alt
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-ident(
-  ext_ref Ostap.Combinators.alt
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-ident(
-  ext_ref Ostap.Combinators.alt
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-ident(
-  ext_ref Ostap.Combinators.alt
-)
-"Language.ml" 20 323 383 "Language.ml" 20 323 387
+"Language.ml" 21 311 337 "Language.ml" 21 311 342
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref addi "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref compi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 20 323 343 "Language.ml" 20 323 387
+"Language.ml" 21 311 332 "Language.ml" 21 311 342
 call(
   stack
 )
@@ -664,19 +410,19 @@ type(
   t
 )
 ident(
-  int_ref _0 "Language.ml" 20 323 343 "Language.ml" 20 323 387
+  int_ref _0 "Language.ml" 21 311 332 "Language.ml" 21 311 342
 )
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref _1 "Language.ml" 20 323 343 "Language.ml" 20 323 387
+  int_ref _1 "Language.ml" 21 311 332 "Language.ml" 21 311 342
 )
 type(
   t
 )
 ident(
-  def _0 "Language.ml" 20 323 343 "Language.ml" 20 323 387
+  def _0 "Language.ml" 21 311 332 "Language.ml" 21 311 342
 )
 type(
   t
@@ -693,7 +439,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _1 "Language.ml" 20 323 343 "Language.ml" 20 323 387
+  def _1 "Language.ml" 21 311 332 "Language.ml" 21 311 342
 )
 type(
   Ostap.Matcher.Token.t
@@ -707,7 +453,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 20 323 342 "Language.ml" 20 323 389
+"Language.ml" 21 311 331 "Language.ml" 21 311 344
 call(
   stack
 )
@@ -721,7 +467,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.many
 )
-"Language.ml" 21 392 403 "Language.ml" 21 392 417
+"Language.ml" 22 347 358 "Language.ml" 22 347 372
 type(
   (t -> Ostap.Matcher.Token.t * t -> t) ->
   t -> (Ostap.Matcher.Token.t * t) list -> t
@@ -729,100 +475,100 @@ type(
 ident(
   ext_ref List.fold_left
 )
-"Language.ml" 21 392 423 "Language.ml" 21 392 424
+"Language.ml" 22 347 378 "Language.ml" 22 347 379
 type(
   t
 )
 ident(
-  def l "Language.ml" 21 392 425 "Language.ml" 21 392 463
+  def l "Language.ml" 22 347 380 "Language.ml" 22 347 418
 )
-"Language.ml" 21 392 426 "Language.ml" 21 392 428
+"Language.ml" 22 347 381 "Language.ml" 22 347 383
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def op "Language.ml" 21 392 436 "Language.ml" 21 392 463
+  def op "Language.ml" 22 347 391 "Language.ml" 22 347 418
 )
-"Language.ml" 21 392 430 "Language.ml" 21 392 431
+"Language.ml" 22 347 385 "Language.ml" 22 347 386
 type(
   t
 )
 ident(
-  def r "Language.ml" 21 392 436 "Language.ml" 21 392 463
+  def r "Language.ml" 22 347 391 "Language.ml" 22 347 418
 )
-"Language.ml" 21 392 426 "Language.ml" 21 392 431
+"Language.ml" 22 347 381 "Language.ml" 22 347 386
 type(
   Ostap.Matcher.Token.t * t
 )
-"Language.ml" 21 392 443 "Language.ml" 21 392 453
+"Language.ml" 22 347 398 "Language.ml" 22 347 408
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
   ext_ref Ostap.Matcher.Token.repr
 )
-"Language.ml" 21 392 454 "Language.ml" 21 392 456
+"Language.ml" 22 347 409 "Language.ml" 22 347 411
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref op "Language.ml" 21 392 426 "Language.ml" 21 392 428
+  int_ref op "Language.ml" 22 347 381 "Language.ml" 22 347 383
 )
-"Language.ml" 21 392 443 "Language.ml" 21 392 456
+"Language.ml" 22 347 398 "Language.ml" 22 347 411
 call(
   stack
 )
 type(
   string
 )
-"Language.ml" 21 392 458 "Language.ml" 21 392 459
+"Language.ml" 22 347 413 "Language.ml" 22 347 414
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 21 392 423 "Language.ml" 21 392 424
+  int_ref l "Language.ml" 22 347 378 "Language.ml" 22 347 379
 )
-"Language.ml" 21 392 461 "Language.ml" 21 392 462
+"Language.ml" 22 347 416 "Language.ml" 22 347 417
 type(
   t
 )
 ident(
-  int_ref r "Language.ml" 21 392 430 "Language.ml" 21 392 431
+  int_ref r "Language.ml" 22 347 385 "Language.ml" 22 347 386
 )
-"Language.ml" 21 392 436 "Language.ml" 21 392 463
+"Language.ml" 22 347 391 "Language.ml" 22 347 418
 type(
   t
 )
-"Language.ml" 21 392 425 "Language.ml" 21 392 463
+"Language.ml" 22 347 380 "Language.ml" 22 347 418
 type(
   Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 21 392 418 "Language.ml" 21 392 464
+"Language.ml" 22 347 373 "Language.ml" 22 347 419
 type(
   t -> Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 21 392 465 "Language.ml" 21 392 466
+"Language.ml" 22 347 420 "Language.ml" 22 347 421
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 20 323 331 "Language.ml" 20 323 333
+  int_ref l "Language.ml" 21 311 319 "Language.ml" 21 311 321
 )
-"Language.ml" 21 392 467 "Language.ml" 21 392 470
+"Language.ml" 22 347 422 "Language.ml" 22 347 425
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  int_ref suf "Language.ml" 20 323 338 "Language.ml" 20 323 342
+  int_ref suf "Language.ml" 21 311 327 "Language.ml" 21 311 331
 )
-"Language.ml" 21 392 403 "Language.ml" 21 392 470
+"Language.ml" 22 347 358 "Language.ml" 22 347 425
 call(
   tail
 )
 type(
   t
 )
-"Language.ml" 20 323 331 "Language.ml" 22 471 480
+"Language.ml" 21 311 319 "Language.ml" 23 426 435
 call(
   stack
 )
@@ -845,7 +591,7 @@ type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def _0 "Language.ml" 21 392 403 "Language.ml" 21 392 470
+  def _0 "Language.ml" 22 347 358 "Language.ml" 22 347 425
 )
 type(
   ((Ostap.Matcher.Token.t * t) list -> t) ->
@@ -859,7 +605,7 @@ type(
   t
 )
 ident(
-  def _1 "Language.ml" 20 323 331 "Language.ml" 22 471 480
+  def _1 "Language.ml" 21 311 319 "Language.ml" 23 426 435
 )
 type(
   ('a, t, 'b) Ostap.Types.parse ->
@@ -868,14 +614,14 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 23 481 489 "Language.ml" 23 481 493
+"Language.ml" 24 436 444 "Language.ml" 24 436 449
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref addi "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref compi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 20 323 331 "Language.ml" 23 481 493
+"Language.ml" 21 311 319 "Language.ml" 24 436 449
 type(
   ('a, t, 'b) Ostap.Types.parse ->
   ('a, t, 'b) Ostap.Types.parse -> ('a, t, 'b) Ostap.Types.parse
@@ -883,7 +629,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"Language.ml" 19 310 316 "Language.ml" 23 481 493
+"Language.ml" 20 299 305 "Language.ml" 24 436 449
 call(
   tail
 )
@@ -897,36 +643,36 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 19 310 316 "Language.ml" 23 481 493
+  int_ref _ostap_stream "Language.ml" 20 299 305 "Language.ml" 24 436 449
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 19 310 316 "Language.ml" 23 481 493
+  def _ostap_stream "Language.ml" 20 299 305 "Language.ml" 24 436 449
 )
-"Language.ml" 26 508 516 "Language.ml" 26 508 518
+"Language.ml" 27 473 481 "Language.ml" 27 473 483
 type(
   t
 )
 ident(
-  def l "Language.ml" 26 508 516 "Language.ml" 28 629 638
+  def l "Language.ml" 27 473 481 "Language.ml" 29 605 614
 )
-"Language.ml" 26 508 518 "Language.ml" 26 508 523
+"Language.ml" 27 473 483 "Language.ml" 27 473 486
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref mulli "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref eqi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 26 508 524 "Language.ml" 26 508 528
+"Language.ml" 27 473 487 "Language.ml" 27 473 491
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def suf "Language.ml" 27 551 561 "Language.ml" 27 551 628
+  def suf "Language.ml" 28 526 537 "Language.ml" 28 526 604
 )
-"Language.ml" 26 508 530 "Language.ml" 26 508 533
+"Language.ml" 27 473 493 "Language.ml" 27 473 497
 call(
   tail
 )
@@ -946,15 +692,15 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 26 508 530 "Language.ml" 26 508 533
+  int_ref _ostap_stream "Language.ml" 27 473 493 "Language.ml" 27 473 497
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 26 508 530 "Language.ml" 26 508 533
+  def _ostap_stream "Language.ml" 27 473 493 "Language.ml" 27 473 497
 )
-"Language.ml" 26 508 536 "Language.ml" 26 508 539
+"Language.ml" 27 473 500 "Language.ml" 27 473 503
 call(
   tail
 )
@@ -974,17 +720,85 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 26 508 536 "Language.ml" 26 508 539
+  int_ref _ostap_stream "Language.ml" 27 473 500 "Language.ml" 27 473 503
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 26 508 536 "Language.ml" 26 508 539
+  def _ostap_stream "Language.ml" 27 473 500 "Language.ml" 27 473 503
 )
-"Language.ml" 26 508 530 "Language.ml" 26 508 539
+"Language.ml" 27 473 506 "Language.ml" 27 473 510
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 27 473 506 "Language.ml" 27 473 510
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 27 473 506 "Language.ml" 27 473 510
+)
+"Language.ml" 27 473 513 "Language.ml" 27 473 516
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 27 473 513 "Language.ml" 27 473 516
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 27 473 513 "Language.ml" 27 473 516
+)
+"Language.ml" 27 473 493 "Language.ml" 27 473 516
 call(
   stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
 )
 type(
   ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
@@ -997,14 +811,30 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"Language.ml" 26 508 541 "Language.ml" 26 508 546
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"Language.ml" 27 473 518 "Language.ml" 27 473 521
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref mulli "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref eqi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 26 508 529 "Language.ml" 26 508 546
+"Language.ml" 27 473 492 "Language.ml" 27 473 521
 call(
   stack
 )
@@ -1031,19 +861,19 @@ type(
   t
 )
 ident(
-  int_ref _0 "Language.ml" 26 508 529 "Language.ml" 26 508 546
+  int_ref _0 "Language.ml" 27 473 492 "Language.ml" 27 473 521
 )
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref _1 "Language.ml" 26 508 529 "Language.ml" 26 508 546
+  int_ref _1 "Language.ml" 27 473 492 "Language.ml" 27 473 521
 )
 type(
   t
 )
 ident(
-  def _0 "Language.ml" 26 508 529 "Language.ml" 26 508 546
+  def _0 "Language.ml" 27 473 492 "Language.ml" 27 473 521
 )
 type(
   t
@@ -1060,7 +890,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _1 "Language.ml" 26 508 529 "Language.ml" 26 508 546
+  def _1 "Language.ml" 27 473 492 "Language.ml" 27 473 521
 )
 type(
   Ostap.Matcher.Token.t
@@ -1074,7 +904,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 26 508 528 "Language.ml" 26 508 548
+"Language.ml" 27 473 491 "Language.ml" 27 473 523
 call(
   stack
 )
@@ -1088,7 +918,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.many
 )
-"Language.ml" 27 551 561 "Language.ml" 27 551 575
+"Language.ml" 28 526 537 "Language.ml" 28 526 551
 type(
   (t -> Ostap.Matcher.Token.t * t -> t) ->
   t -> (Ostap.Matcher.Token.t * t) list -> t
@@ -1096,100 +926,100 @@ type(
 ident(
   ext_ref List.fold_left
 )
-"Language.ml" 27 551 581 "Language.ml" 27 551 582
+"Language.ml" 28 526 557 "Language.ml" 28 526 558
 type(
   t
 )
 ident(
-  def l "Language.ml" 27 551 583 "Language.ml" 27 551 621
+  def l "Language.ml" 28 526 559 "Language.ml" 28 526 597
 )
-"Language.ml" 27 551 584 "Language.ml" 27 551 586
+"Language.ml" 28 526 560 "Language.ml" 28 526 562
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def op "Language.ml" 27 551 594 "Language.ml" 27 551 621
+  def op "Language.ml" 28 526 570 "Language.ml" 28 526 597
 )
-"Language.ml" 27 551 588 "Language.ml" 27 551 589
+"Language.ml" 28 526 564 "Language.ml" 28 526 565
 type(
   t
 )
 ident(
-  def r "Language.ml" 27 551 594 "Language.ml" 27 551 621
+  def r "Language.ml" 28 526 570 "Language.ml" 28 526 597
 )
-"Language.ml" 27 551 584 "Language.ml" 27 551 589
+"Language.ml" 28 526 560 "Language.ml" 28 526 565
 type(
   Ostap.Matcher.Token.t * t
 )
-"Language.ml" 27 551 601 "Language.ml" 27 551 611
+"Language.ml" 28 526 577 "Language.ml" 28 526 587
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
   ext_ref Ostap.Matcher.Token.repr
 )
-"Language.ml" 27 551 612 "Language.ml" 27 551 614
+"Language.ml" 28 526 588 "Language.ml" 28 526 590
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref op "Language.ml" 27 551 584 "Language.ml" 27 551 586
+  int_ref op "Language.ml" 28 526 560 "Language.ml" 28 526 562
 )
-"Language.ml" 27 551 601 "Language.ml" 27 551 614
+"Language.ml" 28 526 577 "Language.ml" 28 526 590
 call(
   stack
 )
 type(
   string
 )
-"Language.ml" 27 551 616 "Language.ml" 27 551 617
+"Language.ml" 28 526 592 "Language.ml" 28 526 593
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 27 551 581 "Language.ml" 27 551 582
+  int_ref l "Language.ml" 28 526 557 "Language.ml" 28 526 558
 )
-"Language.ml" 27 551 619 "Language.ml" 27 551 620
+"Language.ml" 28 526 595 "Language.ml" 28 526 596
 type(
   t
 )
 ident(
-  int_ref r "Language.ml" 27 551 588 "Language.ml" 27 551 589
+  int_ref r "Language.ml" 28 526 564 "Language.ml" 28 526 565
 )
-"Language.ml" 27 551 594 "Language.ml" 27 551 621
+"Language.ml" 28 526 570 "Language.ml" 28 526 597
 type(
   t
 )
-"Language.ml" 27 551 583 "Language.ml" 27 551 621
+"Language.ml" 28 526 559 "Language.ml" 28 526 597
 type(
   Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 27 551 576 "Language.ml" 27 551 622
+"Language.ml" 28 526 552 "Language.ml" 28 526 598
 type(
   t -> Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 27 551 623 "Language.ml" 27 551 624
+"Language.ml" 28 526 599 "Language.ml" 28 526 600
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 26 508 516 "Language.ml" 26 508 518
+  int_ref l "Language.ml" 27 473 481 "Language.ml" 27 473 483
 )
-"Language.ml" 27 551 625 "Language.ml" 27 551 628
+"Language.ml" 28 526 601 "Language.ml" 28 526 604
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  int_ref suf "Language.ml" 26 508 524 "Language.ml" 26 508 528
+  int_ref suf "Language.ml" 27 473 487 "Language.ml" 27 473 491
 )
-"Language.ml" 27 551 561 "Language.ml" 27 551 628
+"Language.ml" 28 526 537 "Language.ml" 28 526 604
 call(
   tail
 )
 type(
   t
 )
-"Language.ml" 26 508 516 "Language.ml" 28 629 638
+"Language.ml" 27 473 481 "Language.ml" 29 605 614
 call(
   stack
 )
@@ -1212,7 +1042,7 @@ type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def _0 "Language.ml" 27 551 561 "Language.ml" 27 551 628
+  def _0 "Language.ml" 28 526 537 "Language.ml" 28 526 604
 )
 type(
   ((Ostap.Matcher.Token.t * t) list -> t) ->
@@ -1226,7 +1056,7 @@ type(
   t
 )
 ident(
-  def _1 "Language.ml" 26 508 516 "Language.ml" 28 629 638
+  def _1 "Language.ml" 27 473 481 "Language.ml" 29 605 614
 )
 type(
   ('a, t, 'b) Ostap.Types.parse ->
@@ -1235,14 +1065,14 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 29 639 647 "Language.ml" 29 639 652
+"Language.ml" 30 615 623 "Language.ml" 30 615 626
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref mulli "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref eqi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 26 508 516 "Language.ml" 29 639 652
+"Language.ml" 27 473 481 "Language.ml" 30 615 626
 type(
   ('a, t, 'b) Ostap.Types.parse ->
   ('a, t, 'b) Ostap.Types.parse -> ('a, t, 'b) Ostap.Types.parse
@@ -1250,7 +1080,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"Language.ml" 25 496 502 "Language.ml" 29 639 652
+"Language.ml" 26 460 466 "Language.ml" 30 615 626
 call(
   tail
 )
@@ -1264,36 +1094,36 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 25 496 502 "Language.ml" 29 639 652
+  int_ref _ostap_stream "Language.ml" 26 460 466 "Language.ml" 30 615 626
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 25 496 502 "Language.ml" 29 639 652
+  def _ostap_stream "Language.ml" 26 460 466 "Language.ml" 30 615 626
 )
-"Language.ml" 32 668 676 "Language.ml" 32 668 678
+"Language.ml" 34 657 665 "Language.ml" 34 657 667
 type(
   t
 )
 ident(
-  def l "Language.ml" 32 668 676 "Language.ml" 34 800 809
+  def l "Language.ml" 34 657 665 "Language.ml" 36 779 788
 )
-"Language.ml" 32 668 678 "Language.ml" 32 668 685
+"Language.ml" 34 657 667 "Language.ml" 34 657 671
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref primary "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref addi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 32 668 686 "Language.ml" 32 668 690
+"Language.ml" 34 657 672 "Language.ml" 34 657 676
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def suf "Language.ml" 33 721 732 "Language.ml" 33 721 799
+  def suf "Language.ml" 35 700 711 "Language.ml" 35 700 778
 )
-"Language.ml" 32 668 692 "Language.ml" 32 668 695
+"Language.ml" 34 657 678 "Language.ml" 34 657 682
 call(
   tail
 )
@@ -1313,15 +1143,15 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 32 668 692 "Language.ml" 32 668 695
+  int_ref _ostap_stream "Language.ml" 34 657 678 "Language.ml" 34 657 682
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 32 668 692 "Language.ml" 32 668 695
+  def _ostap_stream "Language.ml" 34 657 678 "Language.ml" 34 657 682
 )
-"Language.ml" 32 668 698 "Language.ml" 32 668 701
+"Language.ml" 34 657 685 "Language.ml" 34 657 689
 call(
   tail
 )
@@ -1341,51 +1171,17 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 32 668 698 "Language.ml" 32 668 701
+  int_ref _ostap_stream "Language.ml" 34 657 685 "Language.ml" 34 657 689
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 32 668 698 "Language.ml" 32 668 701
+  def _ostap_stream "Language.ml" 34 657 685 "Language.ml" 34 657 689
 )
-"Language.ml" 32 668 704 "Language.ml" 32 668 707
-call(
-  tail
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  string
-)
-type(
-  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
-)
-type(
-  'a
-)
-ident(
-  int_ref _ostap_stream "Language.ml" 32 668 704 "Language.ml" 32 668 707
-)
-type(
-  'a
-)
-ident(
-  def _ostap_stream "Language.ml" 32 668 704 "Language.ml" 32 668 707
-)
-"Language.ml" 32 668 692 "Language.ml" 32 668 707
+"Language.ml" 34 657 678 "Language.ml" 34 657 689
 call(
   stack
-)
-call(
-  stack
-)
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
 )
 type(
   ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
@@ -1398,22 +1194,14 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-type(
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
-  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
-)
-ident(
-  ext_ref Ostap.Combinators.alt
-)
-"Language.ml" 32 668 709 "Language.ml" 32 668 716
+"Language.ml" 34 657 691 "Language.ml" 34 657 695
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref primary "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref addi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 32 668 691 "Language.ml" 32 668 716
+"Language.ml" 34 657 677 "Language.ml" 34 657 695
 call(
   stack
 )
@@ -1440,19 +1228,19 @@ type(
   t
 )
 ident(
-  int_ref _0 "Language.ml" 32 668 691 "Language.ml" 32 668 716
+  int_ref _0 "Language.ml" 34 657 677 "Language.ml" 34 657 695
 )
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref _1 "Language.ml" 32 668 691 "Language.ml" 32 668 716
+  int_ref _1 "Language.ml" 34 657 677 "Language.ml" 34 657 695
 )
 type(
   t
 )
 ident(
-  def _0 "Language.ml" 32 668 691 "Language.ml" 32 668 716
+  def _0 "Language.ml" 34 657 677 "Language.ml" 34 657 695
 )
 type(
   t
@@ -1469,7 +1257,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _1 "Language.ml" 32 668 691 "Language.ml" 32 668 716
+  def _1 "Language.ml" 34 657 677 "Language.ml" 34 657 695
 )
 type(
   Ostap.Matcher.Token.t
@@ -1483,7 +1271,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 32 668 690 "Language.ml" 32 668 718
+"Language.ml" 34 657 676 "Language.ml" 34 657 697
 call(
   stack
 )
@@ -1497,7 +1285,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.many
 )
-"Language.ml" 33 721 732 "Language.ml" 33 721 746
+"Language.ml" 35 700 711 "Language.ml" 35 700 725
 type(
   (t -> Ostap.Matcher.Token.t * t -> t) ->
   t -> (Ostap.Matcher.Token.t * t) list -> t
@@ -1505,100 +1293,100 @@ type(
 ident(
   ext_ref List.fold_left
 )
-"Language.ml" 33 721 752 "Language.ml" 33 721 753
+"Language.ml" 35 700 731 "Language.ml" 35 700 732
 type(
   t
 )
 ident(
-  def l "Language.ml" 33 721 754 "Language.ml" 33 721 792
+  def l "Language.ml" 35 700 733 "Language.ml" 35 700 771
 )
-"Language.ml" 33 721 755 "Language.ml" 33 721 757
+"Language.ml" 35 700 734 "Language.ml" 35 700 736
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def op "Language.ml" 33 721 765 "Language.ml" 33 721 792
+  def op "Language.ml" 35 700 744 "Language.ml" 35 700 771
 )
-"Language.ml" 33 721 759 "Language.ml" 33 721 760
+"Language.ml" 35 700 738 "Language.ml" 35 700 739
 type(
   t
 )
 ident(
-  def r "Language.ml" 33 721 765 "Language.ml" 33 721 792
+  def r "Language.ml" 35 700 744 "Language.ml" 35 700 771
 )
-"Language.ml" 33 721 755 "Language.ml" 33 721 760
+"Language.ml" 35 700 734 "Language.ml" 35 700 739
 type(
   Ostap.Matcher.Token.t * t
 )
-"Language.ml" 33 721 772 "Language.ml" 33 721 782
+"Language.ml" 35 700 751 "Language.ml" 35 700 761
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
   ext_ref Ostap.Matcher.Token.repr
 )
-"Language.ml" 33 721 783 "Language.ml" 33 721 785
+"Language.ml" 35 700 762 "Language.ml" 35 700 764
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref op "Language.ml" 33 721 755 "Language.ml" 33 721 757
+  int_ref op "Language.ml" 35 700 734 "Language.ml" 35 700 736
 )
-"Language.ml" 33 721 772 "Language.ml" 33 721 785
+"Language.ml" 35 700 751 "Language.ml" 35 700 764
 call(
   stack
 )
 type(
   string
 )
-"Language.ml" 33 721 787 "Language.ml" 33 721 788
+"Language.ml" 35 700 766 "Language.ml" 35 700 767
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 33 721 752 "Language.ml" 33 721 753
+  int_ref l "Language.ml" 35 700 731 "Language.ml" 35 700 732
 )
-"Language.ml" 33 721 790 "Language.ml" 33 721 791
+"Language.ml" 35 700 769 "Language.ml" 35 700 770
 type(
   t
 )
 ident(
-  int_ref r "Language.ml" 33 721 759 "Language.ml" 33 721 760
+  int_ref r "Language.ml" 35 700 738 "Language.ml" 35 700 739
 )
-"Language.ml" 33 721 765 "Language.ml" 33 721 792
+"Language.ml" 35 700 744 "Language.ml" 35 700 771
 type(
   t
 )
-"Language.ml" 33 721 754 "Language.ml" 33 721 792
+"Language.ml" 35 700 733 "Language.ml" 35 700 771
 type(
   Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 33 721 747 "Language.ml" 33 721 793
+"Language.ml" 35 700 726 "Language.ml" 35 700 772
 type(
   t -> Ostap.Matcher.Token.t * t -> t
 )
-"Language.ml" 33 721 794 "Language.ml" 33 721 795
+"Language.ml" 35 700 773 "Language.ml" 35 700 774
 type(
   t
 )
 ident(
-  int_ref l "Language.ml" 32 668 676 "Language.ml" 32 668 678
+  int_ref l "Language.ml" 34 657 665 "Language.ml" 34 657 667
 )
-"Language.ml" 33 721 796 "Language.ml" 33 721 799
+"Language.ml" 35 700 775 "Language.ml" 35 700 778
 type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  int_ref suf "Language.ml" 32 668 686 "Language.ml" 32 668 690
+  int_ref suf "Language.ml" 34 657 672 "Language.ml" 34 657 676
 )
-"Language.ml" 33 721 732 "Language.ml" 33 721 799
+"Language.ml" 35 700 711 "Language.ml" 35 700 778
 call(
   tail
 )
 type(
   t
 )
-"Language.ml" 32 668 676 "Language.ml" 34 800 809
+"Language.ml" 34 657 665 "Language.ml" 36 779 788
 call(
   stack
 )
@@ -1621,7 +1409,7 @@ type(
   (Ostap.Matcher.Token.t * t) list
 )
 ident(
-  def _0 "Language.ml" 33 721 732 "Language.ml" 33 721 799
+  def _0 "Language.ml" 35 700 711 "Language.ml" 35 700 778
 )
 type(
   ((Ostap.Matcher.Token.t * t) list -> t) ->
@@ -1635,7 +1423,7 @@ type(
   t
 )
 ident(
-  def _1 "Language.ml" 32 668 676 "Language.ml" 34 800 809
+  def _1 "Language.ml" 34 657 665 "Language.ml" 36 779 788
 )
 type(
   ('a, t, 'b) Ostap.Types.parse ->
@@ -1644,14 +1432,14 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 35 810 818 "Language.ml" 35 810 825
+"Language.ml" 37 789 797 "Language.ml" 37 789 801
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref primary "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref addi "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 32 668 676 "Language.ml" 35 810 825
+"Language.ml" 34 657 665 "Language.ml" 37 789 801
 type(
   ('a, t, 'b) Ostap.Types.parse ->
   ('a, t, 'b) Ostap.Types.parse -> ('a, t, 'b) Ostap.Types.parse
@@ -1659,7 +1447,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"Language.ml" 31 655 661 "Language.ml" 35 810 825
+"Language.ml" 33 646 652 "Language.ml" 37 789 801
 call(
   tail
 )
@@ -1673,22 +1461,798 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 31 655 661 "Language.ml" 35 810 825
+  int_ref _ostap_stream "Language.ml" 33 646 652 "Language.ml" 37 789 801
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 31 655 661 "Language.ml" 35 810 825
+  def _ostap_stream "Language.ml" 33 646 652 "Language.ml" 37 789 801
 )
-"Language.ml" 38 843 851 "Language.ml" 38 843 853
+"Language.ml" 41 825 833 "Language.ml" 41 825 835
+type(
+  t
+)
+ident(
+  def l "Language.ml" 41 825 833 "Language.ml" 43 947 956
+)
+"Language.ml" 41 825 835 "Language.ml" 41 825 840
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  int_ref mulli "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
+)
+"Language.ml" 41 825 841 "Language.ml" 41 825 845
+type(
+  (Ostap.Matcher.Token.t * t) list
+)
+ident(
+  def suf "Language.ml" 42 868 879 "Language.ml" 42 868 946
+)
+"Language.ml" 41 825 847 "Language.ml" 41 825 850
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 41 825 847 "Language.ml" 41 825 850
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 41 825 847 "Language.ml" 41 825 850
+)
+"Language.ml" 41 825 853 "Language.ml" 41 825 856
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 41 825 853 "Language.ml" 41 825 856
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 41 825 853 "Language.ml" 41 825 856
+)
+"Language.ml" 41 825 847 "Language.ml" 41 825 856
+call(
+  stack
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"Language.ml" 41 825 858 "Language.ml" 41 825 863
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  int_ref mulli "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
+)
+"Language.ml" 41 825 846 "Language.ml" 41 825 863
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+type(
+  Ostap.Matcher.Token.t ->
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+type(
+  t -> Ostap.Matcher.Token.t * t
+)
+type(
+  Ostap.Matcher.Token.t * t
+)
+type(
+  t
+)
+ident(
+  int_ref _0 "Language.ml" 41 825 846 "Language.ml" 41 825 863
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref _1 "Language.ml" 41 825 846 "Language.ml" 41 825 863
+)
+type(
+  t
+)
+ident(
+  def _0 "Language.ml" 41 825 846 "Language.ml" 41 825 863
+)
+type(
+  t
+)
+type(
+  (t -> Ostap.Matcher.Token.t * t) ->
+  ('a, t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def _1 "Language.ml" 41 825 846 "Language.ml" 41 825 863
+)
+type(
+  Ostap.Matcher.Token.t
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  (Ostap.Matcher.Token.t ->
+   ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse) ->
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Language.ml" 41 825 845 "Language.ml" 41 825 865
+call(
+  stack
+)
+type(
+  ('a, (Ostap.Matcher.Token.t * t) list, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse ->
+  ('a, (Ostap.Matcher.Token.t * t) list, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.many
+)
+"Language.ml" 42 868 879 "Language.ml" 42 868 893
+type(
+  (t -> Ostap.Matcher.Token.t * t -> t) ->
+  t -> (Ostap.Matcher.Token.t * t) list -> t
+)
+ident(
+  ext_ref List.fold_left
+)
+"Language.ml" 42 868 899 "Language.ml" 42 868 900
+type(
+  t
+)
+ident(
+  def l "Language.ml" 42 868 901 "Language.ml" 42 868 939
+)
+"Language.ml" 42 868 902 "Language.ml" 42 868 904
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def op "Language.ml" 42 868 912 "Language.ml" 42 868 939
+)
+"Language.ml" 42 868 906 "Language.ml" 42 868 907
+type(
+  t
+)
+ident(
+  def r "Language.ml" 42 868 912 "Language.ml" 42 868 939
+)
+"Language.ml" 42 868 902 "Language.ml" 42 868 907
+type(
+  Ostap.Matcher.Token.t * t
+)
+"Language.ml" 42 868 919 "Language.ml" 42 868 929
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  ext_ref Ostap.Matcher.Token.repr
+)
+"Language.ml" 42 868 930 "Language.ml" 42 868 932
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref op "Language.ml" 42 868 902 "Language.ml" 42 868 904
+)
+"Language.ml" 42 868 919 "Language.ml" 42 868 932
+call(
+  stack
+)
+type(
+  string
+)
+"Language.ml" 42 868 934 "Language.ml" 42 868 935
+type(
+  t
+)
+ident(
+  int_ref l "Language.ml" 42 868 899 "Language.ml" 42 868 900
+)
+"Language.ml" 42 868 937 "Language.ml" 42 868 938
+type(
+  t
+)
+ident(
+  int_ref r "Language.ml" 42 868 906 "Language.ml" 42 868 907
+)
+"Language.ml" 42 868 912 "Language.ml" 42 868 939
+type(
+  t
+)
+"Language.ml" 42 868 901 "Language.ml" 42 868 939
+type(
+  Ostap.Matcher.Token.t * t -> t
+)
+"Language.ml" 42 868 894 "Language.ml" 42 868 940
+type(
+  t -> Ostap.Matcher.Token.t * t -> t
+)
+"Language.ml" 42 868 941 "Language.ml" 42 868 942
+type(
+  t
+)
+ident(
+  int_ref l "Language.ml" 41 825 833 "Language.ml" 41 825 835
+)
+"Language.ml" 42 868 943 "Language.ml" 42 868 946
+type(
+  (Ostap.Matcher.Token.t * t) list
+)
+ident(
+  int_ref suf "Language.ml" 41 825 841 "Language.ml" 41 825 845
+)
+"Language.ml" 42 868 879 "Language.ml" 42 868 946
+call(
+  tail
+)
+type(
+  t
+)
+"Language.ml" 41 825 833 "Language.ml" 43 947 956
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+type(
+  t -> ('a, t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+type(
+  (Ostap.Matcher.Token.t * t) list -> t
+)
+type(
+  (Ostap.Matcher.Token.t * t) list
+)
+ident(
+  def _0 "Language.ml" 42 868 879 "Language.ml" 42 868 946
+)
+type(
+  ((Ostap.Matcher.Token.t * t) list -> t) ->
+  ('a, (Ostap.Matcher.Token.t * t) list, 'b) Ostap.Types.parse ->
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  t
+)
+ident(
+  def _1 "Language.ml" 41 825 833 "Language.ml" 43 947 956
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse ->
+  (t -> ('a, t, 'b) Ostap.Types.parse) -> ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Language.ml" 44 957 965 "Language.ml" 44 957 970
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  int_ref mulli "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
+)
+"Language.ml" 41 825 833 "Language.ml" 44 957 970
+type(
+  ('a, t, 'b) Ostap.Types.parse ->
+  ('a, t, 'b) Ostap.Types.parse -> ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"Language.ml" 40 813 819 "Language.ml" 44 957 970
+call(
+  tail
+)
+type(
+  'a -> ('a, t, 'b) Ostap.Types.result
+)
+type(
+  ('a, t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 40 813 819 "Language.ml" 44 957 970
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 40 813 819 "Language.ml" 44 957 970
+)
+"Language.ml" 47 986 994 "Language.ml" 47 986 996
+type(
+  t
+)
+ident(
+  def l "Language.ml" 47 986 994 "Language.ml" 49 1118 1127
+)
+"Language.ml" 47 986 996 "Language.ml" 47 986 1003
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  int_ref primary "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
+)
+"Language.ml" 47 986 1004 "Language.ml" 47 986 1008
+type(
+  (Ostap.Matcher.Token.t * t) list
+)
+ident(
+  def suf "Language.ml" 48 1039 1050 "Language.ml" 48 1039 1117
+)
+"Language.ml" 47 986 1010 "Language.ml" 47 986 1013
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 47 986 1010 "Language.ml" 47 986 1013
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 47 986 1010 "Language.ml" 47 986 1013
+)
+"Language.ml" 47 986 1016 "Language.ml" 47 986 1019
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 47 986 1016 "Language.ml" 47 986 1019
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 47 986 1016 "Language.ml" 47 986 1019
+)
+"Language.ml" 47 986 1022 "Language.ml" 47 986 1025
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  string
+)
+type(
+  string -> ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 47 986 1022 "Language.ml" 47 986 1025
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 47 986 1022 "Language.ml" 47 986 1025
+)
+"Language.ml" 47 986 1010 "Language.ml" 47 986 1025
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"Language.ml" 47 986 1027 "Language.ml" 47 986 1034
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  int_ref primary "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
+)
+"Language.ml" 47 986 1009 "Language.ml" 47 986 1034
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+type(
+  Ostap.Matcher.Token.t ->
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+type(
+  t -> Ostap.Matcher.Token.t * t
+)
+type(
+  Ostap.Matcher.Token.t * t
+)
+type(
+  t
+)
+ident(
+  int_ref _0 "Language.ml" 47 986 1009 "Language.ml" 47 986 1034
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref _1 "Language.ml" 47 986 1009 "Language.ml" 47 986 1034
+)
+type(
+  t
+)
+ident(
+  def _0 "Language.ml" 47 986 1009 "Language.ml" 47 986 1034
+)
+type(
+  t
+)
+type(
+  (t -> Ostap.Matcher.Token.t * t) ->
+  ('a, t, 'b) Ostap.Types.parse ->
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def _1 "Language.ml" 47 986 1009 "Language.ml" 47 986 1034
+)
+type(
+  Ostap.Matcher.Token.t
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Types.parse ->
+  (Ostap.Matcher.Token.t ->
+   ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse) ->
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Language.ml" 47 986 1008 "Language.ml" 47 986 1036
+call(
+  stack
+)
+type(
+  ('a, (Ostap.Matcher.Token.t * t) list, 'b) Ostap.Types.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t * t, 'b) Ostap.Types.parse ->
+  ('a, (Ostap.Matcher.Token.t * t) list, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.many
+)
+"Language.ml" 48 1039 1050 "Language.ml" 48 1039 1064
+type(
+  (t -> Ostap.Matcher.Token.t * t -> t) ->
+  t -> (Ostap.Matcher.Token.t * t) list -> t
+)
+ident(
+  ext_ref List.fold_left
+)
+"Language.ml" 48 1039 1070 "Language.ml" 48 1039 1071
+type(
+  t
+)
+ident(
+  def l "Language.ml" 48 1039 1072 "Language.ml" 48 1039 1110
+)
+"Language.ml" 48 1039 1073 "Language.ml" 48 1039 1075
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def op "Language.ml" 48 1039 1083 "Language.ml" 48 1039 1110
+)
+"Language.ml" 48 1039 1077 "Language.ml" 48 1039 1078
+type(
+  t
+)
+ident(
+  def r "Language.ml" 48 1039 1083 "Language.ml" 48 1039 1110
+)
+"Language.ml" 48 1039 1073 "Language.ml" 48 1039 1078
+type(
+  Ostap.Matcher.Token.t * t
+)
+"Language.ml" 48 1039 1090 "Language.ml" 48 1039 1100
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  ext_ref Ostap.Matcher.Token.repr
+)
+"Language.ml" 48 1039 1101 "Language.ml" 48 1039 1103
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref op "Language.ml" 48 1039 1073 "Language.ml" 48 1039 1075
+)
+"Language.ml" 48 1039 1090 "Language.ml" 48 1039 1103
+call(
+  stack
+)
+type(
+  string
+)
+"Language.ml" 48 1039 1105 "Language.ml" 48 1039 1106
+type(
+  t
+)
+ident(
+  int_ref l "Language.ml" 48 1039 1070 "Language.ml" 48 1039 1071
+)
+"Language.ml" 48 1039 1108 "Language.ml" 48 1039 1109
+type(
+  t
+)
+ident(
+  int_ref r "Language.ml" 48 1039 1077 "Language.ml" 48 1039 1078
+)
+"Language.ml" 48 1039 1083 "Language.ml" 48 1039 1110
+type(
+  t
+)
+"Language.ml" 48 1039 1072 "Language.ml" 48 1039 1110
+type(
+  Ostap.Matcher.Token.t * t -> t
+)
+"Language.ml" 48 1039 1065 "Language.ml" 48 1039 1111
+type(
+  t -> Ostap.Matcher.Token.t * t -> t
+)
+"Language.ml" 48 1039 1112 "Language.ml" 48 1039 1113
+type(
+  t
+)
+ident(
+  int_ref l "Language.ml" 47 986 994 "Language.ml" 47 986 996
+)
+"Language.ml" 48 1039 1114 "Language.ml" 48 1039 1117
+type(
+  (Ostap.Matcher.Token.t * t) list
+)
+ident(
+  int_ref suf "Language.ml" 47 986 1004 "Language.ml" 47 986 1008
+)
+"Language.ml" 48 1039 1050 "Language.ml" 48 1039 1117
+call(
+  tail
+)
+type(
+  t
+)
+"Language.ml" 47 986 994 "Language.ml" 49 1118 1127
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+type(
+  t -> ('a, t, 'b) Ostap.Types.parse
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+type(
+  (Ostap.Matcher.Token.t * t) list -> t
+)
+type(
+  (Ostap.Matcher.Token.t * t) list
+)
+ident(
+  def _0 "Language.ml" 48 1039 1050 "Language.ml" 48 1039 1117
+)
+type(
+  ((Ostap.Matcher.Token.t * t) list -> t) ->
+  ('a, (Ostap.Matcher.Token.t * t) list, 'b) Ostap.Types.parse ->
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  t
+)
+ident(
+  def _1 "Language.ml" 47 986 994 "Language.ml" 49 1118 1127
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse ->
+  (t -> ('a, t, 'b) Ostap.Types.parse) -> ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"Language.ml" 50 1128 1136 "Language.ml" 50 1128 1143
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  int_ref primary "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
+)
+"Language.ml" 47 986 994 "Language.ml" 50 1128 1143
+type(
+  ('a, t, 'b) Ostap.Types.parse ->
+  ('a, t, 'b) Ostap.Types.parse -> ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"Language.ml" 46 973 979 "Language.ml" 50 1128 1143
+call(
+  tail
+)
+type(
+  'a -> ('a, t, 'b) Ostap.Types.result
+)
+type(
+  ('a, t, 'b) Ostap.Types.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "Language.ml" 46 973 979 "Language.ml" 50 1128 1143
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "Language.ml" 46 973 979 "Language.ml" 50 1128 1143
+)
+"Language.ml" 53 1161 1169 "Language.ml" 53 1161 1171
 type(
   int
 )
 ident(
-  def n "Language.ml" 38 843 862 "Language.ml" 38 843 869
+  def n "Language.ml" 53 1161 1180 "Language.ml" 53 1161 1187
 )
-"Language.ml" 38 843 853 "Language.ml" 38 843 860
+"Language.ml" 53 1161 1171 "Language.ml" 53 1161 1178
 call(
   tail
 )
@@ -1702,26 +2266,26 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 38 843 853 "Language.ml" 38 843 860
+  int_ref _ostap_stream "Language.ml" 53 1161 1171 "Language.ml" 53 1161 1178
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 38 843 853 "Language.ml" 38 843 860
+  def _ostap_stream "Language.ml" 53 1161 1171 "Language.ml" 53 1161 1178
 )
-"Language.ml" 38 843 868 "Language.ml" 38 843 869
+"Language.ml" 53 1161 1186 "Language.ml" 53 1161 1187
 type(
   int
 )
 ident(
-  int_ref n "Language.ml" 38 843 851 "Language.ml" 38 843 853
+  int_ref n "Language.ml" 53 1161 1169 "Language.ml" 53 1161 1171
 )
-"Language.ml" 38 843 862 "Language.ml" 38 843 869
+"Language.ml" 53 1161 1180 "Language.ml" 53 1161 1187
 type(
   t
 )
-"Language.ml" 38 843 851 "Language.ml" 38 843 870
+"Language.ml" 53 1161 1169 "Language.ml" 53 1161 1188
 call(
   stack
 )
@@ -1735,7 +2299,7 @@ type(
   int
 )
 ident(
-  def _0 "Language.ml" 38 843 862 "Language.ml" 38 843 869
+  def _0 "Language.ml" 53 1161 1180 "Language.ml" 53 1161 1187
 )
 type(
   (int -> t) ->
@@ -1744,14 +2308,14 @@ type(
 ident(
   ext_ref Ostap.Combinators.map
 )
-"Language.ml" 39 871 879 "Language.ml" 39 871 881
+"Language.ml" 54 1189 1197 "Language.ml" 54 1189 1199
 type(
   string
 )
 ident(
-  def x "Language.ml" 39 871 890 "Language.ml" 39 871 897
+  def x "Language.ml" 54 1189 1208 "Language.ml" 54 1189 1215
 )
-"Language.ml" 39 871 881 "Language.ml" 39 871 886
+"Language.ml" 54 1189 1199 "Language.ml" 54 1189 1204
 call(
   tail
 )
@@ -1765,26 +2329,26 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 39 871 881 "Language.ml" 39 871 886
+  int_ref _ostap_stream "Language.ml" 54 1189 1199 "Language.ml" 54 1189 1204
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 39 871 881 "Language.ml" 39 871 886
+  def _ostap_stream "Language.ml" 54 1189 1199 "Language.ml" 54 1189 1204
 )
-"Language.ml" 39 871 896 "Language.ml" 39 871 897
+"Language.ml" 54 1189 1214 "Language.ml" 54 1189 1215
 type(
   string
 )
 ident(
-  int_ref x "Language.ml" 39 871 879 "Language.ml" 39 871 881
+  int_ref x "Language.ml" 54 1189 1197 "Language.ml" 54 1189 1199
 )
-"Language.ml" 39 871 890 "Language.ml" 39 871 897
+"Language.ml" 54 1189 1208 "Language.ml" 54 1189 1215
 type(
   t
 )
-"Language.ml" 39 871 879 "Language.ml" 39 871 898
+"Language.ml" 54 1189 1197 "Language.ml" 54 1189 1216
 call(
   stack
 )
@@ -1798,7 +2362,7 @@ type(
   string
 )
 ident(
-  def _0 "Language.ml" 39 871 890 "Language.ml" 39 871 897
+  def _0 "Language.ml" 54 1189 1208 "Language.ml" 54 1189 1215
 )
 type(
   (string -> t) ->
@@ -1807,7 +2371,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.map
 )
-"Language.ml" 40 899 908 "Language.ml" 40 899 911
+"Language.ml" 55 1217 1226 "Language.ml" 55 1217 1229
 call(
   tail
 )
@@ -1827,22 +2391,22 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 40 899 908 "Language.ml" 40 899 911
+  int_ref _ostap_stream "Language.ml" 55 1217 1226 "Language.ml" 55 1217 1229
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 40 899 908 "Language.ml" 40 899 911
+  def _ostap_stream "Language.ml" 55 1217 1226 "Language.ml" 55 1217 1229
 )
-"Language.ml" 40 899 912 "Language.ml" 40 899 917
+"Language.ml" 55 1217 1230 "Language.ml" 55 1217 1235
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref parse "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref parse "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 40 899 919 "Language.ml" 40 899 922
+"Language.ml" 55 1217 1237 "Language.ml" 55 1217 1240
 call(
   tail
 )
@@ -1862,15 +2426,15 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 40 899 919 "Language.ml" 40 899 922
+  int_ref _ostap_stream "Language.ml" 55 1217 1237 "Language.ml" 55 1217 1240
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 40 899 919 "Language.ml" 40 899 922
+  def _ostap_stream "Language.ml" 55 1217 1237 "Language.ml" 55 1217 1240
 )
-"Language.ml" 40 899 907 "Language.ml" 40 899 922
+"Language.ml" 55 1217 1225 "Language.ml" 55 1217 1240
 call(
   stack
 )
@@ -1902,7 +2466,7 @@ type(
   t
 )
 ident(
-  int_ref _0 "Language.ml" 40 899 907 "Language.ml" 40 899 922
+  int_ref _0 "Language.ml" 55 1217 1225 "Language.ml" 55 1217 1240
 )
 type(
   Ostap.Matcher.Token.t
@@ -1919,7 +2483,7 @@ type(
   t
 )
 ident(
-  def _0 "Language.ml" 40 899 907 "Language.ml" 40 899 922
+  def _0 "Language.ml" 55 1217 1225 "Language.ml" 55 1217 1240
 )
 type(
   t
@@ -1942,7 +2506,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 38 843 851 "Language.ml" 40 899 922
+"Language.ml" 53 1161 1169 "Language.ml" 55 1217 1240
 call(
   stack
 )
@@ -1963,7 +2527,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"Language.ml" 37 828 834 "Language.ml" 40 899 922
+"Language.ml" 52 1146 1152 "Language.ml" 55 1217 1240
 call(
   tail
 )
@@ -1977,53 +2541,65 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 37 828 834 "Language.ml" 40 899 922
+  int_ref _ostap_stream "Language.ml" 52 1146 1152 "Language.ml" 55 1217 1240
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 37 828 834 "Language.ml" 40 899 922
+  def _ostap_stream "Language.ml" 52 1146 1152 "Language.ml" 55 1217 1240
 )
-"Language.ml" 13 147 153 "Language.ml" 40 899 922
+"Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  def primary "Language.ml" 12 135 139 "Language.ml" 43 930 935
-)
-type(
-  ('a, t, 'b) Ostap.Types.parse
-)
-ident(
-  def mulli "Language.ml" 12 135 139 "Language.ml" 43 930 935
+  def primary "Language.ml" 12 135 139 "Language.ml" 58 1248 1253
 )
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  def addi "Language.ml" 12 135 139 "Language.ml" 43 930 935
+  def mulli "Language.ml" 12 135 139 "Language.ml" 58 1248 1253
 )
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  def compi "Language.ml" 12 135 139 "Language.ml" 43 930 935
+  def addi "Language.ml" 12 135 139 "Language.ml" 58 1248 1253
 )
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  def parse "Language.ml" 12 135 139 "Language.ml" 43 930 935
+  def eqi "Language.ml" 12 135 139 "Language.ml" 58 1248 1253
 )
-"Language.ml" 56 1098 1111 "Language.ml" 56 1098 1113
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  def compi "Language.ml" 12 135 139 "Language.ml" 58 1248 1253
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  def andi "Language.ml" 12 135 139 "Language.ml" 58 1248 1253
+)
+type(
+  ('a, t, 'b) Ostap.Types.parse
+)
+ident(
+  def parse "Language.ml" 12 135 139 "Language.ml" 58 1248 1253
+)
+"Language.ml" 71 1416 1429 "Language.ml" 71 1416 1431
 type(
   t
 )
 ident(
-  def s "Language.ml" 56 1098 1111 "Language.ml" 58 1185 1192
+  def s "Language.ml" 71 1416 1429 "Language.ml" 73 1503 1510
 )
-"Language.ml" 56 1098 1113 "Language.ml" 56 1098 1119
+"Language.ml" 71 1416 1431 "Language.ml" 71 1416 1437
 type(
   (< getDECIMAL : ('a, int, < add : 'b -> 'b; .. > as 'b) Ostap.Types.result;
      getIDENT : ('a, string, 'b) Ostap.Types.result;
@@ -2033,16 +2609,16 @@ type(
   Ostap.Types.parse
 )
 ident(
-  int_ref simple "Language.ml" 56 1098 1104 "Language.ml" 63 1366 1413
+  int_ref simple "Language.ml" 71 1416 1422 "Language.ml" 78 1684 1731
 )
-"Language.ml" 56 1098 1120 "Language.ml" 56 1098 1122
+"Language.ml" 71 1416 1438 "Language.ml" 71 1416 1440
 type(
   t option
 )
 ident(
-  def d "Language.ml" 57 1138 1139 "Language.ml" 57 1138 1184
+  def d "Language.ml" 72 1456 1457 "Language.ml" 72 1456 1502
 )
-"Language.ml" 56 1098 1124 "Language.ml" 56 1098 1127
+"Language.ml" 71 1416 1442 "Language.ml" 71 1416 1445
 call(
   tail
 )
@@ -2062,22 +2638,22 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 56 1098 1124 "Language.ml" 56 1098 1127
+  int_ref _ostap_stream "Language.ml" 71 1416 1442 "Language.ml" 71 1416 1445
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 56 1098 1124 "Language.ml" 56 1098 1127
+  def _ostap_stream "Language.ml" 71 1416 1442 "Language.ml" 71 1416 1445
 )
-"Language.ml" 56 1098 1128 "Language.ml" 56 1098 1133
+"Language.ml" 71 1416 1446 "Language.ml" 71 1416 1451
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref parse "Language.ml" 56 1098 1104 "Language.ml" 63 1366 1413
+  int_ref parse "Language.ml" 71 1416 1422 "Language.ml" 78 1684 1731
 )
-"Language.ml" 56 1098 1123 "Language.ml" 56 1098 1133
+"Language.ml" 71 1416 1441 "Language.ml" 71 1416 1451
 call(
   stack
 )
@@ -2098,7 +2674,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 56 1098 1122 "Language.ml" 56 1098 1135
+"Language.ml" 71 1416 1440 "Language.ml" 71 1416 1453
 call(
   stack
 )
@@ -2111,58 +2687,58 @@ type(
 ident(
   ext_ref Ostap.Combinators.opt
 )
-"Language.ml" 57 1138 1145 "Language.ml" 57 1138 1146
+"Language.ml" 72 1456 1463 "Language.ml" 72 1456 1464
 type(
   t option
 )
 ident(
-  int_ref d "Language.ml" 56 1098 1120 "Language.ml" 56 1098 1122
+  int_ref d "Language.ml" 71 1416 1438 "Language.ml" 71 1416 1440
 )
-"Language.ml" 57 1138 1152 "Language.ml" 57 1138 1156
+"Language.ml" 72 1456 1470 "Language.ml" 72 1456 1474
 type(
   t option
 )
-"Language.ml" 57 1138 1160 "Language.ml" 57 1138 1161
+"Language.ml" 72 1456 1478 "Language.ml" 72 1456 1479
 type(
   t
 )
 ident(
-  int_ref s "Language.ml" 56 1098 1111 "Language.ml" 56 1098 1113
+  int_ref s "Language.ml" 71 1416 1429 "Language.ml" 71 1416 1431
 )
-"Language.ml" 57 1138 1169 "Language.ml" 57 1138 1170
+"Language.ml" 72 1456 1487 "Language.ml" 72 1456 1488
 type(
   t
 )
 ident(
-  def d "Language.ml" 57 1138 1174 "Language.ml" 57 1138 1184
+  def d "Language.ml" 72 1456 1492 "Language.ml" 72 1456 1502
 )
-"Language.ml" 57 1138 1164 "Language.ml" 57 1138 1170
+"Language.ml" 72 1456 1482 "Language.ml" 72 1456 1488
 type(
   t option
 )
-"Language.ml" 57 1138 1179 "Language.ml" 57 1138 1180
+"Language.ml" 72 1456 1497 "Language.ml" 72 1456 1498
 type(
   t
 )
 ident(
-  int_ref s "Language.ml" 56 1098 1111 "Language.ml" 56 1098 1113
+  int_ref s "Language.ml" 71 1416 1429 "Language.ml" 71 1416 1431
 )
-"Language.ml" 57 1138 1182 "Language.ml" 57 1138 1183
+"Language.ml" 72 1456 1500 "Language.ml" 72 1456 1501
 type(
   t
 )
 ident(
-  int_ref d "Language.ml" 57 1138 1169 "Language.ml" 57 1138 1170
+  int_ref d "Language.ml" 72 1456 1487 "Language.ml" 72 1456 1488
 )
-"Language.ml" 57 1138 1174 "Language.ml" 57 1138 1184
+"Language.ml" 72 1456 1492 "Language.ml" 72 1456 1502
 type(
   t
 )
-"Language.ml" 57 1138 1139 "Language.ml" 57 1138 1184
+"Language.ml" 72 1456 1457 "Language.ml" 72 1456 1502
 type(
   t
 )
-"Language.ml" 56 1098 1111 "Language.ml" 58 1185 1192
+"Language.ml" 71 1416 1429 "Language.ml" 73 1503 1510
 call(
   tail
 )
@@ -2179,7 +2755,7 @@ type(
   t option
 )
 ident(
-  def _0 "Language.ml" 57 1138 1139 "Language.ml" 57 1138 1184
+  def _0 "Language.ml" 72 1456 1457 "Language.ml" 72 1456 1502
 )
 type(
   (t option -> t) ->
@@ -2192,7 +2768,7 @@ type(
   t
 )
 ident(
-  def _1 "Language.ml" 56 1098 1111 "Language.ml" 58 1185 1192
+  def _1 "Language.ml" 71 1416 1429 "Language.ml" 73 1503 1510
 )
 type(
   ('a, t, 'b) Ostap.Types.parse ->
@@ -2201,7 +2777,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 56 1098 1104 "Language.ml" 58 1185 1192
+"Language.ml" 71 1416 1422 "Language.ml" 73 1503 1510
 call(
   tail
 )
@@ -2215,22 +2791,22 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 56 1098 1104 "Language.ml" 58 1185 1192
+  int_ref _ostap_stream "Language.ml" 71 1416 1422 "Language.ml" 73 1503 1510
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 56 1098 1104 "Language.ml" 58 1185 1192
+  def _ostap_stream "Language.ml" 71 1416 1422 "Language.ml" 73 1503 1510
 )
-"Language.ml" 60 1208 1216 "Language.ml" 60 1208 1218
+"Language.ml" 75 1526 1534 "Language.ml" 75 1526 1536
 type(
   string
 )
 ident(
-  def x "Language.ml" 60 1208 1216 "Language.ml" 60 1208 1264
+  def x "Language.ml" 75 1526 1534 "Language.ml" 75 1526 1582
 )
-"Language.ml" 60 1208 1218 "Language.ml" 60 1208 1223
+"Language.ml" 75 1526 1536 "Language.ml" 75 1526 1541
 call(
   tail
 )
@@ -2244,15 +2820,15 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 60 1208 1218 "Language.ml" 60 1208 1223
+  int_ref _ostap_stream "Language.ml" 75 1526 1536 "Language.ml" 75 1526 1541
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 60 1208 1218 "Language.ml" 60 1208 1223
+  def _ostap_stream "Language.ml" 75 1526 1536 "Language.ml" 75 1526 1541
 )
-"Language.ml" 60 1208 1224 "Language.ml" 60 1208 1228
+"Language.ml" 75 1526 1542 "Language.ml" 75 1526 1546
 call(
   tail
 )
@@ -2272,47 +2848,47 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 60 1208 1224 "Language.ml" 60 1208 1228
+  int_ref _ostap_stream "Language.ml" 75 1526 1542 "Language.ml" 75 1526 1546
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 60 1208 1224 "Language.ml" 60 1208 1228
+  def _ostap_stream "Language.ml" 75 1526 1542 "Language.ml" 75 1526 1546
 )
-"Language.ml" 60 1208 1229 "Language.ml" 60 1208 1231
+"Language.ml" 75 1526 1547 "Language.ml" 75 1526 1549
 type(
   Expr.t
 )
 ident(
-  def e "Language.ml" 60 1208 1250 "Language.ml" 60 1208 1263
+  def e "Language.ml" 75 1526 1568 "Language.ml" 75 1526 1581
 )
-"Language.ml" 60 1208 1233 "Language.ml" 60 1208 1243
+"Language.ml" 75 1526 1551 "Language.ml" 75 1526 1561
 type(
   ('a, Expr.t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref Expr.parse "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref Expr.parse "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 60 1208 1258 "Language.ml" 60 1208 1259
+"Language.ml" 75 1526 1576 "Language.ml" 75 1526 1577
 type(
   string
 )
 ident(
-  int_ref x "Language.ml" 60 1208 1216 "Language.ml" 60 1208 1218
+  int_ref x "Language.ml" 75 1526 1534 "Language.ml" 75 1526 1536
 )
-"Language.ml" 60 1208 1261 "Language.ml" 60 1208 1262
+"Language.ml" 75 1526 1579 "Language.ml" 75 1526 1580
 type(
   Expr.t
 )
 ident(
-  int_ref e "Language.ml" 60 1208 1229 "Language.ml" 60 1208 1231
+  int_ref e "Language.ml" 75 1526 1547 "Language.ml" 75 1526 1549
 )
-"Language.ml" 60 1208 1250 "Language.ml" 60 1208 1263
+"Language.ml" 75 1526 1568 "Language.ml" 75 1526 1581
 type(
   t
 )
-"Language.ml" 60 1208 1216 "Language.ml" 60 1208 1264
+"Language.ml" 75 1526 1534 "Language.ml" 75 1526 1582
 call(
   stack
 )
@@ -2344,7 +2920,7 @@ type(
   Expr.t
 )
 ident(
-  def _0 "Language.ml" 60 1208 1250 "Language.ml" 60 1208 1263
+  def _0 "Language.ml" 75 1526 1568 "Language.ml" 75 1526 1581
 )
 type(
   (Expr.t -> t) ->
@@ -2357,7 +2933,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _1 "Language.ml" 60 1208 1216 "Language.ml" 60 1208 1264
+  def _1 "Language.ml" 75 1526 1534 "Language.ml" 75 1526 1582
 )
 type(
   Ostap.Matcher.Token.t
@@ -2374,7 +2950,7 @@ type(
   string
 )
 ident(
-  def _2 "Language.ml" 60 1208 1216 "Language.ml" 60 1208 1264
+  def _2 "Language.ml" 75 1526 1534 "Language.ml" 75 1526 1582
 )
 type(
   ('a, string, 'b) Ostap.Types.parse ->
@@ -2383,7 +2959,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 61 1265 1273 "Language.ml" 61 1265 1280
+"Language.ml" 76 1583 1591 "Language.ml" 76 1583 1598
 call(
   tail
 )
@@ -2421,15 +2997,15 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 61 1265 1273 "Language.ml" 61 1265 1280
+  int_ref _ostap_stream "Language.ml" 76 1583 1591 "Language.ml" 76 1583 1598
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 61 1265 1273 "Language.ml" 61 1265 1280
+  def _ostap_stream "Language.ml" 76 1583 1591 "Language.ml" 76 1583 1598
 )
-"Language.ml" 61 1265 1282 "Language.ml" 61 1265 1285
+"Language.ml" 76 1583 1600 "Language.ml" 76 1583 1603
 call(
   tail
 )
@@ -2449,22 +3025,22 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 61 1265 1282 "Language.ml" 61 1265 1285
+  int_ref _ostap_stream "Language.ml" 76 1583 1600 "Language.ml" 76 1583 1603
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 61 1265 1282 "Language.ml" 61 1265 1285
+  def _ostap_stream "Language.ml" 76 1583 1600 "Language.ml" 76 1583 1603
 )
-"Language.ml" 61 1265 1286 "Language.ml" 61 1265 1288
+"Language.ml" 76 1583 1604 "Language.ml" 76 1583 1606
 type(
   string
 )
 ident(
-  def x "Language.ml" 61 1265 1273 "Language.ml" 61 1265 1314
+  def x "Language.ml" 76 1583 1591 "Language.ml" 76 1583 1632
 )
-"Language.ml" 61 1265 1288 "Language.ml" 61 1265 1293
+"Language.ml" 76 1583 1606 "Language.ml" 76 1583 1611
 call(
   tail
 )
@@ -2478,15 +3054,15 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 61 1265 1288 "Language.ml" 61 1265 1293
+  int_ref _ostap_stream "Language.ml" 76 1583 1606 "Language.ml" 76 1583 1611
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 61 1265 1288 "Language.ml" 61 1265 1293
+  def _ostap_stream "Language.ml" 76 1583 1606 "Language.ml" 76 1583 1611
 )
-"Language.ml" 61 1265 1294 "Language.ml" 61 1265 1297
+"Language.ml" 76 1583 1612 "Language.ml" 76 1583 1615
 call(
   tail
 )
@@ -2506,26 +3082,26 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 61 1265 1294 "Language.ml" 61 1265 1297
+  int_ref _ostap_stream "Language.ml" 76 1583 1612 "Language.ml" 76 1583 1615
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 61 1265 1294 "Language.ml" 61 1265 1297
+  def _ostap_stream "Language.ml" 76 1583 1612 "Language.ml" 76 1583 1615
 )
-"Language.ml" 61 1265 1312 "Language.ml" 61 1265 1313
+"Language.ml" 76 1583 1630 "Language.ml" 76 1583 1631
 type(
   string
 )
 ident(
-  int_ref x "Language.ml" 61 1265 1286 "Language.ml" 61 1265 1288
+  int_ref x "Language.ml" 76 1583 1604 "Language.ml" 76 1583 1606
 )
-"Language.ml" 61 1265 1307 "Language.ml" 61 1265 1313
+"Language.ml" 76 1583 1625 "Language.ml" 76 1583 1631
 type(
   t
 )
-"Language.ml" 61 1265 1273 "Language.ml" 61 1265 1314
+"Language.ml" 76 1583 1591 "Language.ml" 76 1583 1632
 call(
   stack
 )
@@ -2566,7 +3142,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _0 "Language.ml" 61 1265 1307 "Language.ml" 61 1265 1313
+  def _0 "Language.ml" 76 1583 1625 "Language.ml" 76 1583 1631
 )
 type(
   Ostap.Matcher.Token.t
@@ -2583,7 +3159,7 @@ type(
   string
 )
 ident(
-  def _1 "Language.ml" 61 1265 1273 "Language.ml" 61 1265 1314
+  def _1 "Language.ml" 76 1583 1591 "Language.ml" 76 1583 1632
 )
 type(
   ('a, string, 'b) Ostap.Types.parse ->
@@ -2596,7 +3172,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _2 "Language.ml" 61 1265 1273 "Language.ml" 61 1265 1314
+  def _2 "Language.ml" 76 1583 1591 "Language.ml" 76 1583 1632
 )
 type(
   Ostap.Matcher.Token.t
@@ -2619,7 +3195,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 62 1315 1323 "Language.ml" 62 1315 1331
+"Language.ml" 77 1633 1641 "Language.ml" 77 1633 1649
 call(
   tail
 )
@@ -2657,15 +3233,15 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 62 1315 1323 "Language.ml" 62 1315 1331
+  int_ref _ostap_stream "Language.ml" 77 1633 1641 "Language.ml" 77 1633 1649
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 62 1315 1323 "Language.ml" 62 1315 1331
+  def _ostap_stream "Language.ml" 77 1633 1641 "Language.ml" 77 1633 1649
 )
-"Language.ml" 62 1315 1332 "Language.ml" 62 1315 1335
+"Language.ml" 77 1633 1650 "Language.ml" 77 1633 1653
 call(
   tail
 )
@@ -2685,29 +3261,29 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 62 1315 1332 "Language.ml" 62 1315 1335
+  int_ref _ostap_stream "Language.ml" 77 1633 1650 "Language.ml" 77 1633 1653
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 62 1315 1332 "Language.ml" 62 1315 1335
+  def _ostap_stream "Language.ml" 77 1633 1650 "Language.ml" 77 1633 1653
 )
-"Language.ml" 62 1315 1336 "Language.ml" 62 1315 1338
+"Language.ml" 77 1633 1654 "Language.ml" 77 1633 1656
 type(
   Expr.t
 )
 ident(
-  def e "Language.ml" 62 1315 1323 "Language.ml" 62 1315 1365
+  def e "Language.ml" 77 1633 1641 "Language.ml" 77 1633 1683
 )
-"Language.ml" 62 1315 1340 "Language.ml" 62 1315 1350
+"Language.ml" 77 1633 1658 "Language.ml" 77 1633 1668
 type(
   ('a, Expr.t, 'b) Ostap.Types.parse
 )
 ident(
-  int_ref Expr.parse "Language.ml" 13 147 153 "Language.ml" 40 899 922
+  int_ref Expr.parse "Language.ml" 14 148 154 "Language.ml" 55 1217 1240
 )
-"Language.ml" 62 1315 1352 "Language.ml" 62 1315 1355
+"Language.ml" 77 1633 1670 "Language.ml" 77 1633 1673
 call(
   tail
 )
@@ -2727,26 +3303,26 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 62 1315 1352 "Language.ml" 62 1315 1355
+  int_ref _ostap_stream "Language.ml" 77 1633 1670 "Language.ml" 77 1633 1673
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 62 1315 1352 "Language.ml" 62 1315 1355
+  def _ostap_stream "Language.ml" 77 1633 1670 "Language.ml" 77 1633 1673
 )
-"Language.ml" 62 1315 1363 "Language.ml" 62 1315 1364
+"Language.ml" 77 1633 1681 "Language.ml" 77 1633 1682
 type(
   Expr.t
 )
 ident(
-  int_ref e "Language.ml" 62 1315 1336 "Language.ml" 62 1315 1338
+  int_ref e "Language.ml" 77 1633 1654 "Language.ml" 77 1633 1656
 )
-"Language.ml" 62 1315 1357 "Language.ml" 62 1315 1364
+"Language.ml" 77 1633 1675 "Language.ml" 77 1633 1682
 type(
   t
 )
-"Language.ml" 62 1315 1323 "Language.ml" 62 1315 1365
+"Language.ml" 77 1633 1641 "Language.ml" 77 1633 1683
 call(
   stack
 )
@@ -2787,7 +3363,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _0 "Language.ml" 62 1315 1357 "Language.ml" 62 1315 1364
+  def _0 "Language.ml" 77 1633 1675 "Language.ml" 77 1633 1682
 )
 type(
   Ostap.Matcher.Token.t
@@ -2804,7 +3380,7 @@ type(
   Expr.t
 )
 ident(
-  def _1 "Language.ml" 62 1315 1323 "Language.ml" 62 1315 1365
+  def _1 "Language.ml" 77 1633 1641 "Language.ml" 77 1633 1683
 )
 type(
   ('a, Expr.t, 'b) Ostap.Types.parse ->
@@ -2817,7 +3393,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _2 "Language.ml" 62 1315 1323 "Language.ml" 62 1315 1365
+  def _2 "Language.ml" 77 1633 1641 "Language.ml" 77 1633 1683
 )
 type(
   Ostap.Matcher.Token.t
@@ -2840,7 +3416,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"Language.ml" 63 1366 1374 "Language.ml" 63 1366 1381
+"Language.ml" 78 1684 1692 "Language.ml" 78 1684 1699
 call(
   tail
 )
@@ -2878,19 +3454,19 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 63 1366 1374 "Language.ml" 63 1366 1381
+  int_ref _ostap_stream "Language.ml" 78 1684 1692 "Language.ml" 78 1684 1699
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 63 1366 1374 "Language.ml" 63 1366 1381
+  def _ostap_stream "Language.ml" 78 1684 1692 "Language.ml" 78 1684 1699
 )
-"Language.ml" 63 1366 1408 "Language.ml" 63 1366 1412
+"Language.ml" 78 1684 1726 "Language.ml" 78 1684 1730
 type(
   t
 )
-"Language.ml" 63 1366 1374 "Language.ml" 63 1366 1413
+"Language.ml" 78 1684 1692 "Language.ml" 78 1684 1731
 call(
   stack
 )
@@ -2910,7 +3486,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.map
 )
-"Language.ml" 60 1208 1216 "Language.ml" 63 1366 1413
+"Language.ml" 75 1526 1534 "Language.ml" 78 1684 1731
 call(
   stack
 )
@@ -2944,7 +3520,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"Language.ml" 59 1194 1200 "Language.ml" 63 1366 1413
+"Language.ml" 74 1512 1518 "Language.ml" 78 1684 1731
 call(
   tail
 )
@@ -2958,24 +3534,24 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "Language.ml" 59 1194 1200 "Language.ml" 63 1366 1413
+  int_ref _ostap_stream "Language.ml" 74 1512 1518 "Language.ml" 78 1684 1731
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "Language.ml" 59 1194 1200 "Language.ml" 63 1366 1413
+  def _ostap_stream "Language.ml" 74 1512 1518 "Language.ml" 78 1684 1731
 )
-"Language.ml" 56 1098 1104 "Language.ml" 63 1366 1413
+"Language.ml" 71 1416 1422 "Language.ml" 78 1684 1731
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  def simple "Language.ml" 55 1086 1090 "Language.ml" 66 1421 1426
+  def simple "Language.ml" 70 1404 1408 "Language.ml" 81 1739 1744
 )
 type(
   ('a, t, 'b) Ostap.Types.parse
 )
 ident(
-  def parse "Language.ml" 55 1086 1090 "Language.ml" 66 1421 1426
+  def parse "Language.ml" 70 1404 1408 "Language.ml" 81 1739 1744
 )
