@@ -83,6 +83,23 @@ module Compile =
 
     let stack_program env code =
       let rec compile stack code =
+        let binop_command = function
+          | "+" -> "addl"
+          | "-" -> "subl"
+          | "*" -> "imull"
+        in
+        let comp_command  = function
+          | "<"  -> "l"
+          | "<=" -> "le"
+          | ">"  -> "g"
+          | ">=" -> "ge"
+          | "==" -> "e"
+          | "!=" -> "ne"                    
+        in
+        let div_reg = function
+          | "/"  -> eax
+          | "%"  -> edx
+        in 
 	match code with
 	| []       -> []
 	| i::code' ->
@@ -105,11 +122,8 @@ module Compile =
     		  let x::y::stack' = stack in
                   (y::stack', [X86Mov (y, eax); X86Mov (x, ebx)] @
                       match op with
-                      | "+"  -> [X86Binop (ebx, eax, "addl");  X86Mov (eax, y)]
-                      | "-"  -> [X86Binop (ebx, eax, "subl");  X86Mov (eax, y)]
-                      | "*"  -> [X86Binop (ebx, eax, "imull"); X86Mov (eax, y)]                                         
-                      | "/"  -> [X86Cltd; X86Div ebx; X86Mov (eax, y)]
-                      | "%"  -> [X86Cltd; X86Div ebx; X86Mov (edx, y)]
+                      | ("+" | "-" | "*")  -> [X86Binop (ebx, eax, binop_command op);  X86Mov (eax, y)]
+                      | ("/" | "%")        -> [X86Cltd; X86Div ebx; X86Mov ((div_reg op), y)]
 
                       | "&&" -> [
                           X86Binop (eax, eax, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ecx);
@@ -118,12 +132,8 @@ module Compile =
                                   
                       | "!!" -> [X86Binop (ebx, eax, "orl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
 
-                      | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "l"; X86Mov (eax, y)]
-                      | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "le"; X86Mov (eax, y)]
-                      | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "g"; X86Mov (eax, y)]
-                      | ">=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ge"; X86Mov (eax, y)]
-                      | "!=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "ne"; X86Mov (eax, y)]
-                      | "==" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "e"; X86Mov (eax, y)]
+                      | ("<" | "<=" | ">" | ">=" | "==" | "!=")  -> [X86Cmp (ebx, eax); X86Mov (L 0, eax);
+                                                                     X86Set (comp_command op); X86Mov (eax, y)]
                       | _ -> failwith "x86op")
 	    in
 	    x86code @ compile stack' code'
