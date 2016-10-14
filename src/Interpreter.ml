@@ -2,16 +2,10 @@ module Expr =
   struct
 
     open Language.Expr
-
+   
     let eval_op op l r =
-    let int = function
-    | false -> 0
-    | true  -> 1
-    in
-    let bool = function
-    | 0 -> false
-    | _ -> true
-    in
+    let int stat = if stat then 1 else 0 in
+    let bool b = b <> 0 in
 
     match op with
     | "+"  -> l + r

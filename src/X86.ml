@@ -20,13 +20,9 @@ let esi = R 4
 let edi = R 5
 
 type x86instr =
-| X86Add   of opnd * opnd
-| X86Sub   of opnd * opnd                        
-| X86Mul   of opnd * opnd
+
+| X86Binop of opnd * opnd * string 
 | X86Div   of opnd
-| X86Mod   of opnd
-| X86And   of opnd * opnd
-| X86Or    of opnd * opnd
 | X86Set   of string
 | X86Mov   of opnd * opnd
 | X86Push  of opnd
@@ -67,21 +63,16 @@ module Show =
 
     let instr = function
 
-    | X86Add  (s1, s2) -> Printf.sprintf "\taddl\t%s,\t%s"  (opnd s1) (opnd s2)
-    | X86Sub  (s1, s2) -> Printf.sprintf "\tsubl\t%s,\t%s"  (opnd s1) (opnd s2)                                      
-    | X86Mul  (s1, s2) -> Printf.sprintf "\timull\t%s,\t%s" (opnd s1) (opnd s2)
-    | X86Div   s       -> Printf.sprintf "\tidivl\t%s"      (opnd s)
-    | X86Mod   s       -> Printf.sprintf "\tidivl\t%s"      (opnd s)
-    | X86And  (s1, s2) -> Printf.sprintf "\tandl\t%s,\t%s"  (opnd s1) (opnd s2)
-    | X86Or   (s1, s2) -> Printf.sprintf "\torl\t%s,\t%s"   (opnd s1) (opnd s2)
-    | X86Set   p       -> Printf.sprintf "\tset%s\t%%al"     p
-    | X86Mov  (s1, s2) -> Printf.sprintf "\tmovl\t%s,\t%s"  (opnd s1) (opnd s2)
-    | X86Push  s       -> Printf.sprintf "\tpushl\t%s"      (opnd s )
-    | X86Pop   s       -> Printf.sprintf "\tpopl\t%s"       (opnd s )
-    | X86Cmp  (s1, s2) -> Printf.sprintf "\tcmpl\t%s,\t%s"  (opnd s1) (opnd s2)                                         
-    | X86Cltd          -> Printf.sprintf "\tcltd"                                         
-    | X86Ret           -> "\tret"
-    | X86Call  p       -> Printf.sprintf "\tcall\t%s"        p
+    | X86Binop (s1, s2, p) -> Printf.sprintf "\t%s\t%s,\t%s"  p (opnd s1) (opnd s2)         
+    | X86Div    s          -> Printf.sprintf "\tidivl\t%s"      (opnd s)
+    | X86Set    p          -> Printf.sprintf "\tset%s\t%%al"     p
+    | X86Mov   (s1, s2)    -> Printf.sprintf "\tmovl\t%s,\t%s"  (opnd s1) (opnd s2)
+    | X86Push   s          -> Printf.sprintf "\tpushl\t%s"      (opnd s )
+    | X86Pop    s          -> Printf.sprintf "\tpopl\t%s"       (opnd s )
+    | X86Cmp   (s1, s2)    -> Printf.sprintf "\tcmpl\t%s,\t%s"  (opnd s1) (opnd s2)                                         
+    | X86Cltd              -> Printf.sprintf "\tcltd"                                         
+    | X86Ret               -> "\tret"
+    | X86Call   p          -> Printf.sprintf "\tcall\t%s"        p
                                          
   end
 
@@ -114,17 +105,19 @@ module Compile =
     		  let x::y::stack' = stack in
                   (y::stack', [X86Mov (y, eax); X86Mov (x, ebx)] @
                       match op with
-                      | "+"  -> [X86Add   (ebx, eax); X86Mov (eax, y)]
-                      | "-"  -> [X86Sub   (ebx, eax); X86Mov (eax, y)]
-                      | "*"  -> [X86Mul   (ebx, eax); X86Mov (eax, y)]                                         
+                      | "+"  -> [X86Binop (ebx, eax, "addl");  X86Mov (eax, y)]
+                      | "-"  -> [X86Binop (ebx, eax, "subl");  X86Mov (eax, y)]
+                      | "*"  -> [X86Binop (ebx, eax, "imull"); X86Mov (eax, y)]                                         
                       | "/"  -> [X86Cltd; X86Div ebx; X86Mov (eax, y)]
                       | "%"  -> [X86Cltd; X86Div ebx; X86Mov (edx, y)]
 
                       | "&&" -> [
-                          X86And   (eax, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ecx);
-                          X86And   (ebx, ebx); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ebx);
-                          X86And   (ebx, ecx); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
-                      | "!!" -> [X86Or    (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                          X86Binop (eax, eax, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ecx);
+                          X86Binop (ebx, ebx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ebx);
+                          X86Binop (ebx, ecx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                                  
+                      | "!!" -> [X86Binop (ebx, eax, "orl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+
                       | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "l"; X86Mov (eax, y)]
                       | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "le"; X86Mov (eax, y)]
                       | ">"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "g"; X86Mov (eax, y)]
