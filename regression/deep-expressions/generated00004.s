@@ -1461,17 +1461,17 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	x0,	%eax
 	movl	%eax,	-8(%ebp)
-	movl	-4(%ebp),	%eax
-	movl	-8(%ebp),	%ebx
-	orl	%ebx,	%eax
+	movl	x1,	%eax
+	movl	%eax,	-12(%ebp)
+	movl	-8(%ebp),	%eax
+	movl	-12(%ebp),	%ebx
+	andl	%ebx,	%eax
 	movl	$0,	%eax
 	setnz	%al
-	movl	%eax,	-4(%ebp)
-	movl	x1,	%eax
 	movl	%eax,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	orl	%ebx,	%eax
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -1572,17 +1572,17 @@ main:
 	setge	%al
 	movl	%eax,	-4(%ebp)
 	movl	$250,	-8(%ebp)
-	movl	-4(%ebp),	%eax
-	movl	-8(%ebp),	%ebx
-	orl	%ebx,	%eax
+	movl	x2,	%eax
+	movl	%eax,	-12(%ebp)
+	movl	-8(%ebp),	%eax
+	movl	-12(%ebp),	%ebx
+	andl	%ebx,	%eax
 	movl	$0,	%eax
 	setnz	%al
-	movl	%eax,	-4(%ebp)
-	movl	x2,	%eax
 	movl	%eax,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	orl	%ebx,	%eax
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)

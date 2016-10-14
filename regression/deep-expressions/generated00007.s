@@ -682,16 +682,16 @@ main:
 	setle	%al
 	movl	%eax,	-0(%ebp)
 	movl	$413,	-4(%ebp)
+	movl	$253,	-8(%ebp)
+	movl	-4(%ebp),	%eax
+	movl	-8(%ebp),	%ebx
+	andl	%ebx,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
 	orl	%ebx,	%eax
-	movl	$0,	%eax
-	setnz	%al
-	movl	%eax,	-0(%ebp)
-	movl	$253,	-4(%ebp)
-	movl	-0(%ebp),	%eax
-	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
