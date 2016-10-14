@@ -1,4 +1,4 @@
-TESTS=$(basename $(wildcard generated*.expr))
+TESTS=$(sort $(basename $(wildcard generated*.expr)))
 
 .PHONY: check $(TESTS)
 
