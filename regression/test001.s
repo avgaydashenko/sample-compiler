@@ -4,9 +4,6 @@
 	.comm	z,	4,	4
 	.globl	main
 main:
-	pushl	%ebp
-	movl	%esp,	%ebp
-	subl	$4,	%esp
 	call	read
 	movl	%eax,	%eax
 	movl	%eax,	x
@@ -15,37 +12,20 @@ main:
 	movl	%eax,	y
 	movl	x,	%eax
 	movl	%eax,	%esi
-	movl	y,	%eax
-	movl	%eax,	%edi
+	movl	$184,	%edi
 	movl	%esi,	%eax
 	movl	%edi,	%ebx
-	cmpl	%ebx,	%eax
+	andl	%eax,	%eax
 	movl	$0,	%eax
-	sete	%al
-	movl	%eax,	%esi
-	movl	$2,	%edi
-	movl	$3,	-0(%ebp)
-	movl	%edi,	%eax
-	movl	-0(%ebp),	%ebx
-	subl	%ebx,	%eax
-	movl	%eax,	%edi
-	movl	%esi,	%eax
-	movl	%edi,	%ebx
-	addl	%ebx,	%eax
-	movl	%eax,	%esi
-	movl	$5,	%edi
-	movl	$5,	-0(%ebp)
-	movl	%edi,	%eax
-	movl	-0(%ebp),	%ebx
-	cmpl	%ebx,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
 	movl	$0,	%eax
-	sete	%al
-	movl	%eax,	%edi
-	movl	%esi,	%eax
-	movl	%edi,	%ebx
-	cmpl	%ebx,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
-	setl	%al
+	setnz	%al
 	movl	%eax,	%esi
 	movl	%esi,	%eax
 	movl	%eax,	z
@@ -54,7 +34,5 @@ main:
 	pushl	%esi
 	call	write
 	popl	%esi
-	movl	%ebp,	%esp
-	popl	%ebp
 	xorl	%eax,	%eax
 	ret

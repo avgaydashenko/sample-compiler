@@ -77,7 +77,15 @@ main:
 	movl	%eax,	%edi
 	movl	%esi,	%eax
 	movl	%edi,	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	%esi

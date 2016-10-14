@@ -120,7 +120,10 @@ module Compile =
                       | "/"  -> [X86Cltd; X86Div ebx; X86Mov (eax, y)]
                       | "%"  -> [X86Cltd; X86Div ebx; X86Mov (edx, y)]
 
-                      | "&&" -> [X86And   (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                      | "&&" -> [
+                          X86And   (eax, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ecx);
+                          X86And   (ebx, ebx); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ebx);
+                          X86And   (ebx, ecx); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
                       | "!!" -> [X86Or    (ebx, eax); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
                       | "<"  -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set  "l"; X86Mov (eax, y)]
                       | "<=" -> [X86Cmp   (ebx, eax); X86Mov (L 0, eax); X86Set "le"; X86Mov (eax, y)]

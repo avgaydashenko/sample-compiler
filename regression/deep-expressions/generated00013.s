@@ -50,7 +50,15 @@ main:
 	movl	$599,	-0(%ebp)
 	movl	%edi,	%eax
 	movl	-0(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	%edi
@@ -259,7 +267,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -316,7 +332,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -325,7 +349,15 @@ main:
 	movl	$572,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -340,13 +372,29 @@ main:
 	movl	%eax,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -367,7 +415,15 @@ main:
 	movl	$690,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -438,7 +494,15 @@ main:
 	movl	$114,	-16(%ebp)
 	movl	-12(%ebp),	%eax
 	movl	-16(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-12(%ebp)
@@ -486,7 +550,15 @@ main:
 	movl	%eax,	-0(%ebp)
 	movl	%edi,	%eax
 	movl	-0(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	%edi
@@ -556,7 +628,15 @@ main:
 	movl	%eax,	-12(%ebp)
 	movl	-8(%ebp),	%eax
 	movl	-12(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-8(%ebp)
@@ -616,7 +696,15 @@ main:
 	movl	%eax,	-12(%ebp)
 	movl	-8(%ebp),	%eax
 	movl	-12(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-8(%ebp)
@@ -646,7 +734,15 @@ main:
 	movl	%eax,	-12(%ebp)
 	movl	-8(%ebp),	%eax
 	movl	-12(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-8(%ebp)
@@ -688,7 +784,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -704,7 +808,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -728,7 +840,15 @@ main:
 	movl	$657,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -803,7 +923,15 @@ main:
 	movl	%eax,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -927,7 +1055,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -985,7 +1121,15 @@ main:
 	movl	%eax,	-0(%ebp)
 	movl	%edi,	%eax
 	movl	-0(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	%edi
@@ -1002,7 +1146,15 @@ main:
 	movl	$127,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -1056,13 +1208,29 @@ main:
 	movl	$98,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -1089,7 +1257,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -1148,7 +1324,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -1177,7 +1361,15 @@ main:
 	movl	%eax,	-4(%ebp)
 	movl	-0(%ebp),	%eax
 	movl	-4(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-0(%ebp)
@@ -1201,7 +1393,15 @@ main:
 	movl	%eax,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -1223,7 +1423,15 @@ main:
 	movl	$827,	-12(%ebp)
 	movl	-8(%ebp),	%eax
 	movl	-12(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-8(%ebp)
@@ -1305,7 +1513,15 @@ main:
 	movl	%eax,	-12(%ebp)
 	movl	-8(%ebp),	%eax
 	movl	-12(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-8(%ebp)
@@ -1341,7 +1557,15 @@ main:
 	movl	%eax,	-16(%ebp)
 	movl	-12(%ebp),	%eax
 	movl	-16(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-12(%ebp)
@@ -1545,7 +1769,15 @@ main:
 	movl	%eax,	-12(%ebp)
 	movl	-8(%ebp),	%eax
 	movl	-12(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-8(%ebp)
@@ -1617,7 +1849,15 @@ main:
 	movl	%eax,	-8(%ebp)
 	movl	-4(%ebp),	%eax
 	movl	-8(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-4(%ebp)
@@ -1725,7 +1965,15 @@ main:
 	movl	%eax,	-12(%ebp)
 	movl	-8(%ebp),	%eax
 	movl	-12(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-8(%ebp)
@@ -1741,7 +1989,15 @@ main:
 	movl	$366,	-20(%ebp)
 	movl	-16(%ebp),	%eax
 	movl	-20(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-16(%ebp)
@@ -1768,7 +2024,15 @@ main:
 	movl	$535,	-20(%ebp)
 	movl	-16(%ebp),	%eax
 	movl	-20(%ebp),	%ebx
-	andl	%ebx,	%eax
+	andl	%eax,	%eax
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ecx
+	andl	%ebx,	%ebx
+	movl	$0,	%eax
+	setnz	%al
+	movl	%eax,	%ebx
+	andl	%ebx,	%ecx
 	movl	$0,	%eax
 	setnz	%al
 	movl	%eax,	-16(%ebp)
