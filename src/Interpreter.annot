@@ -874,21 +874,21 @@ type(
   int list -> Language.Stmt.t -> int list
 )
 ident(
-  def eval "Interpreter.ml" 51 1353 1365 "Interpreter.ml" 53 1367 1372
+  def eval "Interpreter.ml" 53 1553 1565 "Interpreter.ml" 55 1567 1572
 )
 "Interpreter.ml" 38 862 875 "Interpreter.ml" 38 862 880
 type(
   int list
 )
 ident(
-  def input "Interpreter.ml" 38 862 881 "Interpreter.ml" 51 1353 1365
+  def input "Interpreter.ml" 38 862 881 "Interpreter.ml" 53 1553 1565
 )
 "Interpreter.ml" 38 862 881 "Interpreter.ml" 38 862 885
 type(
   Language.Stmt.t
 )
 ident(
-  def stmt "Interpreter.ml" 39 888 894 "Interpreter.ml" 51 1353 1365
+  def stmt "Interpreter.ml" 39 888 894 "Interpreter.ml" 53 1553 1565
 )
 "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
 type(
@@ -896,28 +896,28 @@ type(
   Language.Stmt.t -> (string * int) list * int list * int list
 )
 ident(
-  def eval' "Interpreter.ml" 39 888 894 "Interpreter.ml" 51 1353 1365
+  def eval' "Interpreter.ml" 39 888 894 "Interpreter.ml" 53 1553 1565
 )
 "Interpreter.ml" 39 888 910 "Interpreter.ml" 39 888 915
 type(
   (string * int) list
 )
 ident(
-  def state "Interpreter.ml" 39 888 938 "Interpreter.ml" 48 1248 1286
+  def state "Interpreter.ml" 39 888 938 "Interpreter.ml" 50 1385 1486
 )
 "Interpreter.ml" 39 888 917 "Interpreter.ml" 39 888 922
 type(
   int list
 )
 ident(
-  def input "Interpreter.ml" 39 888 938 "Interpreter.ml" 48 1248 1286
+  def input "Interpreter.ml" 39 888 938 "Interpreter.ml" 50 1385 1486
 )
 "Interpreter.ml" 39 888 924 "Interpreter.ml" 39 888 930
 type(
   int list
 )
 ident(
-  def output "Interpreter.ml" 39 888 938 "Interpreter.ml" 48 1248 1286
+  def output "Interpreter.ml" 39 888 938 "Interpreter.ml" 50 1385 1486
 )
 "Interpreter.ml" 39 888 910 "Interpreter.ml" 39 888 930
 type(
@@ -928,21 +928,21 @@ type(
   (string * int) list * int list * int list
 )
 ident(
-  def c "Interpreter.ml" 39 888 938 "Interpreter.ml" 48 1248 1286
+  def c "Interpreter.ml" 39 888 938 "Interpreter.ml" 50 1385 1486
 )
 "Interpreter.ml" 39 888 938 "Interpreter.ml" 39 888 942
 type(
   Language.Stmt.t
 )
 ident(
-  def stmt "Interpreter.ml" 40 945 946 "Interpreter.ml" 48 1248 1286
+  def stmt "Interpreter.ml" 40 945 946 "Interpreter.ml" 50 1385 1486
 )
 "Interpreter.ml" 40 945 950 "Interpreter.ml" 40 945 956
 type(
   string -> int
 )
 ident(
-  def state' "Interpreter.ml" 41 983 984 "Interpreter.ml" 48 1248 1286
+  def state' "Interpreter.ml" 41 983 984 "Interpreter.ml" 50 1385 1486
 )
 "Interpreter.ml" 40 945 957 "Interpreter.ml" 40 945 958
 type(
@@ -994,32 +994,32 @@ ident(
 type(
   Language.Stmt.t
 )
-"Interpreter.ml" 42 1000 1020 "Interpreter.ml" 42 1000 1021
+"Interpreter.ml" 42 1000 1021 "Interpreter.ml" 42 1000 1022
 type(
   (string * int) list * int list * int list
 )
 ident(
   int_ref c "Interpreter.ml" 39 888 909 "Interpreter.ml" 39 888 936
 )
-"Interpreter.ml" 43 1022 1033 "Interpreter.ml" 43 1022 1034
+"Interpreter.ml" 43 1023 1034 "Interpreter.ml" 43 1023 1035
 type(
   Language.Stmt.t
 )
 ident(
-  def l "Interpreter.ml" 43 1022 1042 "Interpreter.ml" 43 1022 1061
+  def l "Interpreter.ml" 43 1023 1044 "Interpreter.ml" 43 1023 1063
 )
-"Interpreter.ml" 43 1022 1036 "Interpreter.ml" 43 1022 1037
+"Interpreter.ml" 43 1023 1037 "Interpreter.ml" 43 1023 1038
 type(
   Language.Stmt.t
 )
 ident(
-  def r "Interpreter.ml" 43 1022 1042 "Interpreter.ml" 43 1022 1061
+  def r "Interpreter.ml" 43 1023 1044 "Interpreter.ml" 43 1023 1063
 )
-"Interpreter.ml" 43 1022 1025 "Interpreter.ml" 43 1022 1038
+"Interpreter.ml" 43 1023 1026 "Interpreter.ml" 43 1023 1039
 type(
   Language.Stmt.t
 )
-"Interpreter.ml" 43 1022 1042 "Interpreter.ml" 43 1022 1047
+"Interpreter.ml" 43 1023 1044 "Interpreter.ml" 43 1023 1049
 type(
   (string * int) list * int list * int list ->
   Language.Stmt.t -> (string * int) list * int list * int list
@@ -1027,7 +1027,7 @@ type(
 ident(
   int_ref eval' "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
 )
-"Interpreter.ml" 43 1022 1049 "Interpreter.ml" 43 1022 1054
+"Interpreter.ml" 43 1023 1051 "Interpreter.ml" 43 1023 1056
 type(
   (string * int) list * int list * int list ->
   Language.Stmt.t -> (string * int) list * int list * int list
@@ -1035,195 +1035,195 @@ type(
 ident(
   int_ref eval' "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
 )
-"Interpreter.ml" 43 1022 1055 "Interpreter.ml" 43 1022 1056
+"Interpreter.ml" 43 1023 1057 "Interpreter.ml" 43 1023 1058
 type(
   (string * int) list * int list * int list
 )
 ident(
   int_ref c "Interpreter.ml" 39 888 909 "Interpreter.ml" 39 888 936
 )
-"Interpreter.ml" 43 1022 1057 "Interpreter.ml" 43 1022 1058
+"Interpreter.ml" 43 1023 1059 "Interpreter.ml" 43 1023 1060
 type(
   Language.Stmt.t
 )
 ident(
-  int_ref l "Interpreter.ml" 43 1022 1033 "Interpreter.ml" 43 1022 1034
+  int_ref l "Interpreter.ml" 43 1023 1034 "Interpreter.ml" 43 1023 1035
 )
-"Interpreter.ml" 43 1022 1048 "Interpreter.ml" 43 1022 1059
+"Interpreter.ml" 43 1023 1050 "Interpreter.ml" 43 1023 1061
 call(
   stack
 )
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 43 1022 1060 "Interpreter.ml" 43 1022 1061
+"Interpreter.ml" 43 1023 1062 "Interpreter.ml" 43 1023 1063
 type(
   Language.Stmt.t
 )
 ident(
-  int_ref r "Interpreter.ml" 43 1022 1036 "Interpreter.ml" 43 1022 1037
+  int_ref r "Interpreter.ml" 43 1023 1037 "Interpreter.ml" 43 1023 1038
 )
-"Interpreter.ml" 43 1022 1042 "Interpreter.ml" 43 1022 1061
+"Interpreter.ml" 43 1023 1044 "Interpreter.ml" 43 1023 1063
 call(
   tail
 )
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 44 1062 1073 "Interpreter.ml" 44 1062 1074
+"Interpreter.ml" 44 1064 1075 "Interpreter.ml" 44 1064 1076
 type(
   string
 )
 ident(
-  def x "Interpreter.ml" 44 1062 1082 "Interpreter.ml" 44 1062 1131
+  def x "Interpreter.ml" 44 1064 1085 "Interpreter.ml" 44 1064 1134
 )
-"Interpreter.ml" 44 1062 1076 "Interpreter.ml" 44 1062 1077
+"Interpreter.ml" 44 1064 1078 "Interpreter.ml" 44 1064 1079
 type(
   Language.Expr.t
 )
 ident(
-  def e "Interpreter.ml" 44 1062 1082 "Interpreter.ml" 44 1062 1131
+  def e "Interpreter.ml" 44 1064 1085 "Interpreter.ml" 44 1064 1134
 )
-"Interpreter.ml" 44 1062 1065 "Interpreter.ml" 44 1062 1078
+"Interpreter.ml" 44 1064 1067 "Interpreter.ml" 44 1064 1080
 type(
   Language.Stmt.t
 )
-"Interpreter.ml" 44 1062 1084 "Interpreter.ml" 44 1062 1085
+"Interpreter.ml" 44 1064 1087 "Interpreter.ml" 44 1064 1088
 type(
   string
 )
 ident(
-  int_ref x "Interpreter.ml" 44 1062 1073 "Interpreter.ml" 44 1062 1074
+  int_ref x "Interpreter.ml" 44 1064 1075 "Interpreter.ml" 44 1064 1076
 )
-"Interpreter.ml" 44 1062 1087 "Interpreter.ml" 44 1062 1096
+"Interpreter.ml" 44 1064 1090 "Interpreter.ml" 44 1064 1099
 type(
   (string -> int) -> Language.Expr.t -> int
 )
 ident(
   int_ref Expr.eval "Interpreter.ml" 26 603 615 "Interpreter.ml" 26 603 619
 )
-"Interpreter.ml" 44 1062 1097 "Interpreter.ml" 44 1062 1103
+"Interpreter.ml" 44 1064 1100 "Interpreter.ml" 44 1064 1106
 type(
   string -> int
 )
 ident(
   int_ref state' "Interpreter.ml" 40 945 950 "Interpreter.ml" 40 945 956
 )
-"Interpreter.ml" 44 1062 1104 "Interpreter.ml" 44 1062 1105
+"Interpreter.ml" 44 1064 1107 "Interpreter.ml" 44 1064 1108
 type(
   Language.Expr.t
 )
 ident(
-  int_ref e "Interpreter.ml" 44 1062 1076 "Interpreter.ml" 44 1062 1077
+  int_ref e "Interpreter.ml" 44 1064 1078 "Interpreter.ml" 44 1064 1079
 )
-"Interpreter.ml" 44 1062 1087 "Interpreter.ml" 44 1062 1105
+"Interpreter.ml" 44 1064 1090 "Interpreter.ml" 44 1064 1108
 call(
   stack
 )
 type(
   int
 )
-"Interpreter.ml" 44 1062 1083 "Interpreter.ml" 44 1062 1106
+"Interpreter.ml" 44 1064 1086 "Interpreter.ml" 44 1064 1109
 type(
   string * int
 )
-"Interpreter.ml" 44 1062 1110 "Interpreter.ml" 44 1062 1115
+"Interpreter.ml" 44 1064 1113 "Interpreter.ml" 44 1064 1118
 type(
   (string * int) list
 )
 ident(
   int_ref state "Interpreter.ml" 39 888 910 "Interpreter.ml" 39 888 915
 )
-"Interpreter.ml" 44 1062 1083 "Interpreter.ml" 44 1062 1115
+"Interpreter.ml" 44 1064 1086 "Interpreter.ml" 44 1064 1118
 type(
   (string * int) list
 )
-"Interpreter.ml" 44 1062 1117 "Interpreter.ml" 44 1062 1122
+"Interpreter.ml" 44 1064 1120 "Interpreter.ml" 44 1064 1125
 type(
   int list
 )
 ident(
   int_ref input "Interpreter.ml" 39 888 917 "Interpreter.ml" 39 888 922
 )
-"Interpreter.ml" 44 1062 1124 "Interpreter.ml" 44 1062 1130
+"Interpreter.ml" 44 1064 1127 "Interpreter.ml" 44 1064 1133
 type(
   int list
 )
 ident(
   int_ref output "Interpreter.ml" 39 888 924 "Interpreter.ml" 39 888 930
 )
-"Interpreter.ml" 44 1062 1082 "Interpreter.ml" 44 1062 1131
+"Interpreter.ml" 44 1064 1085 "Interpreter.ml" 44 1064 1134
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 45 1132 1143 "Interpreter.ml" 45 1132 1144
+"Interpreter.ml" 45 1135 1146 "Interpreter.ml" 45 1135 1147
 type(
   Language.Expr.t
 )
 ident(
-  def e "Interpreter.ml" 45 1132 1152 "Interpreter.ml" 45 1132 1197
+  def e "Interpreter.ml" 45 1135 1156 "Interpreter.ml" 45 1135 1201
 )
-"Interpreter.ml" 45 1132 1135 "Interpreter.ml" 45 1132 1144
+"Interpreter.ml" 45 1135 1138 "Interpreter.ml" 45 1135 1147
 type(
   Language.Stmt.t
 )
-"Interpreter.ml" 45 1132 1153 "Interpreter.ml" 45 1132 1158
+"Interpreter.ml" 45 1135 1157 "Interpreter.ml" 45 1135 1162
 type(
   (string * int) list
 )
 ident(
   int_ref state "Interpreter.ml" 39 888 910 "Interpreter.ml" 39 888 915
 )
-"Interpreter.ml" 45 1132 1160 "Interpreter.ml" 45 1132 1165
+"Interpreter.ml" 45 1135 1164 "Interpreter.ml" 45 1135 1169
 type(
   int list
 )
 ident(
   int_ref input "Interpreter.ml" 39 888 917 "Interpreter.ml" 39 888 922
 )
-"Interpreter.ml" 45 1132 1167 "Interpreter.ml" 45 1132 1173
+"Interpreter.ml" 45 1135 1171 "Interpreter.ml" 45 1135 1177
 type(
   int list
 )
 ident(
   int_ref output "Interpreter.ml" 39 888 924 "Interpreter.ml" 39 888 930
 )
-"Interpreter.ml" 45 1132 1177 "Interpreter.ml" 45 1132 1186
+"Interpreter.ml" 45 1135 1181 "Interpreter.ml" 45 1135 1190
 type(
   (string -> int) -> Language.Expr.t -> int
 )
 ident(
   int_ref Expr.eval "Interpreter.ml" 26 603 615 "Interpreter.ml" 26 603 619
 )
-"Interpreter.ml" 45 1132 1187 "Interpreter.ml" 45 1132 1193
+"Interpreter.ml" 45 1135 1191 "Interpreter.ml" 45 1135 1197
 type(
   string -> int
 )
 ident(
   int_ref state' "Interpreter.ml" 40 945 950 "Interpreter.ml" 40 945 956
 )
-"Interpreter.ml" 45 1132 1194 "Interpreter.ml" 45 1132 1195
+"Interpreter.ml" 45 1135 1198 "Interpreter.ml" 45 1135 1199
 type(
   Language.Expr.t
 )
 ident(
-  int_ref e "Interpreter.ml" 45 1132 1143 "Interpreter.ml" 45 1132 1144
+  int_ref e "Interpreter.ml" 45 1135 1146 "Interpreter.ml" 45 1135 1147
 )
-"Interpreter.ml" 45 1132 1177 "Interpreter.ml" 45 1132 1195
+"Interpreter.ml" 45 1135 1181 "Interpreter.ml" 45 1135 1199
 call(
   stack
 )
 type(
   int
 )
-"Interpreter.ml" 45 1132 1176 "Interpreter.ml" 45 1132 1196
+"Interpreter.ml" 45 1135 1180 "Interpreter.ml" 45 1135 1200
 type(
   int list
 )
 type(
   int list
 )
-"Interpreter.ml" 45 1132 1167 "Interpreter.ml" 45 1132 1196
+"Interpreter.ml" 45 1135 1171 "Interpreter.ml" 45 1135 1200
 call(
   stack
 )
@@ -1236,134 +1236,165 @@ type(
 ident(
   ext_ref Pervasives.( @ )
 )
-"Interpreter.ml" 45 1132 1152 "Interpreter.ml" 45 1132 1197
+"Interpreter.ml" 45 1135 1156 "Interpreter.ml" 45 1135 1201
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 46 1198 1209 "Interpreter.ml" 46 1198 1210
+"Interpreter.ml" 46 1202 1213 "Interpreter.ml" 46 1202 1214
 type(
   string
 )
 ident(
-  def x "Interpreter.ml" 47 1218 1223 "Interpreter.ml" 48 1248 1286
+  def x "Interpreter.ml" 47 1223 1228 "Interpreter.ml" 48 1253 1291
 )
-"Interpreter.ml" 46 1198 1201 "Interpreter.ml" 46 1198 1210
+"Interpreter.ml" 46 1202 1205 "Interpreter.ml" 46 1202 1214
 type(
   Language.Stmt.t
 )
-"Interpreter.ml" 47 1218 1227 "Interpreter.ml" 47 1218 1228
+"Interpreter.ml" 47 1223 1232 "Interpreter.ml" 47 1223 1233
 type(
   int
 )
 ident(
-  def y "Interpreter.ml" 48 1248 1253 "Interpreter.ml" 48 1248 1286
+  def y "Interpreter.ml" 48 1253 1258 "Interpreter.ml" 48 1253 1291
 )
-"Interpreter.ml" 47 1218 1230 "Interpreter.ml" 47 1218 1236
+"Interpreter.ml" 47 1223 1235 "Interpreter.ml" 47 1223 1241
 type(
   int list
 )
 ident(
-  def input' "Interpreter.ml" 48 1248 1253 "Interpreter.ml" 48 1248 1286
+  def input' "Interpreter.ml" 48 1253 1258 "Interpreter.ml" 48 1253 1291
 )
-"Interpreter.ml" 47 1218 1227 "Interpreter.ml" 47 1218 1236
+"Interpreter.ml" 47 1223 1232 "Interpreter.ml" 47 1223 1241
 type(
   int list
 )
-"Interpreter.ml" 47 1218 1239 "Interpreter.ml" 47 1218 1244
+"Interpreter.ml" 47 1223 1244 "Interpreter.ml" 47 1223 1249
 type(
   int list
 )
 ident(
   int_ref input "Interpreter.ml" 39 888 917 "Interpreter.ml" 39 888 922
 )
-"Interpreter.ml" 48 1248 1255 "Interpreter.ml" 48 1248 1256
+"Interpreter.ml" 48 1253 1260 "Interpreter.ml" 48 1253 1261
 type(
   string
 )
 ident(
-  int_ref x "Interpreter.ml" 46 1198 1209 "Interpreter.ml" 46 1198 1210
+  int_ref x "Interpreter.ml" 46 1202 1213 "Interpreter.ml" 46 1202 1214
 )
-"Interpreter.ml" 48 1248 1258 "Interpreter.ml" 48 1248 1259
+"Interpreter.ml" 48 1253 1263 "Interpreter.ml" 48 1253 1264
 type(
   int
 )
 ident(
-  int_ref y "Interpreter.ml" 47 1218 1227 "Interpreter.ml" 47 1218 1228
+  int_ref y "Interpreter.ml" 47 1223 1232 "Interpreter.ml" 47 1223 1233
 )
-"Interpreter.ml" 48 1248 1254 "Interpreter.ml" 48 1248 1260
+"Interpreter.ml" 48 1253 1259 "Interpreter.ml" 48 1253 1265
 type(
   string * int
 )
-"Interpreter.ml" 48 1248 1264 "Interpreter.ml" 48 1248 1269
+"Interpreter.ml" 48 1253 1269 "Interpreter.ml" 48 1253 1274
 type(
   (string * int) list
 )
 ident(
   int_ref state "Interpreter.ml" 39 888 910 "Interpreter.ml" 39 888 915
 )
-"Interpreter.ml" 48 1248 1254 "Interpreter.ml" 48 1248 1269
+"Interpreter.ml" 48 1253 1259 "Interpreter.ml" 48 1253 1274
 type(
   (string * int) list
 )
-"Interpreter.ml" 48 1248 1271 "Interpreter.ml" 48 1248 1277
+"Interpreter.ml" 48 1253 1276 "Interpreter.ml" 48 1253 1282
 type(
   int list
 )
 ident(
-  int_ref input' "Interpreter.ml" 47 1218 1230 "Interpreter.ml" 47 1218 1236
+  int_ref input' "Interpreter.ml" 47 1223 1235 "Interpreter.ml" 47 1223 1241
 )
-"Interpreter.ml" 48 1248 1279 "Interpreter.ml" 48 1248 1285
+"Interpreter.ml" 48 1253 1284 "Interpreter.ml" 48 1253 1290
 type(
   int list
 )
 ident(
   int_ref output "Interpreter.ml" 39 888 924 "Interpreter.ml" 39 888 930
 )
-"Interpreter.ml" 48 1248 1253 "Interpreter.ml" 48 1248 1286
+"Interpreter.ml" 48 1253 1258 "Interpreter.ml" 48 1253 1291
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 47 1218 1223 "Interpreter.ml" 48 1248 1286
+"Interpreter.ml" 47 1223 1228 "Interpreter.ml" 48 1253 1291
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 41 983 984 "Interpreter.ml" 48 1248 1286
+"Interpreter.ml" 49 1292 1306 "Interpreter.ml" 49 1292 1307
 type(
-  (string * int) list * int list * int list
-)
-"Interpreter.ml" 40 945 946 "Interpreter.ml" 48 1248 1286
-type(
-  (string * int) list * int list * int list
-)
-"Interpreter.ml" 39 888 938 "Interpreter.ml" 48 1248 1286
-type(
-  Language.Stmt.t -> (string * int) list * int list * int list
-)
-"Interpreter.ml" 39 888 908 "Interpreter.ml" 48 1248 1286
-type(
-  (string * int) list * int list * int list ->
-  Language.Stmt.t -> (string * int) list * int list * int list
-)
-"Interpreter.ml" 50 1296 1307 "Interpreter.ml" 50 1296 1308
-type(
-  (string * int) list
-)
-"Interpreter.ml" 50 1296 1310 "Interpreter.ml" 50 1296 1311
-type(
-  int list
-)
-"Interpreter.ml" 50 1296 1313 "Interpreter.ml" 50 1296 1319
-type(
-  int list
+  Language.Expr.t
 )
 ident(
-  def result "Interpreter.ml" 51 1353 1359 "Interpreter.ml" 51 1353 1365
+  def e "Interpreter.ml" 49 1292 1320 "Interpreter.ml" 49 1292 1384
 )
-"Interpreter.ml" 50 1296 1307 "Interpreter.ml" 50 1296 1319
+"Interpreter.ml" 49 1292 1309 "Interpreter.ml" 49 1292 1311
 type(
-  (string * int) list * int list * int list
+  Language.Stmt.t
 )
-"Interpreter.ml" 50 1296 1323 "Interpreter.ml" 50 1296 1328
+ident(
+  def s1 "Interpreter.ml" 49 1292 1320 "Interpreter.ml" 49 1292 1384
+)
+"Interpreter.ml" 49 1292 1313 "Interpreter.ml" 49 1292 1315
+type(
+  Language.Stmt.t
+)
+ident(
+  def s2 "Interpreter.ml" 49 1292 1320 "Interpreter.ml" 49 1292 1384
+)
+"Interpreter.ml" 49 1292 1302 "Interpreter.ml" 49 1292 1316
+type(
+  Language.Stmt.t
+)
+"Interpreter.ml" 49 1292 1324 "Interpreter.ml" 49 1292 1333
+type(
+  (string -> int) -> Language.Expr.t -> int
+)
+ident(
+  int_ref Expr.eval "Interpreter.ml" 26 603 615 "Interpreter.ml" 26 603 619
+)
+"Interpreter.ml" 49 1292 1334 "Interpreter.ml" 49 1292 1340
+type(
+  string -> int
+)
+ident(
+  int_ref state' "Interpreter.ml" 40 945 950 "Interpreter.ml" 40 945 956
+)
+"Interpreter.ml" 49 1292 1341 "Interpreter.ml" 49 1292 1342
+type(
+  Language.Expr.t
+)
+ident(
+  int_ref e "Interpreter.ml" 49 1292 1306 "Interpreter.ml" 49 1292 1307
+)
+"Interpreter.ml" 49 1292 1323 "Interpreter.ml" 49 1292 1343
+call(
+  stack
+)
+type(
+  int
+)
+"Interpreter.ml" 49 1292 1347 "Interpreter.ml" 49 1292 1348
+type(
+  int
+)
+"Interpreter.ml" 49 1292 1323 "Interpreter.ml" 49 1292 1348
+type(
+  bool
+)
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( != )
+)
+"Interpreter.ml" 49 1292 1355 "Interpreter.ml" 49 1292 1360
 type(
   (string * int) list * int list * int list ->
   Language.Stmt.t -> (string * int) list * int list * int list
@@ -1371,59 +1402,290 @@ type(
 ident(
   int_ref eval' "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
 )
-"Interpreter.ml" 50 1296 1330 "Interpreter.ml" 50 1296 1332
-type(
-  (string * int) list
-)
-"Interpreter.ml" 50 1296 1334 "Interpreter.ml" 50 1296 1339
-type(
-  int list
-)
-ident(
-  int_ref input "Interpreter.ml" 38 862 875 "Interpreter.ml" 38 862 880
-)
-"Interpreter.ml" 50 1296 1341 "Interpreter.ml" 50 1296 1343
-type(
-  int list
-)
-"Interpreter.ml" 50 1296 1329 "Interpreter.ml" 50 1296 1344
+"Interpreter.ml" 49 1292 1361 "Interpreter.ml" 49 1292 1362
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 50 1296 1345 "Interpreter.ml" 50 1296 1349
+ident(
+  int_ref c "Interpreter.ml" 39 888 909 "Interpreter.ml" 39 888 936
+)
+"Interpreter.ml" 49 1292 1363 "Interpreter.ml" 49 1292 1365
 type(
   Language.Stmt.t
 )
 ident(
-  int_ref stmt "Interpreter.ml" 38 862 881 "Interpreter.ml" 38 862 885
+  int_ref s1 "Interpreter.ml" 49 1292 1309 "Interpreter.ml" 49 1292 1311
 )
-"Interpreter.ml" 50 1296 1323 "Interpreter.ml" 50 1296 1349
+"Interpreter.ml" 49 1292 1354 "Interpreter.ml" 49 1292 1366
+call(
+  tail
+)
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 49 1292 1373 "Interpreter.ml" 49 1292 1378
+type(
+  (string * int) list * int list * int list ->
+  Language.Stmt.t -> (string * int) list * int list * int list
+)
+ident(
+  int_ref eval' "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
+)
+"Interpreter.ml" 49 1292 1379 "Interpreter.ml" 49 1292 1380
+type(
+  (string * int) list * int list * int list
+)
+ident(
+  int_ref c "Interpreter.ml" 39 888 909 "Interpreter.ml" 39 888 936
+)
+"Interpreter.ml" 49 1292 1381 "Interpreter.ml" 49 1292 1383
+type(
+  Language.Stmt.t
+)
+ident(
+  int_ref s2 "Interpreter.ml" 49 1292 1313 "Interpreter.ml" 49 1292 1315
+)
+"Interpreter.ml" 49 1292 1372 "Interpreter.ml" 49 1292 1384
+call(
+  tail
+)
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 49 1292 1320 "Interpreter.ml" 49 1292 1384
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 50 1385 1402 "Interpreter.ml" 50 1385 1403
+type(
+  Language.Expr.t
+)
+ident(
+  def e "Interpreter.ml" 50 1385 1413 "Interpreter.ml" 50 1385 1486
+)
+"Interpreter.ml" 50 1385 1405 "Interpreter.ml" 50 1385 1406
+type(
+  Language.Stmt.t
+)
+ident(
+  def s "Interpreter.ml" 50 1385 1413 "Interpreter.ml" 50 1385 1486
+)
+"Interpreter.ml" 50 1385 1395 "Interpreter.ml" 50 1385 1407
+type(
+  Language.Stmt.t
+)
+"Interpreter.ml" 50 1385 1417 "Interpreter.ml" 50 1385 1426
+type(
+  (string -> int) -> Language.Expr.t -> int
+)
+ident(
+  int_ref Expr.eval "Interpreter.ml" 26 603 615 "Interpreter.ml" 26 603 619
+)
+"Interpreter.ml" 50 1385 1427 "Interpreter.ml" 50 1385 1433
+type(
+  string -> int
+)
+ident(
+  int_ref state' "Interpreter.ml" 40 945 950 "Interpreter.ml" 40 945 956
+)
+"Interpreter.ml" 50 1385 1434 "Interpreter.ml" 50 1385 1435
+type(
+  Language.Expr.t
+)
+ident(
+  int_ref e "Interpreter.ml" 50 1385 1402 "Interpreter.ml" 50 1385 1403
+)
+"Interpreter.ml" 50 1385 1416 "Interpreter.ml" 50 1385 1436
+call(
+  stack
+)
+type(
+  int
+)
+"Interpreter.ml" 50 1385 1440 "Interpreter.ml" 50 1385 1441
+type(
+  int
+)
+"Interpreter.ml" 50 1385 1416 "Interpreter.ml" 50 1385 1441
+type(
+  bool
+)
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( != )
+)
+"Interpreter.ml" 50 1385 1447 "Interpreter.ml" 50 1385 1452
+type(
+  (string * int) list * int list * int list ->
+  Language.Stmt.t -> (string * int) list * int list * int list
+)
+ident(
+  int_ref eval' "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
+)
+"Interpreter.ml" 50 1385 1454 "Interpreter.ml" 50 1385 1459
+type(
+  (string * int) list * int list * int list ->
+  Language.Stmt.t -> (string * int) list * int list * int list
+)
+ident(
+  int_ref eval' "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
+)
+"Interpreter.ml" 50 1385 1460 "Interpreter.ml" 50 1385 1461
+type(
+  (string * int) list * int list * int list
+)
+ident(
+  int_ref c "Interpreter.ml" 39 888 909 "Interpreter.ml" 39 888 936
+)
+"Interpreter.ml" 50 1385 1462 "Interpreter.ml" 50 1385 1463
+type(
+  Language.Stmt.t
+)
+ident(
+  int_ref s "Interpreter.ml" 50 1385 1405 "Interpreter.ml" 50 1385 1406
+)
+"Interpreter.ml" 50 1385 1453 "Interpreter.ml" 50 1385 1464
 call(
   stack
 )
 type(
   (string * int) list * int list * int list
 )
-"Interpreter.ml" 51 1353 1359 "Interpreter.ml" 51 1353 1365
+"Interpreter.ml" 50 1385 1473 "Interpreter.ml" 50 1385 1474
+type(
+  Language.Expr.t
+)
+ident(
+  int_ref e "Interpreter.ml" 50 1385 1402 "Interpreter.ml" 50 1385 1403
+)
+"Interpreter.ml" 50 1385 1476 "Interpreter.ml" 50 1385 1477
+type(
+  Language.Stmt.t
+)
+ident(
+  int_ref s "Interpreter.ml" 50 1385 1405 "Interpreter.ml" 50 1385 1406
+)
+"Interpreter.ml" 50 1385 1465 "Interpreter.ml" 50 1385 1479
+type(
+  Language.Stmt.t
+)
+"Interpreter.ml" 50 1385 1447 "Interpreter.ml" 50 1385 1479
+call(
+  tail
+)
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 50 1385 1485 "Interpreter.ml" 50 1385 1486
+type(
+  (string * int) list * int list * int list
+)
+ident(
+  int_ref c "Interpreter.ml" 39 888 909 "Interpreter.ml" 39 888 936
+)
+"Interpreter.ml" 50 1385 1413 "Interpreter.ml" 50 1385 1486
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 41 983 984 "Interpreter.ml" 50 1385 1486
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 40 945 946 "Interpreter.ml" 50 1385 1486
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 39 888 938 "Interpreter.ml" 50 1385 1486
+type(
+  Language.Stmt.t -> (string * int) list * int list * int list
+)
+"Interpreter.ml" 39 888 908 "Interpreter.ml" 50 1385 1486
+type(
+  (string * int) list * int list * int list ->
+  Language.Stmt.t -> (string * int) list * int list * int list
+)
+"Interpreter.ml" 52 1496 1507 "Interpreter.ml" 52 1496 1508
+type(
+  (string * int) list
+)
+"Interpreter.ml" 52 1496 1510 "Interpreter.ml" 52 1496 1511
+type(
+  int list
+)
+"Interpreter.ml" 52 1496 1513 "Interpreter.ml" 52 1496 1519
 type(
   int list
 )
 ident(
-  int_ref result "Interpreter.ml" 50 1296 1313 "Interpreter.ml" 50 1296 1319
+  def result "Interpreter.ml" 53 1553 1559 "Interpreter.ml" 53 1553 1565
 )
-"Interpreter.ml" 50 1296 1302 "Interpreter.ml" 51 1353 1365
+"Interpreter.ml" 52 1496 1507 "Interpreter.ml" 52 1496 1519
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 52 1496 1523 "Interpreter.ml" 52 1496 1528
+type(
+  (string * int) list * int list * int list ->
+  Language.Stmt.t -> (string * int) list * int list * int list
+)
+ident(
+  int_ref eval' "Interpreter.ml" 39 888 902 "Interpreter.ml" 39 888 907
+)
+"Interpreter.ml" 52 1496 1530 "Interpreter.ml" 52 1496 1532
+type(
+  (string * int) list
+)
+"Interpreter.ml" 52 1496 1534 "Interpreter.ml" 52 1496 1539
 type(
   int list
 )
-"Interpreter.ml" 39 888 894 "Interpreter.ml" 51 1353 1365
+ident(
+  int_ref input "Interpreter.ml" 38 862 875 "Interpreter.ml" 38 862 880
+)
+"Interpreter.ml" 52 1496 1541 "Interpreter.ml" 52 1496 1543
 type(
   int list
 )
-"Interpreter.ml" 38 862 881 "Interpreter.ml" 51 1353 1365
+"Interpreter.ml" 52 1496 1529 "Interpreter.ml" 52 1496 1544
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 52 1496 1545 "Interpreter.ml" 52 1496 1549
+type(
+  Language.Stmt.t
+)
+ident(
+  int_ref stmt "Interpreter.ml" 38 862 881 "Interpreter.ml" 38 862 885
+)
+"Interpreter.ml" 52 1496 1523 "Interpreter.ml" 52 1496 1549
+call(
+  stack
+)
+type(
+  (string * int) list * int list * int list
+)
+"Interpreter.ml" 53 1553 1559 "Interpreter.ml" 53 1553 1565
+type(
+  int list
+)
+ident(
+  int_ref result "Interpreter.ml" 52 1496 1513 "Interpreter.ml" 52 1496 1519
+)
+"Interpreter.ml" 52 1496 1502 "Interpreter.ml" 53 1553 1565
+type(
+  int list
+)
+"Interpreter.ml" 39 888 894 "Interpreter.ml" 53 1553 1565
+type(
+  int list
+)
+"Interpreter.ml" 38 862 881 "Interpreter.ml" 53 1553 1565
 type(
   Language.Stmt.t -> int list
 )
-"Interpreter.ml" 38 862 875 "Interpreter.ml" 51 1353 1365
+"Interpreter.ml" 38 862 875 "Interpreter.ml" 53 1553 1565
 type(
   int list -> Language.Stmt.t -> int list
 )

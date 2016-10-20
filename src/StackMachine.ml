@@ -5,7 +5,10 @@ type i =
 | S_LD    of string
 | S_ST    of string
 | S_BINOP of string
-
+| S_JMP   of string
+| S_CJMP  of string * string
+| S_LBL   of string                        
+               
 module Interpreter =
   struct
 
@@ -34,6 +37,14 @@ module Interpreter =
               | S_BINOP s ->
 		  let y::x::stack' = stack in
                   (state, (Interpreter.Expr.eval_op s x y)::stack', input, output)
+(*
+              | S_JMP s ->
+                 ...
+              | S_CJMP (s1, s2) ->
+                 ...
+              | S_LBL s ->
+                 ...
+ *)
               )
               code'
       in
@@ -53,10 +64,13 @@ module Compile =
     | Binop (s, x, y) -> expr x @ expr y @ [S_BINOP s]
 
     let rec stmt = function
-    | Skip          -> []
-    | Assign (x, e) -> expr e @ [S_ST x]
-    | Read    x     -> [S_READ; S_ST x]
-    | Write   e     -> expr e @ [S_WRITE]
-    | Seq    (l, r) -> stmt l @ stmt r
-
+    | Skip               -> []
+    | Assign (x, e)      -> expr e @ [S_ST x]
+    | Read    x          -> [S_READ; S_ST x]
+    | Write   e          -> expr e @ [S_WRITE]
+    | Seq    (l, r)      -> stmt l @ stmt r
+(*
+    | If     (e, s1, s2) -> expr e @ [S_CJMP (stmt s1, stmt s2)]
+    | While  (e, s)      -> expr e @ 
+ *)                                     
   end
