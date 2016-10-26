@@ -1,0 +1,10 @@
+c*
+test*
+generated*
+!**/orig/*
+!*.expr
+!*.input
+!*.c
+*.data
+performance/data.gnuplot
+perfromance/graph.pdf
