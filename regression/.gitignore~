@@ -1,0 +1,5 @@
+test*
+generated*
+!**/orig/*
+!*.expr
+!*.input
