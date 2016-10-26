@@ -90,8 +90,8 @@ module Compile =
     | Write   e          -> expr e @ [S_WRITE]
     | Seq    (l, r)      -> stmt l @ stmt r
     | If     (e, s1, s2) ->
-       let l1 = string_of_int(label()) in
-       let l2 = string_of_int(label()) in
+       let l1 = "l"^string_of_int(label()) in
+       let l2 = "l"^string_of_int(label()) in
          expr e @
          [S_CJMP ("z", l1)] @
          stmt s1 @
@@ -99,8 +99,8 @@ module Compile =
          stmt s2 @
          [S_LBL l2]    
     | While  (e, s)      ->
-       let l1 = string_of_int(label()) in
-       let l2 = string_of_int(label()) in
+       let l1 = "l"^string_of_int(label()) in
+       let l2 = "l"^string_of_int(label()) in
          [S_LBL l1] @
          expr e @
          [S_CJMP ("z", l2)] @

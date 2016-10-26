@@ -31,7 +31,10 @@ type x86instr =
 | X86Call  of string
 | X86Cltd
 | X86Cmp   of opnd * opnd
-
+| X86Lbl   of string
+| X86Jmp   of string
+| X86Cjmp  of string * string                
+                       
 module S = Set.Make (String)
 
 class x86env =
@@ -73,6 +76,9 @@ module Show =
     | X86Cltd              -> Printf.sprintf "\tcltd"                                         
     | X86Ret               -> "\tret"
     | X86Call   p          -> Printf.sprintf "\tcall\t%s"        p
+    | X86Lbl    p          -> Printf.sprintf "%s:"               p
+    | X86Jmp    p          -> Printf.sprintf "\tjmp\t%s"         p
+    | X86Cjmp  (p1, p2)    -> Printf.sprintf "\tj%s\t%s"         p1 p2                                             
                                          
   end
 
@@ -135,6 +141,12 @@ module Compile =
                       | ("<" | "<=" | ">" | ">=" | "==" | "!=")  -> [X86Cmp (ebx, eax); X86Mov (L 0, eax);
                                                                      X86Set (comp_command op); X86Mov (eax, y)]
                       | _ -> failwith "x86op")
+              | S_LBL l -> (stack, [X86Lbl l])
+              | S_JMP l -> (stack, [X86Jmp l])
+              | S_CJMP (cmp, l) ->
+                 let x::stack' = stack in
+                   (stack', [X86Cmp (L 0, x); X86Cjmp (cmp, l)])
+                 
 	    in
 	    x86code @ compile stack' code'
       in
