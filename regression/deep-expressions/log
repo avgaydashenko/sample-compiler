@@ -1,9 +1,0 @@
-RC_RUNTIME=../../runtime ../../src/rc.byte -o generated00000.expr && cat generated00000.input | ./generated00000 > generated00000.log && diff generated00000.log orig/generated00000.log
-cat generated00000.input | RC_RUNTIME=../../runtime ../../src/rc.byte    generated00000.expr > generated00000.log && diff generated00000.log orig/generated00000.log
-cat generated00000.input | RC_RUNTIME=../../runtime ../../src/rc.byte -s generated00000.expr > generated00000.log && diff generated00000.log orig/generated00000.log
-RC_RUNTIME=../../runtime ../../src/rc.byte -o generated00001.expr && cat generated00001.input | ./generated00001 > generated00001.log && diff generated00001.log orig/generated00001.log
-cat generated00001.input | RC_RUNTIME=../../runtime ../../src/rc.byte    generated00001.expr > generated00001.log && diff generated00001.log orig/generated00001.log
-cat generated00001.input | RC_RUNTIME=../../runtime ../../src/rc.byte -s generated00001.expr > generated00001.log && diff generated00001.log orig/generated00001.log
-RC_RUNTIME=../../runtime ../../src/rc.byte -o generated00002.expr && cat generated00002.input | ./generated00002 > generated00002.log && diff generated00002.log orig/generated00002.log
-cat generated00002.input | RC_RUNTIME=../../runtime ../../src/rc.byte    generated00002.expr > generated00002.log && diff generated00002.log orig/generated00002.log
-cat generated00002.input | RC_RUNTIME=../../runtime ../../src/rc.byte -s generated00002.expr > generated00002.log && diff generated00002.log orig/generated00002.log
