@@ -5,7 +5,7 @@ let parse infile =
   Util.parse
     (object
        inherit Matcher.t s
-       inherit Util.Lexers.ident ["read"; "write"; "skip"; "if"; "while"; "fi"; "else"; "do"; "od"] s
+       inherit Util.Lexers.ident ["read"; "write"; "skip"; "if"; "while"; "fi"; "else"; "do"; "od"; "repeat"; "until"] s
        inherit Util.Lexers.decimal s
        inherit Util.Lexers.skip [
 	 Matcher.Skip.whitespaces " \t\n";
@@ -28,7 +28,7 @@ let main = ()
     | `Ok stmt -> 
 	(match mode with
 	 | `X86 ->
-             let basename = Filename.chop_suffix filename ".expr" in 
+       let basename = Filename.chop_suffix filename ".expr" in 
 	     X86.build stmt basename
 	 | _ ->
 	     let rec read acc =

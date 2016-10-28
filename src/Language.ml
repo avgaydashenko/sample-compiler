@@ -1,3 +1,4 @@
+
 open Ostap 
 open Matcher
 
@@ -60,7 +61,8 @@ module Stmt =
     | Assign of string * Expr.t
     | Seq    of t * t
     | If     of Expr.t * t * t
-    | While  of Expr.t * t                               
+    | While  of Expr.t * t
+    | Repeat of Expr.t * t
 
     ostap (
       parse: s:simple d:(-";" parse)? {
@@ -77,7 +79,9 @@ module Stmt =
         %"fi"                            {If (e, s1, s2)}
       | %"while"     e:!(Expr.parse)
         %"do"        s:parse
-        %"od"                            {While (e, s)}                     
+        %"od"                            {While (e, s)}
+      | %"repeat"    s:parse
+        %"until"     e:!(Expr.parse)     {Repeat (e, s)}             
     )
 
   end

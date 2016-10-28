@@ -48,6 +48,11 @@ module Stmt =
 	    ((x, y) :: state, input', output)
         | If (e, s1, s2) -> if (Expr.eval state' e) != 0 then (eval' c s1) else (eval' c s2)
         | While (e, s)   -> if (Expr.eval state' e) != 0 then eval' (eval' c s) (While (e, s)) else c
+        | Repeat (e, s)  -> let (state'', input'', output'') = (eval' c s) in
+                            let fun_state'' x = List.assoc x state'' in
+                            if (Expr.eval fun_state'' e) != 0                            
+                            then (state'', input'', output'')
+                            else eval' (state'', input'', output'') stmt
       in
       let (_, _, result) = eval' ([], input, []) stmt in
       result
