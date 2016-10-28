@@ -1,23 +1,23 @@
 type opnd = R of int | S of int | M of string | L of int
 
 let x86regs = [|
-  "%eax"; 
-  "%ebx"; 
   "%ecx"; 
-  "%edx"; 
   "%esi"; 
-  "%edi"
+  "%edi";
+  "%eax"; 
+  "%ebx";
+  "%edx"
 |]
                 
 let num_of_regs = Array.length x86regs
 let word_size = 4
 
-let eax = R 0
-let ebx = R 1
-let ecx = R 2
-let edx = R 3
-let esi = R 4
-let edi = R 5
+let ecx = R 0           
+let esi = R 1
+let edi = R 2            
+let eax = R 3
+let ebx = R 4
+let edx = R 5
 
 type x86instr =
 
@@ -50,9 +50,9 @@ class x86env =
 
 let allocate env stack =
   match stack with
-  | []                              -> R 4
+  | []                              -> R 0
   | (S n)::_                        -> env#allocate (n+1); S (n+1)
-  | (R n)::_ when n < num_of_regs-1 -> R (n+1)
+  | (R n)::_ when n < num_of_regs-4 -> R (n+1)
   | _                               -> env#allocate (0); S 0
 
 module Show =
@@ -76,9 +76,9 @@ module Show =
     | X86Cltd              -> Printf.sprintf "\tcltd"                                         
     | X86Ret               -> "\tret"
     | X86Call   p          -> Printf.sprintf "\tcall\t%s"        p
-    | X86Lbl    p          -> Printf.sprintf "%s:"               p
-    | X86Jmp    p          -> Printf.sprintf "\tjmp\t%s"         p
-    | X86Cjmp  (p1, p2)    -> Printf.sprintf "\tj%s\t%s"         p1 p2                                             
+    | X86Lbl    l          -> Printf.sprintf "%s:"               l
+    | X86Jmp    l          -> Printf.sprintf "\tjmp\t%s"         l
+    | X86Cjmp  (s, l)      -> Printf.sprintf "\tj%s\t%s"         s l                                             
                                          
   end
 
@@ -105,14 +105,20 @@ module Compile =
         let div_reg = function
           | "/"  -> eax
           | "%"  -> edx
-        in 
+        in
+        let func x y =
+          match (x, y) with
+          | (R i, R j) -> (x, y, [])
+          | (S i, R j) -> (ebx, y, [X86Mov (x, ebx)])
+          | (S i, S j) -> (ebx, eax, [X86Mov (y, eax); X86Mov (x, ebx)])
+        in                            
 	match code with
 	| []       -> []
 	| i::code' ->
 	    let (stack', x86code) =
               match i with
               | S_READ   -> ([eax], [X86Call "read"])
-              | S_WRITE  -> ([], [X86Push (R 4); X86Call "write"; X86Pop (R 4)])
+              | S_WRITE  -> ([], [X86Push (R 0); X86Call "write"; X86Pop (R 0)])
               | S_PUSH n ->
 		  let s = allocate env stack in
 		  (s::stack, [X86Mov (L n, s)])
@@ -125,20 +131,21 @@ module Compile =
 		  let s::stack' = stack in
 		  (stack', [X86Mov (s, eax); X86Mov (eax, M x)])
       	      | S_BINOP op ->
-    		  let x::y::stack' = stack in
-                  (y::stack', [X86Mov (y, eax); X86Mov (x, ebx)] @
+       		  let x::y::stack' = stack in
+                  let (x', y', pref) = func x y in
+                  (y::stack', pref @
                       match op with
-                      | ("+" | "-" | "*")  -> [X86Binop (ebx, eax, binop_command op);  X86Mov (eax, y)]
-                      | ("/" | "%")        -> [X86Cltd; X86Div ebx; X86Mov ((div_reg op), y)]
+                      | ("+" | "-" | "*")  -> [X86Binop (x', y', binop_command op); X86Mov (y', y)]
+                      | ("/" | "%")        -> [X86Mov (y, eax); X86Cltd; X86Div x'; X86Mov ((div_reg op), y)]
 
                       | "&&" -> [
-                          X86Binop (eax, eax, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ecx);
-                          X86Binop (ebx, ebx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ebx);
-                          X86Binop (ebx, ecx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                          X86Binop (y', y', "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, edx);
+                          X86Binop (x', x', "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ebx);
+                          X86Binop (ebx, edx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
                                   
-                      | "!!" -> [X86Binop (ebx, eax, "orl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                      | "!!" -> [X86Binop (x', y', "orl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
 
-                      | ("<" | "<=" | ">" | ">=" | "==" | "!=")  -> [X86Cmp (ebx, eax); X86Mov (L 0, eax);
+                      | ("<" | "<=" | ">" | ">=" | "==" | "!=")  -> [X86Cmp (x', y'); X86Mov (L 0, eax);
                                                                      X86Set (comp_command op); X86Mov (eax, y)]
                       | _ -> failwith "x86op")
               | S_LBL l -> (stack, [X86Lbl l])
