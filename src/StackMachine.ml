@@ -106,4 +106,12 @@ module Compile =
          [S_CJMP ("z", l2)] @
          stmt s @
          [S_JMP l1; S_LBL l2]
+    | Repeat  (e, s)      ->
+       let l1 = "l"^string_of_int(label()) in
+       let l2 = "l"^string_of_int(label()) in
+         [S_LBL l1] @
+         stmt s @
+         expr e @
+         [S_CJMP ("nz", l2)] @        
+         [S_JMP l1; S_LBL l2]         
   end

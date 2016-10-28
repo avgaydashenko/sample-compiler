@@ -8,7 +8,7 @@ check: $(TESTS)
 $(TESTS): %: %.expr
 #	RC_RUNTIME=../runtime ../src/rc.byte -o $< && cat $@.input | ./$@ > $@.log && diff $@.log orig/$@.log
 	cat $@.input | RC_RUNTIME=../runtime ../src/rc.byte    $< > $@.log && diff $@.log orig/$@.log
-#	cat $@.input | RC_RUNTIME=../runtime ../src/rc.byte -s $< > $@.log && diff $@.log orig/$@.log
+	cat $@.input | RC_RUNTIME=../runtime ../src/rc.byte -s $< > $@.log && diff $@.log orig/$@.log
 
 clean:
 	rm -f test*.log *.s *~ $(TESTS)
