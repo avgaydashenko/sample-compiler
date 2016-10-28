@@ -109,8 +109,12 @@ module Compile =
         let func x y =
           match (x, y) with
           | (R i, R j) -> (x, y, [])
+(*
           | (S i, R j) -> (ebx, y, [X86Mov (x, ebx)])
           | (S i, S j) -> (ebx, eax, [X86Mov (y, eax); X86Mov (x, ebx)])
+*)
+          | (S i, R j) -> (edx, y, [X86Mov (x, edx)])
+          | (S i, S j) -> (edx, eax, [X86Mov (y, eax); X86Mov (x, edx)])
         in                            
 	match code with
 	| []       -> []
@@ -136,12 +140,13 @@ module Compile =
                   (y::stack', pref @
                       match op with
                       | ("+" | "-" | "*")  -> [X86Binop (x', y', binop_command op); X86Mov (y', y)]
-                      | ("/" | "%")        -> [X86Mov (y, eax); X86Cltd; X86Div x'; X86Mov ((div_reg op), y)]
+                      | ("/" | "%")        -> [X86Mov (y', eax); X86Cltd; X86Div x';
+                                               X86Mov ((div_reg op), y'); X86Mov (y', y)]
 
                       | "&&" -> [
                           X86Binop (y', y', "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, edx);
-                          X86Binop (x', x', "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, ebx);
-                          X86Binop (ebx, edx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
+                          X86Binop (x', x', "andl"); X86Mov (L 0, eax); X86Set "nz";
+                          X86Binop (eax, edx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
                                   
                       | "!!" -> [X86Binop (x', y', "orl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
 
