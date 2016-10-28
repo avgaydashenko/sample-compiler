@@ -6,7 +6,7 @@ TESTS=test001 test002 test003 test004 test005 test006 test007 test008 test009 te
 check: $(TESTS) 
 
 $(TESTS): %: %.expr
-#	RC_RUNTIME=../runtime ../src/rc.byte -o $< && cat $@.input | ./$@ > $@.log && diff $@.log orig/$@.log
+	RC_RUNTIME=../runtime ../src/rc.byte -o $< && cat $@.input | ./$@ > $@.log && diff $@.log orig/$@.log
 	cat $@.input | RC_RUNTIME=../runtime ../src/rc.byte    $< > $@.log && diff $@.log orig/$@.log
 	cat $@.input | RC_RUNTIME=../runtime ../src/rc.byte -s $< > $@.log && diff $@.log orig/$@.log
 
