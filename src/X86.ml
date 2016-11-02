@@ -139,7 +139,7 @@ module Compile =
 
                       | "&&" -> [
                           X86Binop (y', y', "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, edx); 
-                          X86Binop (x, x, "andl"); X86Mov (L 0, eax); X86Set "nz";                          
+                          X86Mov (x, eax); X86Binop (eax, eax, "andl"); X86Mov (L 0, eax); X86Set "nz";
                           X86Binop (eax, edx, "andl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
                                   
                       | "!!" -> [X86Binop (x, y', "orl"); X86Mov (L 0, eax); X86Set "nz"; X86Mov (eax, y)]
