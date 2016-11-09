@@ -9,8 +9,9 @@ module Expr =
     | Const of int
     | Var   of string
     | Binop of string * t * t
-
-    ostap (
+    | Func  of string * t list
+                              
+    ostap(
 
       parse:
         l:andi suf:("!!" andi)* {
@@ -63,7 +64,9 @@ module Stmt =
     | If     of Expr.t * t * t
     | While  of Expr.t * t
     | Repeat of Expr.t * t
-
+    | Func   of string * Expr.t list
+    | Return of Expr.t
+                           
     ostap (
       parse: s:simple d:(-";" parse)? {
 	match d with None -> s | Some d -> Seq (s, d)
