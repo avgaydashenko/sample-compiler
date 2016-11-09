@@ -77,14 +77,33 @@ module Stmt =
       | %"write" "(" e:!(Expr.parse) ")" {Write e}
       | %"skip"                          {Skip}
       | %"if"        e:!(Expr.parse)
-        %"then"      s1:parse
-        %"else"      s2:parse           
-        %"fi"                            {If (e, s1, s2)}
+        %"then"      s:parse
+                     elif:(%"elif" !(Expr.parse)
+                           %"then" parse)*
+                     el:  (%"else" parse)?
+        %"fi"
+           {
+             If (e, s,
+                List.fold_right
+                  (fun (e, s) elif -> If (e, s, elif))
+                  elif
+                  (
+                    match el with
+                    | Some e -> e
+                    | _      -> Skip
+                  )
+                )
+           }
       | %"while"     e:!(Expr.parse)
         %"do"        s:parse
         %"od"                            {While (e, s)}
       | %"repeat"    s:parse
-        %"until"     e:!(Expr.parse)     {Repeat (e, s)}             
+        %"until"     e:!(Expr.parse)     {Repeat (e, s)}
+      | %"for"       s1:parse ","
+                     e:!(Expr.parse) ","
+                     s2:parse
+        %"do"        s:parse
+        %"od"                            {Seq (s1, While (e, Seq (s, s2)))}
     )
 
   end
