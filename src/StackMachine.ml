@@ -8,21 +8,17 @@ type i =
 | S_JMP   of string
 | S_CJMP  of string * string
 | S_LBL   of string
-(*
-| S_CALL of string * string list
+| S_CALL  of string * string list
 | S_RET
-| S_DROP
-| S_END with show
-
-take arguments from stack, make env with them, jump to function body                                            
-*)  
+| S_BEGIN of string * string list * string list
+| S_END   
              
 module Interpreter =
   struct
 
-    open Interpreter.Expr
+  open Interpreter.Expr
     
-    let run input program =
+    let run reader writer program =
       let rec env s program =
         match program with
         | [] -> []
@@ -30,39 +26,39 @@ module Interpreter =
            if s == l then program else env s program'
         | instr::program' -> env s program'
       in                           
-      let rec run' (state, stack, input, output) code =
+      let rec run' (state, stack) code =
 	match code with
-	| []       -> output
+	| []       -> (state, stack)
 	| i::code' ->
               (match i with
               | S_READ ->
-		  let y::input' = input in
-		  run' (state, y::stack, input', output) code'
+		  let y = reader() in
+		  run' (state, y::stack) code'
               | S_WRITE ->
-		  let y::stack' = stack in
-		  run' (state, stack', input, output @ [y]) code'
+		  let y::stack' = stack in writer y;
+		  run' (state, stack') code'
               | S_PUSH n ->
-		  run' (state, n::stack, input, output) code'
+		  run' (state, n::stack) code'
               | S_LD x ->
-		  run' (state, (List.assoc x state)::stack, input, output) code'
+		  run' (state, (List.assoc x state)::stack) code'
               | S_ST x ->
 		  let y::stack' = stack in
-		  run' ((x, y)::state, stack', input, output) code'
+		  run' ((x, y)::state, stack') code'
               | S_BINOP s ->
 		  let y::x::stack' = stack in
-                  run' (state, (Interpreter.Expr.eval_op s x y)::stack', input, output) code'
+                  run' (state, (Interpreter.Expr.eval_op s x y)::stack') code'
               | S_JMP s ->
-                 run' (state, stack, input, output) (env s program)
+                 run' (state, stack) (env s program)
               | S_CJMP (l, s) ->
                  let y::stack'= stack in
                  (match l with
-                 | "z"  when (y == 0) -> run' (state, stack', input, output) (env s program)
-                 | "nz" when (y <> 0) -> run' (state, stack', input, output) (env s program)
-                 | _ -> run' (state, stack, input, output) code')
-              | S_LBL _ -> run' (state, stack, input, output) code'
+                 | "z"  when (y == 0) -> run' (state, stack') (env s program)
+                 | "nz" when (y <> 0) -> run' (state, stack') (env s program)
+                 | _ -> run' (state, stack) code')
+              | S_LBL _ -> run' (state, stack) code'
               )
       in
-      run' ([], [], input, []) program
+      run' ([], []) program; ()
 	
   end
 

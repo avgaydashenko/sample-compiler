@@ -22,12 +22,21 @@ module Expr =
     | "&&" -> int ((bool l) && (bool r))                
     | "!!" -> int ((bool l) || (bool r))
     | _ -> failwith "unsupported operation" 
-                               
-    let rec eval state = function
-    | Const  n          -> n
-    | Var    x          -> state x
-    | Binop (op, l, r)  -> eval_op op (eval state l) (eval state r)
-                                   
+
+    let rec eval ((state, eval_stmt, funcs) as c) =
+      let rec eval' = function
+      | Const  n          -> n
+      | Var    x          -> List.assoc x state
+      | Binop (op, l, r)  -> eval_op op (eval' l) (eval' r)
+      | Call  (f, args)   -> let (args_names, body) = List.assoc f funcs in
+                             let args_vals = List.map eval' args in
+                             let vars = List.map2 (fun an av -> (an, av)) args_names args_vals in
+                             let (state', res) = eval_stmt vars body in
+                             match res with
+                             | `Return v -> eval (state', eval_stmt, funcs) v
+                             | `Continue -> failwith "function without return"
+      in eval'
+
   end
   
 module Stmt =
@@ -35,26 +44,26 @@ module Stmt =
 
     open Language.Stmt
 
-    let eval input stmt =
-      let rec eval' ((state, input, output) as c) stmt =
-	let state' x = List.assoc x state in
+    let eval reader writer funcs stmt =
+      let rec eval' state stmt =
+        let ev_exp e = Expr.eval (state, eval', funcs) e in 
+        let comp stmt cont_case =
+          let (state', res) = eval' state stmt in
+          (match res with
+           | `Return v -> (state', `Return v)
+           | `Continue -> cont_case state') in
 	match stmt with
-	| Skip           -> c
-	| Seq    (l, r)  -> eval' (eval' c l) r
-	| Assign (x, e)  -> ((x, Expr.eval state' e) :: state, input, output)
-	| Write   e      -> (state, input, output @ [Expr.eval state' e])
-	| Read    x      ->
-	    let y::input' = input in
-	    ((x, y) :: state, input', output)
-        | If (e, s1, s2) -> if (Expr.eval state' e) != 0 then (eval' c s1) else (eval' c s2)
-        | While (e, s)   -> if (Expr.eval state' e) != 0 then eval' (eval' c s) (While (e, s)) else c
-        | Repeat (e, s)  -> let (state'', input'', output'') = (eval' c s) in
-                            let fun_state'' x = List.assoc x state'' in
-                            if (Expr.eval fun_state'' e) != 0                            
-                            then (state'', input'', output'')
-                            else eval' (state'', input'', output'') stmt
+	| Skip           -> (state, `Continue)
+	| Seq    (l, r)  -> comp l (fun state' -> eval' state' r)
+	| Assign (x, e)  -> ((x, ev_exp e) :: state, `Continue)
+	| Write   e      -> writer (ev_exp e); (state, `Continue)
+	| Read    x      -> let y = reader() in ((x, y) :: state, `Continue)
+        | If (e, s1, s2) -> eval' state (if (ev_exp e) != 0 then s1 else s2)
+        | While (e, s)   -> if (ev_exp e) != 0 then comp s (fun state' -> eval' state' (While (e, s))) else (state, `Continue)
+        | Repeat (e, s)  -> comp s (fun state' -> eval' state' (While (Binop("==", e, Const 0), s)))
+        | Call (f, args) -> let _ = ev_exp (Call (f, args)) in (state, `Continue)
+        | Return v       -> (state, `Return v)
       in
-      let (_, _, result) = eval' ([], input, []) stmt in
-      result
+      eval' [] stmt; ()
 
   end
