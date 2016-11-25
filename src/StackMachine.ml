@@ -1,3 +1,4 @@
+
 type i =
 | S_READ
 | S_WRITE
@@ -10,7 +11,7 @@ type i =
 | S_LBL   of string
 | S_CALL  of string * string list
 | S_RET
-| S_BEGIN of string * string list * string list
+| S_BEGIN of string * string list
 | S_END   
              
 module Interpreter =
@@ -78,7 +79,8 @@ module Compile =
       fun () ->
       incr count;
       !count
-                                             
+
+       
     let rec stmt = function
     | Skip               -> []
     | Assign (x, e)      -> expr e @ [S_ST x]
@@ -107,5 +109,10 @@ module Compile =
          [S_LBL l1] @
          stmt s @
          expr e @
-         [S_CJMP ("z", l1)]         
+           [S_CJMP ("z", l1)]
+(*    | Call (f, args) -> [S_CALL (f, args)]
+    | Return v -> expr v @ [S_RET] *)
+
+    let compile funcs main = stmt main
+                             
   end
