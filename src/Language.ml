@@ -93,8 +93,8 @@ module Stmt =
                   elif
                   (
                     match el with
-                    | Some e -> e
-                    | _      -> Skip
+                    | Some elif -> elif
+                    | _         -> Skip
                   )
                 )
            }

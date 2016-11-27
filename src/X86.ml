@@ -160,9 +160,9 @@ module Compile =
 
   end
 
-let compile stmt =
+let compile funcs stmt =
   let env = new x86env in
-  let code = Compile.stack_program env @@ StackMachine.Compile.stmt stmt in
+  let code = Compile.stack_program env @@ StackMachine.Compile.compile funcs stmt in
   let asm  = Buffer.create 1024 in
   let (!!) s = Buffer.add_string asm s in
   let (!)  s = !!s; !!"\n" in
@@ -193,8 +193,8 @@ let compile stmt =
   !"\tret";
   Buffer.contents asm
 
-let build stmt name =
+let build funcs stmt name =
   let outf = open_out (Printf.sprintf "%s.s" name) in
-  Printf.fprintf outf "%s" (compile stmt);
+  Printf.fprintf outf "%s" (compile funcs stmt);
   close_out outf;
   ignore (Sys.command (Printf.sprintf "gcc -m32 -o %s $RC_RUNTIME/runtime.o %s.s" name name))
