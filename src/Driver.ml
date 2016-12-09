@@ -31,7 +31,7 @@ let main = ()
 	(match mode with
 	 | `X86 ->
              let basename = Filename.chop_suffix filename ".expr" in 
-	     X86.build stmt basename
+	     X86.build funcs stmt basename
 	 | _ ->
 	    let reader () =
               Printf.printf "> ";
@@ -41,7 +41,7 @@ let main = ()
               Printf.printf "%d\n" x
             in
             match mode with
-            | `SM -> StackMachine.Interpreter.run reader writer (StackMachine.Compile.stmt stmt)
+            | `SM -> StackMachine.Interpreter.run reader writer (StackMachine.Compile.compile funcs stmt)
             | _   -> Interpreter.Stmt.eval reader writer funcs stmt
 	)
 

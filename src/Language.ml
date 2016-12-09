@@ -46,8 +46,8 @@ module Expr =
         n:DECIMAL {Const n}
       | x:IDENT call:(-"(" !(Util.list0 parse) -")")? {
           match call with
-          | Some (args) -> Call (x, args)
-          | None        -> Var   x}
+          | Some (args) -> Call (("fun_"^x), args)
+          | None        -> Var   ("var_"^x)}
       | -"(" parse -")"
                       
     )
@@ -75,10 +75,10 @@ module Stmt =
                                     };
       expr : !(Expr.parse);
       simple:
-        x:IDENT s:("(" args:!(Util.list0 expr) ")" {Call (x, args)} |
-                   ":=" e:expr                     {Assign (x, e)}  
+        x:IDENT s:("(" args:!(Util.list0 expr) ")" {Call (("fun_"^x), args)} |
+                   ":=" e:expr                     {Assign (("var_"^x), e)}  
                   ) {s}       
-      | %"read"    "("  x:IDENT ")"      {Read x}
+      | %"read"    "("  x:IDENT ")"      {Read ("var_"^x)}
       | %"write"   "("  e:expr  ")"      {Write e}
       | %"skip"                          {Skip}
       | %"return"       e:expr           {Return e}
@@ -93,8 +93,8 @@ module Stmt =
                   elif
                   (
                     match el with
-                    | Some e -> e
-                    | _      -> Skip
+                    | Some elif -> elif
+                    | _         -> Skip
                   )
                 )
            }
@@ -113,7 +113,7 @@ module Def =
     ostap (
       arg  : IDENT;
       parse: %"fun" name:IDENT "(" args:!(Util.list0 arg) ")" %"begin" body:!(Stmt.parse) %"end" {
-        (name, (args, body))
+        ("fun_"^name, (List.map (fun arg -> "var_"^arg) args, body))
       }
     )
     
