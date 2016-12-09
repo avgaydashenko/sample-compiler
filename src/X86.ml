@@ -1,4 +1,4 @@
-9type opnd = R of int | S of int | M of string | L of int
+type opnd = R of int | S of int | M of string | L of int
 
 let x86regs = [|
   "%ebx";
