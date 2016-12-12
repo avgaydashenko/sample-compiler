@@ -50,12 +50,12 @@ module Interpreter =
 		  run' state ((List.assoc x curr_state)::stack) code'
               | S_ST x ->
 		  let y::stack' = stack in
-		  run' ((ret_addr, (x, y)::curr_state)::state) stack' code'
+		  run' ((ret_addr, (x, y)::curr_state)::state') stack' code'
               | S_ARG x ->
                   let y::stack' = stack in
-		  run' ((ret_addr, (x, y)::curr_state)::state) stack' code'
+		  run' ((ret_addr, (x, y)::curr_state)::state') stack' code'
               | S_BINOP s ->
-		  let y::x::stack' = stack in
+                  let y::x::stack' = stack in
                   run' state ((Interpreter.Expr.eval_op s x y)::stack') code'
               | S_JMP s ->
                   run' state stack (go_to_lbl s program)
@@ -137,10 +137,10 @@ module Compile =
     let debug = function
     | S_READ    -> Printf.printf "read\n"
     | S_WRITE   -> Printf.printf "write\n"
-    | S_PUSH _  -> Printf.printf "push\n"
+    | S_PUSH x  -> Printf.printf "push %d\n" x
     | S_LD s    -> Printf.printf "ld %s\n" s
     | S_ST s    -> Printf.printf "st %s\n" s
-    | S_ARG s   -> Printf.printf "ld %s\n" s
+    | S_ARG s   -> Printf.printf "arg %s\n" s
     | S_BINOP s -> Printf.printf "binop %s\n" s
     | S_JMP s   -> Printf.printf "jmp %s\n" s
     | S_CJMP (s1, s2) -> Printf.printf "cjmp %s %s\n" s1 s2

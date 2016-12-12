@@ -75,7 +75,8 @@ module Stmt =
                                     };
       expr : !(Expr.parse);
       simple:
-        x:IDENT s:("(" args:!(Util.list0 expr) ")" {Call (("fun_"^x), args)} |
+        x:IDENT ":=" %"read""()"         {Read ("var_"^x)}
+      | x:IDENT s:("(" args:!(Util.list0 expr) ")" {Call (("fun_"^x), args)} |
                    ":=" e:expr                     {Assign (("var_"^x), e)}  
                   ) {s}       
       | %"read"    "("  x:IDENT ")"      {Read ("var_"^x)}
