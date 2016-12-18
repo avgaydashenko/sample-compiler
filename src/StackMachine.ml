@@ -30,13 +30,13 @@ module Interpreter =
       match n with
       | 0 -> program
       | _ -> let pr::program' = program in go_to_instr (n-1) program'
-         
+                                                       
     let run reader writer program =
       let rec run' state stack code =
         let (ret_addr, curr_state)::state' = state in
 	match code with
 	| []       -> ()
-	| i::code' -> 
+	| i::code' ->
               (match i with
               | S_READ ->
 		  let y = reader() in
@@ -64,12 +64,12 @@ module Interpreter =
                  (match l with
                  | "z"  when (y == 0) -> run' state stack' (go_to_lbl s program)
                  | "nz" when (y <> 0) -> run' state stack' (go_to_lbl s program)
-                 | _ -> run' state stack code')
+                 | _ -> run' state stack' code')
               | S_LBL _ ->
                  run' state stack code'
               | S_CALL s ->
                  run' (((List.length program) - (List.length code'), [])::state) stack (go_to_lbl s program)
-              | S_RET ->
+              | S_RET -> 
                  run' state' stack (go_to_instr ret_addr program)
               | S_POP ->
                  let y::stack' = stack in
@@ -131,8 +131,7 @@ module Compile =
     | Return v -> expr v @ [S_RET]
 
     let make_func f = let (func_name, args_names, body) = (fst f, fst (snd f), snd (snd f)) in
-                      [S_LBL func_name] @ (List.map (fun x -> S_ARG x) args_names) @ (stmt body) @
-                        [S_LBL (String.concat "_" [func_name; "end"])]
+                      [S_LBL func_name] @ (List.map (fun x -> S_ARG x) args_names) @ (stmt body)
 
     let debug = function
     | S_READ    -> Printf.printf "read\n"
