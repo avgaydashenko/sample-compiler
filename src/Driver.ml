@@ -5,13 +5,13 @@ let parse infile =
   Util.parse
     (object
        inherit Matcher.t s
-       inherit Util.Lexers.ident ["read"; "write"; "skip"; "if"; "then"; "fi"; "else"; "for";
+       inherit Util.Lexers.ident ["read"; "write"; "skip"; "if"; "then"; "fi"; "else"; "for"; "continue"; "break";
                                   "while"; "do"; "od"; "repeat"; "until"; "fun"; "begin"; "end"; "return"] s
        inherit Util.Lexers.decimal s
        inherit Util.Lexers.skip [
 	 Matcher.Skip.whitespaces " \t\n";
 	 Matcher.Skip.lineComment "--";
-	 Matcher.Skip. nestedComment "(*" "*)"
+	 Matcher.Skip.nestedComment "(*" "*)"
        ] s
      end
     )

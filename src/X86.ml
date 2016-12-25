@@ -208,8 +208,9 @@ let rec get_func_data res = function
             match body with
             | ((Read x) | (Assign (x, _))) -> let seek list = List.exists (fun y -> y = x) list in
                                               if (not (seek args_names) && not (seek locals)) then x::locals else locals
-            | ((While (_, s)) | (Repeat (_, s))) -> get_loc_vars locals s
-            | ((If (_, s1, s2)) | (Seq (s1, s2))) -> get_loc_vars (get_loc_vars locals s1) s2
+            | ((While (_, _, s)) | (Repeat (_, _, s))) -> get_loc_vars locals s
+            | (For (_, s1, e, s2, s)) -> get_loc_vars (get_loc_vars (get_loc_vars locals s1) s) s2
+            | ((If (_, _, s1, s2)) | (Seq (s1, s2))) -> get_loc_vars (get_loc_vars locals s1) s2
             | _ -> locals
           in
           get_loc_vars [] body

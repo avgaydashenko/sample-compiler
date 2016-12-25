@@ -1,0 +1,13 @@
+read (n);
+f := 1;
+
+loop:
+while n > 1 do
+  n := n-1;
+  if n == 5
+  then continue loop
+  fi;
+  f := f * n
+od;
+
+write (f)

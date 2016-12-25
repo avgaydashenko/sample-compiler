@@ -1,0 +1,12 @@
+count_dozens:
+for i := 0, i < 5, i := i + 1
+do
+  for j := 0, j < 10, j := j + 1
+  do
+    if j > i
+    then continue count_dozens
+    else write (i * 10 + j)
+    fi
+  od
+od
+  

@@ -1,0 +1,31 @@
+s := 0;
+
+inc_repeat:
+repeat
+  s := s+1;
+  if s % 2 == 0 then continue inc_repeat fi;
+  if s > 5 then break inc_repeat fi
+until 1 != 1;
+
+write (s); (* s = 7 *)
+
+s := 0;
+
+inc_while:
+while 1 == 1
+do
+  s := s+1;
+  if s % 2 == 0 then continue inc_while fi;
+  if s > 5 then break inc_while fi
+od;
+
+write (s); (* s = 7 *)
+
+inc_for:
+for s := 0, 1 == 1, s := s+1
+do
+  if s % 2 == 0 then continue inc_for fi;
+  if s > 5 then break inc_for fi
+od;
+
+write (s) (* s = 7 *)

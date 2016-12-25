@@ -59,15 +59,24 @@ module Stmt =
 
     type t =
     | Skip
-    | Read   of string
-    | Write  of Expr.t
-    | Assign of string * Expr.t
-    | Seq    of t * t
-    | If     of Expr.t * t * t
-    | While  of Expr.t * t
-    | Repeat of Expr.t * t
-    | Call   of string * Expr.t list
-    | Return of Expr.t
+    | Read     of string
+    | Write    of Expr.t
+    | Assign   of string * Expr.t
+    | Seq      of t * t
+    | If       of string * Expr.t * t * t
+    | While    of string * Expr.t * t
+    | Repeat   of string * Expr.t * t
+    | For      of string * t * Expr.t * t * t
+    | Call     of string * Expr.t list
+    | Return   of Expr.t
+    | Break    of string
+    | Continue of string
+
+    let label = 
+      let count = ref (0) in
+      fun () ->
+      incr count;
+      !count
                            
     ostap (
       parse: s:simple d:(-";" parse)? {
@@ -83,14 +92,17 @@ module Stmt =
       | %"write"   "("  e:expr  ")"      {Write e}
       | %"skip"                          {Skip}
       | %"return"       e:expr           {Return e}
-      | %"if" e:expr %"then" s:parse
+      | name:(IDENT)? (":")? 
+        %"if" e:expr %"then" s:parse
               elif:(%"elif" expr %"then" parse)*
               el:  (%"else" parse)?
         %"fi"
            {
-             If (e, s,
+             If ((match name with
+                  | Some name -> name
+                  | _ -> "unnamed_if_"^string_of_int(label())), e, s,
                 List.fold_right
-                  (fun (e, s) elif -> If (e, s, elif))
+                  (fun (e, s) elif -> If ("nested_elif", e, s, elif))
                   elif
                   (
                     match el with
@@ -99,9 +111,22 @@ module Stmt =
                   )
                 )
            }
-      | %"while"  e:expr %"do"     s:parse %"od" {While (e, s)}
-      | %"repeat" s:parse %"until" e:expr        {Repeat (e, s)}
-      | %"for"    s1:parse "," e:expr "," s2:parse %"do" s:parse %"od" {Seq (s1, While (e, Seq (s, s2)))}
+      | name:(IDENT)? (":")? %"while" e:expr %"do" s:parse %"od" {While ((match name with
+                                                                   | Some name -> name
+                                                                   | _ -> "unnamed_while_"^string_of_int(label())), e, s)}
+      | name:(IDENT)? (":")? %"repeat" s:parse %"until" e:expr {Repeat ((match name with
+                                                                  | Some name -> name
+                                                                  | _ -> "unnamed_repeat_"^string_of_int(label())), e, s)}
+      | name:(IDENT)? (":")? %"for" s1:parse "," e:expr "," s2:parse %"do" s:parse %"od"
+          {For ((match name with
+                 | Some name -> name
+                 | _ -> "unnamed_for_"^string_of_int(label())), s1, e, s2, s)}
+      | %"break" name:(IDENT)? {Break ((match name with
+                                        | Some name -> name
+                                        | _ -> "unnamed"))}
+      | %"continue" name:(IDENT)? {Continue ((match name with
+                                              | Some name -> name
+                                              | _ -> "unnamed"))}
     )
 
   end

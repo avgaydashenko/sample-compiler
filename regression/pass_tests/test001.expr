@@ -1,0 +1,12 @@
+s := 0;
+
+loop:
+repeat
+  read (n);
+  s := s + n;
+  if n == 0
+  then break loop
+  fi
+until 1 != 1;
+
+write (s)

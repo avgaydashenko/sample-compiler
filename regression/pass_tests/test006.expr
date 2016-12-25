@@ -1,0 +1,11 @@
+n := 1;
+get_fact_5:
+for i := 1, i < 6, i := i+1
+do
+  n := n*i;
+  if n == 1
+  then continue get_fact_5
+  fi
+od;
+
+write (n)
