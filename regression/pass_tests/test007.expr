@@ -1,0 +1,26 @@
+n := 5;
+(*
+outer_if:
+if n == 5
+then
+  if n > 5
+  then
+    n := 5
+  else
+    break outer_if
+  fi;
+  write(0)
+fi;
+*)
+if n == 5
+then
+  if n <= 5
+  then
+    continue;
+    write(0)
+  fi;
+  break;
+  write(0)
+fi;
+
+write(n)

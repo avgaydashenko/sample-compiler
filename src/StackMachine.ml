@@ -112,13 +112,12 @@ module Compile =
         let l1 = "l"^string_of_int(label()) in
         let l2 = "l"^string_of_int(label()) in
         let res = (
-            [S_LBL name] @
             expr e @
             [S_CJMP ("z", l1)] @      
             stmt s1 @
-            [S_JMP ("end_"^name); S_LBL l1] @
+            [S_JMP name; S_LBL l1] @
             stmt s2 @
-            [S_LBL ("end_"^name)]
+            [S_LBL name; S_LBL ("end_"^name)]
           ) in
         loops := tl !loops; res
      | While  (name, e, s)      ->
