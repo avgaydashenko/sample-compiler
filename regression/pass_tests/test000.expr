@@ -2,5 +2,6 @@ myfor:
 for i := 0, i < 3, i := i + 1
 do
   write(i);
-  continue
+  continue;
+  write(i)
 od
