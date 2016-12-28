@@ -160,10 +160,25 @@ module Compile =
      | Continue name -> [S_JMP (match name with
                              | "unnamed" -> (hd !control_structure_scopes)
                              | _         -> name)]
-       
-    let make_func f = let (func_name, args_names, body) = (fst f, fst (snd f), snd (snd f)) in
-                      [S_LBL func_name] @ (List.map (fun x -> S_ARG x) args_names) @ (stmt body)
 
+    let get_useful_labels code =
+      List.map (fun instr ->
+          match instr with
+          | (S_JMP lbl | S_CJMP (_, lbl)) -> lbl
+        ) (List.filter (fun instr -> match instr with
+                                     | (S_JMP lbl | S_CJMP (_, lbl)) -> true
+                                     | _ -> false) code)
+      
+    let optimized_stmt code =
+      let unoptim = stmt code in
+      let useful_labels = get_useful_labels unoptim in
+      List.filter (fun instr ->
+          match instr with
+          | S_LBL lbl when (List.exists (fun y -> y = lbl) useful_labels) == false -> false
+          | other_instr -> true
+        ) unoptim
+
+                          
     let debug = function
     | S_READ    -> Printf.printf "read\n"
     | S_WRITE   -> Printf.printf "write\n"
@@ -178,8 +193,11 @@ module Compile =
     | S_CALL s  -> Printf.printf "call %s\n" s
     | S_RET     -> Printf.printf "ret\n"
     | S_POP     -> Printf.printf "pop\n"
+
+    let make_func f = let (func_name, args_names, body) = (fst f, fst (snd f), snd (snd f)) in
+                      [S_LBL func_name] @ (List.map (fun x -> S_ARG x) args_names) @ (optimized_stmt body)
                                  
-    let compile funcs main = let res = ((List.concat (List.map make_func funcs)) @ [S_LBL "main"] @ (stmt main)) in
+    let compile funcs main = let res = ((List.concat (List.map make_func funcs)) @ [S_LBL "main"] @ (optimized_stmt main)) in
                              (*List.map debug res;*) res
                              
   end
