@@ -99,7 +99,7 @@ module Compile =
       incr count;
       !count
 
-    let loops : string list ref = ref []
+    let control_structure_scopes : string list ref = ref []
        
     let rec stmt = function
      | Skip               -> []
@@ -108,7 +108,7 @@ module Compile =
      | Write   e          -> expr e @ [S_WRITE]
      | Seq    (l, r)      -> stmt l @ stmt r
      | If     (name, e, s1, s2) ->
-        loops := name::(!loops);
+        control_structure_scopes := name::(!control_structure_scopes);
         let l1 = "l"^string_of_int(label()) in
         let l2 = "l"^string_of_int(label()) in
         let res = (
@@ -119,9 +119,9 @@ module Compile =
             stmt s2 @
             [S_LBL name; S_LBL ("end_"^name)]
           ) in
-        loops := tl !loops; res
+        control_structure_scopes := tl !control_structure_scopes; res
      | While  (name, e, s)      ->
-        loops := name::(!loops);
+        control_structure_scopes := name::(!control_structure_scopes);
         let res = (
             [S_LBL name] @
             expr e @
@@ -129,18 +129,18 @@ module Compile =
             stmt s @
             [S_JMP name; S_LBL ("end_"^name)]
           ) in
-        loops := tl !loops; res
+        control_structure_scopes := tl !control_structure_scopes; res
      | Repeat  (name, e, s)      ->
-        loops := name::(!loops);
+        control_structure_scopes := name::(!control_structure_scopes);
         let res = (
             [S_LBL name] @
             stmt s @
             expr e @
             [S_CJMP ("z", name); S_LBL ("end_"^name)]
           ) in
-        loops := tl !loops; res
+        control_structure_scopes := tl !control_structure_scopes; res
      | For (name, s1, e, s2, s) ->
-        loops := name::(!loops);
+        control_structure_scopes := name::(!control_structure_scopes);
         let res = (
             stmt s1 @
             [S_LBL ("real_"^name)] @
@@ -151,14 +151,14 @@ module Compile =
             stmt s2 @    
             [S_JMP ("real_"^name); S_LBL ("end_"^name)]
           ) in
-        loops := tl !loops; res
+        control_structure_scopes := tl !control_structure_scopes; res
      | Call (f, args) -> (expr (Call (f, args))) @ [S_POP]
      | Return v -> expr v @ [S_RET]
      | Break name -> [S_JMP ("end_"^(match name with
-                             | "unnamed" -> (hd !loops)
+                             | "unnamed" -> (hd !control_structure_scopes)
                              | _         -> name))]
      | Continue name -> [S_JMP (match name with
-                             | "unnamed" -> (hd !loops)
+                             | "unnamed" -> (hd !control_structure_scopes)
                              | _         -> name)]
        
     let make_func f = let (func_name, args_names, body) = (fst f, fst (snd f), snd (snd f)) in
