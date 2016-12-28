@@ -1,0 +1,25 @@
+(*
+fun fact (n)
+begin
+  if n < 2
+    then return 1
+    else
+      x := fact (n-1);
+      return n * x
+  fi
+end
+
+n := read ();
+write (fact(n))
+*)
+
+fun fact (n)
+begin
+  if n < 2
+    then return 1
+    else return n * fact (n-1)
+  fi
+end
+
+n := read ();
+write (fact(n))
